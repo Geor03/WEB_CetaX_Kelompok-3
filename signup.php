@@ -28,17 +28,16 @@
   
         <div class="kanan">
           <ul class="navbar">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="product.html">Product</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
-        </div>
-<!--   
+            <li><a href="home.php">Home</a></li>
+            <li><a href="product.php">Product</a></li>
+            <li><a href="about-us.php">About Us</a></li>
+            <li><a href="contact-us.php">Contact Us</a></li>         
+           </ul>
+        </div> 
         <div class="login">
-          <a id="login-btn" href="login.html">Log In</a>
-          <a id="sign-btn" href="signup.html">Sign Up</a>
-        </div> -->
+          <a id="login-btn" href="login.php">Log In</a>
+          <a id="sign-btn" href="signup.php">Sign Up</a>
+        </div>
     </nav>
   
     <!-- Welcome -->
@@ -149,13 +148,13 @@
   
         <div class="useful-link">
           <h3>Useful Link</h3>
-          <a href="product.html">
+          <a href="product.php">
             Product
           </a>
-          <a href="portfolio.html">
+          <a href="portfolio.php">
             Portfolio
           </a>
-          <a href="">
+          <a href="about-us.php">
             About Us
           </a>
           <a href="">

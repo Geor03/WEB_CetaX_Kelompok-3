@@ -16,3 +16,6 @@
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = $pdo->prepare("INSERT INTO `table_customer`( `username`, `email`, `password`, `first_name`, `last_name`, `no_telp`, `address`, `role`) values ('$user','$email','$pass','$Fname','$Lname','$phone','$address','$role')");
     $result = $query->execute();
+    if($result){
+        header('Location: home.php');
+    }

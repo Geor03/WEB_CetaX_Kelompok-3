@@ -196,13 +196,13 @@
 
         <div class="useful-link">
           <h3>Useful Link</h3>
-          <a href="product.html">
+          <a href="product.php">
             Product
           </a>
-          <a href="portfolio.html">
+          <a href="portfolio.php">
             Portfolio
           </a>
-          <a href="about-us.html">
+          <a href="about-us.php">
             About Us
           </a>
           <a href="">

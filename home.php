@@ -42,10 +42,10 @@
 
     <div class="kanan">
       <ul class="navbar">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="product.php">Product</a></li>
+          <li><a href="about-us.php">About Us</a></li>
+          <li><a href="contact-us.php">Contact Us</a></li>
       </ul>
     </div>
 
@@ -203,10 +203,10 @@
       <img src="images/Why-us.png" id="why-us" alt="">
 
       <!-- Portfolio -->
-      <a id="portofolio" href="portfolio.html">
+      <a id="portofolio" href="portfolio.php">
         <div class="portfolio">
           <h1>Our Portfolio</h1>
-          <a id="click" href="portfolio.html">Click Here →</a>
+          <a id="click" href="portfolio.php">Click Here →</a>
 
           <a href="portfolio.html">
             <img src="images/baju2.png" alt="">
@@ -278,13 +278,13 @@
 
       <div class="useful-link">
         <h3>Useful Link</h3>
-        <a href="product.html">
-          Product
+        <a href="product.php">
+            Product
         </a>
-        <a href="portfolio.html">
+        <a href="portfolio.php">
           Portfolio
         </a>
-        <a href="about-us.html">
+        <a href="about-us.php">
           About Us
         </a>
         <a href="">
