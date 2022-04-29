@@ -1,6 +1,21 @@
 <?php
   include_once 'css/all-style.php';
   session_start();
+  $host = 'localhost';
+  $dbname = 'cetax';
+  $username = 'root';
+  $password = '';
+  $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
+  $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+
+  $result = $pdo->prepare(" SELECT * FROM table_product ");
+  $result->execute();
+  $final = $result->fetchAll();
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +40,8 @@
         </div>
 
         <div class="items">
-            <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
-            <li><i class="fa-solid fa-right-from-bracket"></i><a href="#">Log out</a></li>
+            <li><i class="fa-solid fa-chart-pie"></i><a href="admin-page.php">Dashboard</a></li>
+            <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>
         </div>
     </section>
 
@@ -58,6 +73,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php foreach($final as $key=>$product) :?>
                     <tr>
                         <td class="people">
                             <div class="people-de">
@@ -77,6 +93,7 @@
                             <button id="open">Edit</button>
                         </td>
                     </tr>
+                    <?php endforeach ?>
                 </tbody>
             </table>
         </div>
