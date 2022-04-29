@@ -1,3 +1,7 @@
+<?php
+  include_once 'css/all-style.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
