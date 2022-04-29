@@ -3,7 +3,6 @@
 <link rel="stylesheet" type="text/css" href="css/faq.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/portfolio-category.css">
 <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 <link rel="stylesheet" type="text/css" href="css/product.css">
