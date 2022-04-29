@@ -53,9 +53,27 @@
                       </div>
 
                       <div class="txt_field">
-                        <input type="text" name="province" required>
+                          <input type="text" name="email" required>
+                          <span></span>
+                          <label>Email</label>
+                      </div>
+
+                      <div class="txt_field">
+                          <input type="password" name="pw" required>
+                          <span></span>
+                          <label>Password</label>
+                      </div>
+
+                      <div class="txt_field">
+                        <input type="text" name="first_name" required>
                         <span></span>
-                        <label>Province</label>
+                        <label>First Name</label>
+                      </div>
+
+                      <div class="txt_field">
+                        <input type="text" name="last_name" required>
+                        <span></span>
+                        <label>Last Name</label>
                       </div>
 
                       <div class="txt_field">
@@ -68,18 +86,6 @@
                         <input type="text" name="postal_code" required>
                         <span></span>
                         <label>Postal Code</label>
-                      </div>
-
-                      <div class="txt_field">
-                          <input type="text" name="email" required>
-                          <span></span>
-                          <label>Email</label>
-                      </div>
-
-                      <div class="txt_field">
-                          <input type="password" name="pw" required>
-                          <span></span>
-                          <label>Password</label>
                       </div>
 
                       <input type="submit" value="Sign Up">

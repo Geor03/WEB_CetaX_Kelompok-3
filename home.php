@@ -53,7 +53,15 @@
     </div>
 
     <div class="logout">
-      <p>Customer Name</p>
+      <div class="wrapper">
+        <ul class="dynamic-txt">
+          <li><span>Hi</span></li>
+          <li><span>你好</span></li>
+          <li><span>こんにちは</span></li>
+          <li><span>مرحبا</span></li>
+          <li><span>Bonjour</span></li>
+        </ul>
+      </div>
       <a href="php/logout.php">Log Out</a>
     </div>
 
