@@ -222,6 +222,10 @@ select {
     display: none;
 }
 
+#form-box-signup {
+    height: 800px;
+}
+
 .form-box {
     width: 1000px;
     height: 600px;

@@ -48,44 +48,53 @@
 
     <div class="form">
 
-        <div class="form-box">
+        <div class="form-box" id="form-box-signup">
 
             <div class="form-text">
 
                 <h1>Sign up</h1>
                     <form action="php/signup-process.php" method="post">
-                        <div class="txt_field">
-                            <input type="text" name="email" required>
-                            <span></span>
-                            <label>Email</label>
-                        </div>
-                        <div class="txt_field">
-                            <input type="text" name="user" required>
-                            <span></span>
-                            <label>Username</label>
-                        </div>
+                      <div class="txt_field">
+                        <input type="text" name="user" required>
+                        <span></span>
+                        <label>Username</label>
+                      </div>
 
-                        <div class="txt_field">
-                            <input type="password" name="pw" required>
-                            <span></span>
-                            <label>Password</label>
-                        </div>
+                      <div class="txt_field">
+                        <input type="text" name="province" required>
+                        <span></span>
+                        <label>Province</label>
+                      </div>
 
-                        <div class="select">
-                            <select name="format" id="format">
-                                <option selected disabled>Choose Role</option>
-                                <option value="Member">Member</option>
-                                <option value="Mechanic">Admin</option>
-                            </select>
-                        </div>
+                      <div class="txt_field">
+                        <input type="text" name="address" required>
+                        <span></span>
+                        <label>Address</label>
+                      </div>
 
-                        <div class="forgot-pass">Forgot Password?</div>
+                      <div class="txt_field">
+                        <input type="text" name="postal_code" required>
+                        <span></span>
+                        <label>Postal Code</label>
+                      </div>
 
-                        <input type="submit" value="Sign Up">
+                      <div class="txt_field">
+                          <input type="text" name="email" required>
+                          <span></span>
+                          <label>Email</label>
+                      </div>
 
-                        <div class="signUp-link">
-                            You're a member? <a href="login.php">Log in</a>
-                        </div>
+                      <div class="txt_field">
+                          <input type="password" name="pw" required>
+                          <span></span>
+                          <label>Password</label>
+                      </div>
+
+                      <input type="submit" value="Sign Up">
+
+                      <div class="signUp-link">
+                          You're a member? <a href="login.php">Log in</a>
+                      </div>
                     </form>
 
             </div>
