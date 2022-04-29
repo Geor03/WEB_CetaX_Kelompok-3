@@ -52,6 +52,10 @@
       </ul>
     </div>
 
+    <div class="logout">
+      <a href="php/logout.php">Log Out</a>
+    </div>
+
     <?php
       if( $_SESSION['role'] != null){
         //nanti masukin yg profile sama log out button disini

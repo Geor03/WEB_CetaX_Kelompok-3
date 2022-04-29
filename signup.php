@@ -26,14 +26,6 @@
           <h1>Ceta</h1><h1 id="color">X</h1>
         </div>
   
-        <div class="kanan">
-          <ul class="navbar">
-            <li><a href="home.php">Home</a></li>
-            <li><a href="product.php">Product</a></li>
-            <li><a href="about-us.php">About Us</a></li>
-            <li><a href="contact-us.php">Contact Us</a></li>         
-           </ul>
-        </div> 
         <div class="login">
           <a id="login-btn" href="login.php">Log In</a>
           <a id="sign-btn" href="signup.php">Sign Up</a>
