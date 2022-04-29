@@ -77,7 +77,7 @@
                       </div>
 
                       <div class="txt_field">
-                        <input type="text" name="phone_num" required>
+                        <input type="text" name="phone" required>
                         <span></span>
                         <label>Phone Number</label>
                       </div>
