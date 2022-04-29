@@ -61,6 +61,7 @@
           <li><span>مرحبا</span></li>
           <li><span>Bonjour</span></li>
         </ul>
+        <div class="static-txt">Customer Name</div>
       </div>
       <a href="php/logout.php">Log Out</a>
     </div>
