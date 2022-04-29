@@ -11,9 +11,11 @@ body {
     width: 100%;
     background: #e5e7eB;
     position: relative;
-    display: flex;
 }
 
+.container {
+    display: flex;
+}
 
 /* Navigation Menu */
 #menu {
