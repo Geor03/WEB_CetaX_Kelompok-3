@@ -65,13 +65,13 @@
                       </div>
 
                       <div class="txt_field">
-                        <input type="text" name="first_name" required>
+                        <input type="text" name="Fname" required>
                         <span></span>
                         <label>First Name</label>
                       </div>
 
                       <div class="txt_field">
-                        <input type="text" name="last_name" required>
+                        <input type="text" name="Lname" required>
                         <span></span>
                         <label>Last Name</label>
                       </div>
@@ -83,7 +83,7 @@
                       </div>
 
                       <div class="txt_field">
-                        <input type="text" name="postal_code" required>
+                        <input type="text" name="postal" required>
                         <span></span>
                         <label>Postal Code</label>
                       </div>
