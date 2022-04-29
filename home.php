@@ -53,6 +53,7 @@
     </div>
 
     <div class="logout">
+      <p>Customer Name</p>
       <a href="php/logout.php">Log Out</a>
     </div>
 
