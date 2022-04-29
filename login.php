@@ -58,13 +58,13 @@
                 <h1>Login</h1>
                 <form action="php/login-process.php" method="post">
                     <div class="txt_field">
-                        <input type="text" placeholder="Username" name="user" required>
+                        <input type="text" name="user" required>
                         <span></span>
                         <label>Username</label>
                     </div>
 
                     <div class="txt_field">
-                        <input type="password" placeholder="Password" name="pw" required>
+                        <input type="password" name="pw" required>
                         <span></span>
                         <label>Password</label>
                     </div>

@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$username = $_POST['user'];
-$password = $_POST['pw'];
+$user = $_POST['user'];
+$pw = $_POST['pw'];
 
 $host = 'localhost';
 $dbname = 'cetax';
@@ -14,24 +14,24 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 $sql = "SELECT * FROM table_customer WHERE username = ?";
 
 $result = $pdo->prepare($sql);
-$result->execute([$username]);
+$result->execute([$user]);
 
 if($row = $result->fetch()) {
-    if(password_verify($password, $row['password'])) {
-        $_SESSION['username'] = $row['username'];
-        $_SESSION['role'] = $row['role'];
-        $_SESSION['user_id'] = $row['id'];
+    if($pw == $row->password) {
+        $_SESSION['username'] = $row->username;
+        $_SESSION['role'] = $row->role;
+        $_SESSION['user_id'] = $row->id;
         // Jangan lupa ganti
         if($_SESSION['role'] == "user"){
-            header('Location: home.php');
+            header('Location: ../home.php');
         }
         else if($_SESSION['role'] == "admin"){
-            header();//direct ke halaman admin
+            header('Location: ../admin-page.php');//direct ke halaman admin
         }
         
     } else {
-        header('Location: login.php');
+        header('Location: ../login.php');
     }
 } else {
-    header('Location: login.php');
+    header('Location: ../login.php');
 }

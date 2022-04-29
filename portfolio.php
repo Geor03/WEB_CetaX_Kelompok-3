@@ -7,7 +7,7 @@
   $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
-  $sql = "SELECT * FROM table_portfolio WHERE id_portfolioCategory = ?";
+  $sql = "SELECT * FROM table_portfolio WHERE id_portfolioCategory = ? LIMIT 3";
   $result = $pdo->prepare($sql);
   $result->execute("1");
   $magazines = $result->fetchAll();

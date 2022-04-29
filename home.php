@@ -12,7 +12,10 @@
   $result = $pdo->prepare(" SELECT * FROM table_product ");
   $result->execute();
   $final = $result->fetchAll();
-
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
+  
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +62,7 @@
         <a id="login-btn" href="login.php">Log In</a>
         <a id="sign-btn" href="signup.php">Sign Up</a>
       </div>
-    <?   
+    <?php   
       }
     ?>
   </nav>
