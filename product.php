@@ -48,17 +48,17 @@
           <div class="slide-img">
               <img src="images/baju1.png" alt="">
               <div class="overlay">
-                  <a href="" class="buy-btn">Learn More</a>
+                  <a href="order-page.php" class="buy-btn">Learn More</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="">Shirt</a>
+                  <a href="order-page.php">Shirt</a>
               </div>
               <!-- Price -->
-              <a href="" class="price">Shirt Printing</a>
+              <a href="order-page.php" class="price">Shirt Printing</a>
           </div>
         </div>
 
@@ -68,17 +68,17 @@
           <div class="slide-img">
               <img src="images/totebag.jpg" alt="">
               <div class="overlay">
-                  <a href="" class="buy-btn">Learn More</a>
+                  <a href="order-page.php" class="buy-btn">Learn More</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="">Tote Bag</a>
+                  <a href="order-page.php">Tote Bag</a>
               </div>
               <!-- Price -->
-              <a href="" class="price">Tote Bag Printing</a>
+              <a href="order-page.php" class="price">Tote Bag Printing</a>
           </div>
         </div>
 
@@ -88,17 +88,17 @@
           <div class="slide-img">
               <img src="images/mug.jpg" alt="">
               <div class="overlay">
-                  <a href="" class="buy-btn">Learn More</a>
+                  <a href="order-page.php" class="buy-btn">Learn More</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="">Mug</a>
+                  <a href="order-page.php">Mug</a>
               </div>
               <!-- Price -->
-              <a href="" class="price">Mug Printing</a>
+              <a href="order-page.php" class="price">Mug Printing</a>
           </div>
         </div>
       </div>
@@ -112,17 +112,17 @@
           <div class="slide-img">
               <img src="images/sticker.jpg" alt="">
               <div class="overlay">
-                  <a href="" class="buy-btn">Learn More</a>
+                  <a href="order-page.php" class="buy-btn">Learn More</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="">Mini Sticker</a>
+                  <a href="order-page.php">Mini Sticker</a>
               </div>
               <!-- Price -->
-              <a href="" class="price">Mini Sticker Printing</a>
+              <a href="order-page.php" class="price">Mini Sticker Printing</a>
           </div>
         </div>
 
@@ -132,17 +132,17 @@
           <div class="slide-img">
               <img src="images/stickerdeco.jpg" alt="">
               <div class="overlay">
-                  <a href="" class="buy-btn">Learn More</a>
+                  <a href="order-page.php" class="buy-btn">Learn More</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="">Sticker Deco</a>
+                  <a href="order-page.php">Sticker Deco</a>
               </div>
               <!-- Price -->
-              <a href="" class="price">Sticker Deco Printing</a>
+              <a href="order-page.php" class="price">Sticker Deco Printing</a>
           </div>
         </div>
 
@@ -152,17 +152,17 @@
           <div class="slide-img">
               <img src="images/hoodie.jpg" alt="">
               <div class="overlay">
-                  <a href="" class="buy-btn">Learn More</a>
+                  <a href="order-page.php" class="buy-btn">Learn More</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="">Hoodie</a>
+                  <a href="order-page.php">Hoodie</a>
               </div>
               <!-- Price -->
-              <a href="" class="price">Hoodie Printing</a>
+              <a href="order-page.php" class="price">Hoodie Printing</a>
           </div>
         </div>
     </div>

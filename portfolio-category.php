@@ -48,8 +48,8 @@
         </div>
   
         <div class="login">
-          <a id="login-btn" href="login.html">Log In</a>
-          <a id="sign-btn" href="signup.html">Sign Up</a>
+          <a id="login-btn" href="login.php">Log In</a>
+          <a id="sign-btn" href="signup.php">Sign Up</a>
         </div>
     </nav>
 
