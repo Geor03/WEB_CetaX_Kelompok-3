@@ -124,7 +124,7 @@
 
     <div class="btn">
         <div class="btn-purchase">
-            <input type="submit" value="Update">
+            <input type="submit" value="Purchase Now">
         </div>
     </div>
     
