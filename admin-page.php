@@ -77,8 +77,7 @@
                         <tr>
                             <td class="people">
                                 <div class="people-de">
-                                    <h5>Customer Name</h5>
-                                    <p>customer@example.com</p>
+                                    <h5>Product Name</h5>
                                 </div>
                             </td>
 
