@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include_once 'css/all-style.php';
   $host = 'localhost';
   $dbname = 'cetax';
@@ -9,11 +10,11 @@
 
   $sql = "SELECT * FROM table_portfolio WHERE id_portfolioCategory = ? LIMIT 3";
   $result = $pdo->prepare($sql);
-  $result->execute("1");
+  $result->execute([1]);
   $magazines = $result->fetchAll();
-  $result->execute("2");
+  $result->execute([2]);
   $shirts = $result->fetchAll();
-  $result->execute("3");
+  $result->execute([3]);
   $autos = $result->fetchAll();
 ?>
 
@@ -50,7 +51,14 @@
         </div>
         <?php
           if( $_SESSION['role'] != null){
-            //nanti masukin yg profile sama log out button disini
+        ?>
+            <div class="logout">
+          
+            <p>Hello, <?= $_SESSION['Name'] ?></p>
+      
+            <a href="php/logout.php">Log Out</a>
+            </div>
+        <?php
           }
           else{
         ?>
@@ -58,7 +66,7 @@
             <a id="login-btn" href="login.php">Log In</a>
             <a id="sign-btn" href="signup.php">Sign Up</a>
           </div>
-        <?   
+        <?php   
           }
         ?>
     </nav>
@@ -88,7 +96,7 @@
     </div>
 
     <div id="magazine-btn">
-        <a href="portfolio-category.php?category=<?php echo stripslashes($magazines->id_portfolioCategory ) ?>">See More</a>
+        <a href="portfolio-category.php?category=<?php echo stripslashes($magazines[1]->id_portfolioCategory) ?>">See More</a>
     </div>
 
     <!-- Clothing Company -->
@@ -116,7 +124,7 @@
     </div>
 
     <div id="magazine-btn">
-        <a href="portfolio-category.php?category=<?php echo stripslashes($shirts->id_portfolioCategory ) ?>">See More</a>
+        <a href="portfolio-category.php?category=<?php echo stripslashes($shirts[1]->id_portfolioCategory ) ?>">See More</a>
     </div>
 
     <!-- Automobile Company -->
@@ -144,7 +152,7 @@
     </div>
 
     <div id="magazine-btn">
-        <a href="portfolio-category.php?category=<?php echo stripslashes($autos->id_portfolioCategory) ?>">See More</a>
+        <a href="portfolio-category.php?category=<?php echo stripslashes($autos[1]->id_portfolioCategory) ?>">See More</a>
     </div>
 
 <!-- Footer -->
