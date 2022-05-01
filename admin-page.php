@@ -9,7 +9,7 @@
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-  $result = $pdo->prepare(" SELECT * FROM table_product ");
+  $result = $pdo->prepare(" SELECT tp.*,pc.category_product  FROM table_product tp INNER JOIN product_category pc ON tp.id_productCategory = pc.id_productCategory");
   $result->execute();
   $final = $result->fetchAll();
   if( $_SESSION['role'] == null){
@@ -77,7 +77,7 @@
                         <tr>
                             <td class="people">
                                 <div class="people-de">
-                                    <h5>Product Name</h5>
+                                    <h5><?php echo stripslashes($product->product_name) ?></h5>
                                 </div>
                             </td>
 

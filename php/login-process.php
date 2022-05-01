@@ -21,6 +21,7 @@ if($row = $result->fetch()) {
         $_SESSION['username'] = $row->username;
         $_SESSION['role'] = $row->role;
         $_SESSION['user_id'] = $row->id;
+        $_SESSION['Name'] = $row->first_name;
         // Jangan lupa ganti
         if($_SESSION['role'] == "user"){
             header('Location: ../home.php');

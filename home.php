@@ -52,16 +52,17 @@
       </ul>
     </div>
 
-    <div class="logout">
-      
-      <p>Customer Name</p>
 
-      <a href="php/logout.php">Log Out</a>
-    </div>
 
     <?php
-      if( $_SESSION['role'] != null){
-        //nanti masukin yg profile sama log out button disini
+      if( $_SESSION['role'] != null){?>
+        <div class="logout">
+      
+        <p>Hello, <?= $_SESSION['Name'] ?></p>
+  
+        <a href="php/logout.php">Log Out</a>
+        </div>
+    <?php
       }
       else{
     ?>
@@ -255,10 +256,6 @@
 
           <a href="https://www.youtube.com/">
             <img src="images/yt.png" alt="">
-          </a>
-
-          <a href="">
-            <img src="" alt="">
           </a>
         </div>
 
