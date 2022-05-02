@@ -1,5 +1,21 @@
 <?php
   include_once 'css/all-style.php';
+  session_start();
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
+  $host = 'localhost';
+  $dbname = 'cetax';
+  $username = 'root';
+  $password = '';
+  $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
+  $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+
+  $result = $pdo->prepare(" SELECT * FROM table_product LIMIT 3");
+  $result->execute();
+  $final = $result->fetchAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -57,28 +73,30 @@
       <!-- Content -->
       <div class="container">
         <!-- Box 1 -->
+        <?php foreach($final as $key=>$product) :?>
         <div class="box">
           <!-- Slide image -->
           <div class="slide-img">
-              <img src="images/baju1.png" alt="">
+              <img src="<?php echo stripslashes($product->product_photo)?>" alt="">
               <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
+                  <a href="order-page.php?product=<?php stripslashes($product->id_product)?>" class="buy-btn">Buy Now</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="order-page.php">Shirt</a>
+                  <a href="order-page.php?product=<?php stripslashes($product->id_product)?>"><?php echo stripslashes($product->product_name)?></a>
               </div>
               <!-- Price -->
-              <a href="order-page.php" class="price">Shirt Printing</a>
+              <a href="order-page.php?product=<?php stripslashes($product->id_product)?>" class="price">$<?php echo stripslashes($product->price)?></a>
           </div>
         </div>
-
-        <!-- Box 2 -->
+        <?php endforeach ?>
+      </div>
+        <!--Box 2
         <div class="box">
-          <!-- Slide image -->
+           Slide image
           <div class="slide-img">
               <img src="images/totebag.jpg" alt="">
               <div class="overlay">
@@ -87,18 +105,14 @@
           </div>
 
           <div class="detail-box">
-              <!-- Type -->
               <div class="type">
                   <a href="order-page.php">Tote Bag</a>
               </div>
-              <!-- Price -->
               <a href="order-page.php" class="price">Tote Bag Printing</a>
           </div>
         </div>
 
-        <!-- Box 3 -->
         <div class="box">
-          <!-- Slide image -->
           <div class="slide-img">
               <img src="images/mug.jpg" alt="">
               <div class="overlay">
@@ -107,22 +121,17 @@
           </div>
 
           <div class="detail-box">
-              <!-- Type -->
               <div class="type">
                   <a href="order-page.php">Mug</a>
               </div>
-              <!-- Price -->
               <a href="order-page.php" class="price">Mug Printing</a>
           </div>
         </div>
       </div>
 
-    <!-- Container 2 -->
 
     <div class="container-2">
-        <!-- Box 1 -->
         <div class="box">
-          <!-- Slide image -->
           <div class="slide-img">
               <img src="images/sticker.jpg" alt="">
               <div class="overlay">
@@ -131,18 +140,14 @@
           </div>
 
           <div class="detail-box">
-              <!-- Type -->
               <div class="type">
                   <a href="order-page.php">Mini Sticker</a>
               </div>
-              <!-- Price -->
               <a href="order-page.php" class="price">Mini Sticker Printing</a>
           </div>
         </div>
 
-        <!-- Box 2 -->
         <div class="box">
-          <!-- Slide image -->
           <div class="slide-img">
               <img src="images/stickerdeco.jpg" alt="">
               <div class="overlay">
@@ -151,18 +156,14 @@
           </div>
 
           <div class="detail-box">
-              <!-- Type -->
               <div class="type">
                   <a href="order-page.php">Sticker Deco</a>
               </div>
-              <!-- Price -->
               <a href="order-page.php" class="price">Sticker Deco Printing</a>
           </div>
         </div>
 
-        <!-- Box 3 -->
         <div class="box">
-          <!-- Slide image -->
           <div class="slide-img">
               <img src="images/hoodie.jpg" alt="">
               <div class="overlay">
@@ -171,15 +172,13 @@
           </div>
 
           <div class="detail-box">
-              <!-- Type -->
               <div class="type">
                   <a href="order-page.php">Hoodie</a>
               </div>
-              <!-- Price -->
               <a href="order-page.php" class="price">Hoodie Printing</a>
           </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- How to Order -->
     <h1 id="order-title">How to Order</h1>
@@ -235,10 +234,6 @@
   
             <a href="https://www.youtube.com/">
               <img src="images/yt.png" alt="">
-            </a>
-  
-            <a href="">
-              <img src="" alt="">
             </a>
           </div>
   

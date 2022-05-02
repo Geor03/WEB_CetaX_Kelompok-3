@@ -1,6 +1,9 @@
 <?php
   include_once 'css/all-style.php';
   session_start();
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
   $host = 'localhost';
   $dbname = 'cetax';
   $username = 'root';
@@ -9,13 +12,9 @@
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-  $result = $pdo->prepare(" SELECT * FROM table_product ");
+  $result = $pdo->prepare(" SELECT * FROM table_product LIMIT 3");
   $result->execute();
   $final = $result->fetchAll();
-  if( $_SESSION['role'] == null){
-    header('Location: login.php');
-  }
-  
 ?>
 
 <!DOCTYPE html>
@@ -165,7 +164,7 @@
         <div class="price-box">
             <h3><?php echo stripslashes($product->product_name) ?></h3>
             <h2 class="price">$<?php echo stripslashes($product->price) ?></h2>
-            <a href="" class="buy">Buy Now</a>
+            <a href="order-page.php?product=<?php stripslashes($product->id_product)?>" class="buy">Buy Now</a>
         </div>
       </div>
       <?php endforeach ?>
