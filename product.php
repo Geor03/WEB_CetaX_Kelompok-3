@@ -34,10 +34,24 @@
           </ul>
         </div>
   
-        <div class="login">
-          <a id="login-btn" href="login.php">Log In</a>
-          <a id="sign-btn" href="signup.php">Sign Up</a>
-        </div>
+        <?php if( $_SESSION['role'] != null){?>
+            <div class="logout">
+          
+            <p>Hello, <?= $_SESSION['Name'] ?></p>
+      
+            <a href="php/logout.php">Log Out</a>
+            </div>
+        <?php
+          }
+          else{
+        ?>
+          <div class="login">
+            <a id="login-btn" href="login.php">Log In</a>
+            <a id="sign-btn" href="signup.php">Sign Up</a>
+          </div>
+        <?php   
+          }
+        ?>
     </nav>
 
       <!-- Content -->

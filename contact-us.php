@@ -1,5 +1,5 @@
 <?php
-  include_once $base.'./css/all-style.php';
+  include_once 'css/all-style.php';
 ?>
 
 <!DOCTYPE html>
@@ -32,10 +32,24 @@
             <li><a href="contact-us.php">Contact Us</a></li>         
            </ul>
         </div> 
+        <?php if( $_SESSION['role'] != null){?>
+          <div class="logout">
+        
+          <p>Hello, <?= $_SESSION['Name'] ?></p>
+    
+          <a href="php/logout.php">Log Out</a>
+          </div>
+        <?php
+          }
+          else{
+        ?>
         <div class="login">
           <a id="login-btn" href="login.php">Log In</a>
           <a id="sign-btn" href="signup.php">Sign Up</a>
         </div>
+        <?php   
+          }
+        ?>
     </nav>
 
     <!-- Content -->
@@ -135,10 +149,6 @@
       
         <a href="https://www.youtube.com/">
           <img src="images/yt.png" alt="">
-        </a>
-      
-        <a href="">
-          <img src="" alt="">
         </a>
       </div>
     
