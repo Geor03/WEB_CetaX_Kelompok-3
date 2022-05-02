@@ -1,5 +1,9 @@
 <?php
   include_once 'css/all-style.php';
+  session_start();
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
   $category  = $_GET['category'];
   $host = 'localhost';
   $dbname = 'cetax';

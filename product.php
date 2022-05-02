@@ -79,17 +79,17 @@
           <div class="slide-img">
               <img src="<?php echo stripslashes($product->product_photo)?>" alt="">
               <div class="overlay">
-                  <a href="order-page.php?product=<?php stripslashes($product->id_product)?>" class="buy-btn">Buy Now</a>
+                  <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy-btn">Buy Now</a>
               </div>
           </div>
 
           <div class="detail-box">
               <!-- Type -->
               <div class="type">
-                  <a href="order-page.php?product=<?php stripslashes($product->id_product)?>"><?php echo stripslashes($product->product_name)?></a>
+                  <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>"><?php echo stripslashes($product->product_name)?></a>
               </div>
               <!-- Price -->
-              <a href="order-page.php?product=<?php stripslashes($product->id_product)?>" class="price">$<?php echo stripslashes($product->price)?></a>
+              <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="price">$<?php echo stripslashes($product->price)?></a>
           </div>
         </div>
         <?php endforeach ?>

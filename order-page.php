@@ -1,6 +1,21 @@
 <?php
   include_once 'css/all-style.php';
   session_start();
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
+  $productId = $_GET['product'];
+  $host = 'localhost';
+  $dbname = 'cetax';
+  $username = 'root';
+  $password = '';
+  $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
+  $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+
+  $result = $pdo->prepare("SELECT * FROM table_product WHERE id_product = $productId");
+  $result->execute();
+  $final = $result->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -34,16 +49,15 @@
         </ul>
         </div>
 
-        <div class="logout">
-        
-        <p>Customer Name</p>
-
-        <a href="php/logout.php">Log Out</a>
-        </div>
-
         <?php
-        if( $_SESSION['role'] != null){
-            //nanti masukin yg profile sama log out button disini
+        if( $_SESSION['role'] != null){?>
+            <div class="logout">
+        
+            <p>Hello, <?= $_SESSION['Name'] ?></p>
+
+            <a href="php/logout.php">Log Out</a>
+            </div>
+        <?php
         }
         else{
         ?>
@@ -57,7 +71,7 @@
     </nav>
 
     <!-- Content -->
-    <h1 id="order-title">T-Shirt</h1>
+    <h1 id="order-title"><?php echo stripslashes($final->product_name)?></h1>
     
     <div class="content-order">
         <!-- Product & Product Description -->
@@ -80,7 +94,7 @@
                 <h1>Product Detail</h1>
                 <p>
                     Price <br>
-                    <s>IDR 60.000</s> IDR 40.000
+                    <s>IDR 60.000</s> $<?php echo stripslashes($final->price)?>
                 </p>
 
                 <p>
@@ -92,7 +106,7 @@
             <div class="product-op">
                 <div class="form-text">
                     <h1>Product Options</h1>
-                    <form action="php/login-process.php" method="post">
+                    <form action="php/login-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
                         <div class="txt_field">
                             <input type="text" id="size" name="size" required>
                             <span></span>
@@ -145,10 +159,6 @@
 
                 <a href="https://www.youtube.com/">
                     <img src="images/yt.png" alt="">
-                </a>
-
-                <a href="">
-                    <img src="" alt="">
                 </a>
             </div>
 

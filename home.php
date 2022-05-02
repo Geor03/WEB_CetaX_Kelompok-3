@@ -52,7 +52,6 @@
     </div>
 
 
-
     <?php
       if( $_SESSION['role'] != null){?>
         <div class="logout">
@@ -164,7 +163,7 @@
         <div class="price-box">
             <h3><?php echo stripslashes($product->product_name) ?></h3>
             <h2 class="price">$<?php echo stripslashes($product->price) ?></h2>
-            <a href="order-page.php?product=<?php stripslashes($product->id_product)?>" class="buy">Buy Now</a>
+            <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy">Buy Now</a>
         </div>
       </div>
       <?php endforeach ?>
