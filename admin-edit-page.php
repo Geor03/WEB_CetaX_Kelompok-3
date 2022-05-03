@@ -1,6 +1,10 @@
 <?php
   include_once 'css/all-style.php';
   session_start();
+  if( $_SESSION['role'] == null){
+    header('Location: login.php');
+  }
+  $productId = $_GET['product'];
   $host = 'localhost';
   $dbname = 'cetax';
   $username = 'root';
@@ -9,13 +13,9 @@
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-  $result = $pdo->prepare(" SELECT tp.*,pc.category_product  FROM table_product tp INNER JOIN product_category pc ON tp.id_productCategory = pc.id_productCategory");
+  $result = $pdo->prepare("SELECT * FROM table_product WHERE id_product = $productId");
   $result->execute();
-  $final = $result->fetchAll();
-  if( $_SESSION['role'] == null){
-    header('Location: login.php');
-  }
-  
+  $final = $result->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -42,9 +42,9 @@
         </center>
 
         <div class="form-edit">
-            <form action="php/signup-process.php" method="post">
+            <form action="php/admin-page.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
                 <div class="txt_field">
-                    <input type="text" name="name" required>
+                    <input type="text" name="product_name" required>
                     <span></span>
                     <label>Product Name</label>
                 </div>

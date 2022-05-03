@@ -89,7 +89,7 @@
                             <td class="active"><p>Active</p></td>
 
                             <td class="edit">
-                                <a href="admin-edit-page.php">
+                                <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product)?>">
                                     <button>Edit</button>
                                 </a>
                             </td>
