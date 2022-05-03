@@ -41,7 +41,7 @@
             <h2>Edit Product</h2>
         </center>
 
-        <div class="form-text">
+        <div class="form-edit">
             <form action="php/signup-process.php" method="post">
                 <div class="txt_field">
                     <input type="text" name="name" required>
@@ -62,7 +62,7 @@
 
                 <div class="txt_field" id="file">
                     <div class="file-upload">
-                        <input type="file">
+                        <input type="file" name="file">
                     </div>
                 </div>
 

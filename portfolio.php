@@ -172,10 +172,6 @@
                 <a href="https://www.youtube.com/">
                   <img src="images/yt.png" alt="">
                 </a>
-            
-                <a href="">
-                  <img src="" alt="">
-                </a>
             </div>
 
             <div class="copyright">

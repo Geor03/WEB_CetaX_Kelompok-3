@@ -194,6 +194,7 @@ nav {
 
 .form-text {
     margin-left: 10%;
+    flex-direction: column;
 }
 
 .form-text h1 {

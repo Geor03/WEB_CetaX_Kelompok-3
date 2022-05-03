@@ -127,26 +127,27 @@
                         <div class="select">
                             <select name="material" id="material">
                                 <option selected disabled>Choose Material</option>
-                                <option value="S">Cotton 20s</option>
-                                <option value="S">Cotton 24s</option>
-                                <option value="S">Cotton 30s</option>
+                                <option value="Cotton 20s">Cotton 20s</option>
+                                <option value="Cotton 24s">Cotton 24s</option>
+                                <option value="Cotton 30s">Cotton 30s</option>
                             </select>
                         </div>
 
                         <div class="select">
                             <select name="shipping" class="ship">
                                 <option selected disabled>Choose Shipping Method</option>
-                                <option value="S">Same Day</option>
-                                <option value="S">Next Day</option>
+                                <option value="Same Day">Same Day</option>
+                                <option value="Next Day">Next Day</option>
                             </select>
                         </div>
 
                         <div class="select" id="payment">
                             <select name="payment" id="payment">
                                 <option selected disabled>Choose Payment Method</option>
-                                <option value="S">Debit/Credit Card</option>
-                                <option value="S">Ovo</option>
-                                <option value="S">Gopay</option>
+                                <option value="1">Gopay</option>
+                                <option value="2">Ovo</option>
+                                <option value="3">Shopeepay</option>
+                                <option value="4">Debit/Credit Card</option>
                             </select>
                         </div>
 
