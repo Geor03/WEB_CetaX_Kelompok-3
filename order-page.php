@@ -112,9 +112,9 @@
                             <select name="size" id="size">
                                 <option selected disabled>Choose Size</option>
                                 <option value="S">S</option>
-                                <option value="S">M</option>
-                                <option value="S">L</option>
-                                <option value="S">XL</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
                             </select>
                         </div>
 

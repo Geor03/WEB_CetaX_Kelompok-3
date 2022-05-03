@@ -65,41 +65,41 @@
             Hit the message up!!
           </p>
 
-          <a href="#information">Hit me!</a>
+          <a href="#information" style="padding: 10px 20px;">Hit me!</a>
         </div>
         
         <img src="images/contact-us.jpg" alt="">
       </div>
 
       <div id="information" class="information">
-        <div class="form-contact">
-          <h3>Sent your message</h3>
+        <div class="containerForm" style="flex-basis: 60%; padding: 40px 60px;">
+          <h3 id="title-ctc">Sent your message</h3>
           <form>
             <div class="input-row">
-              <div class="input-group">
-                <input class="ctc" type="text" required>
-                <span class="ctc-span"></span>
-                <label class="ctc-name">Name</label>
+              <div class="txt_field">
+                  <input type="text" name="name" required>
+                  <span></span>
+                  <label>Name</label>
               </div>
 
-              <div class="input-group">
-                <input class="ctc" type="text" required>
-                <span class="ctc-span"></span>
-                <label class="ctc-name">Phone</label>
+              <div class="txt_field">
+                  <input type="text" name="phone" required>
+                  <span></span>
+                  <label>Phone</label>
               </div>
             </div>
 
             <div class="input-row">
-              <div class="input-group">
-                <input class="ctc" type="text" required>
-                <span class="ctc-span"></span>
-                <label class="ctc-name">Email</label>
+            <div class="txt_field">
+                  <input type="text" name="email" required>
+                  <span></span>
+                  <label>Email</label>
               </div>
 
-              <div class="input-group">
-                <input class="ctc" type="text" required>
-                <span class="ctc-span"></span>
-                <label class="ctc-name">Subject</label>
+              <div class="txt_field">
+                  <input type="text" name="subject" required>
+                  <span></span>
+                  <label>Subject</label>
               </div>
             </div>
 
