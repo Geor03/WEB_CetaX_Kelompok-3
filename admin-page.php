@@ -89,7 +89,9 @@
                             <td class="active"><p>Active</p></td>
 
                             <td class="edit">
-                                <button id="open">Edit</button>
+                                <a href="admin-edit-page.php">
+                                    <button>Edit</button>
+                                </a>
                             </td>
                         </tr>
                         <?php endforeach ?>
