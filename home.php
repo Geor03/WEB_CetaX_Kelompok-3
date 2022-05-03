@@ -11,7 +11,6 @@
   $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
-
   $result = $pdo->prepare(" SELECT * FROM table_product LIMIT 3");
   $result->execute();
   $final = $result->fetchAll();
