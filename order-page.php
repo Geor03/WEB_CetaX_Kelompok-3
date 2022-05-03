@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
+    <link rel="stylesheet" href="css/order-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
@@ -107,10 +108,14 @@
                 <div class="form-text">
                     <h1>Product Options</h1>
                     <form action="php/login-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
-                        <div class="txt_field">
-                            <input type="text" id="size" name="size" required>
-                            <span></span>
-                            <label>Size</label>
+                        <div class="select">
+                            <select name="size" id="size">
+                                <option selected disabled>Choose Size</option>
+                                <option value="S">S</option>
+                                <option value="S">M</option>
+                                <option value="S">L</option>
+                                <option value="S">XL</option>
+                            </select>
                         </div>
 
                         <div class="txt_field">
@@ -119,10 +124,13 @@
                             <label>Quantity</label>
                         </div>
 
-                        <div class="txt_field">
-                            <input type="text" name="material" required>
-                            <span></span>
-                            <label>Material</label>
+                        <div class="select">
+                            <select name="material" id="material">
+                                <option selected disabled>Choose Material</option>
+                                <option value="S">Cotton 20s</option>
+                                <option value="S">Cotton 24s</option>
+                                <option value="S">Cotton 30s</option>
+                            </select>
                         </div>
 
                         <div id="file">
@@ -130,6 +138,24 @@
                                 <input type="file">
                             </div>
                         </div>
+
+                        <div class="select" id="shipping">
+                            <select name="shipping" id="shipping">
+                                <option selected disabled>Choose Shipping Method</option>
+                                <option value="S">Same Day</option>
+                                <option value="S">Next Day</option>
+                            </select>
+                        </div>
+
+                        <div class="select" id="payment">
+                            <select name="payment" id="payment">
+                                <option selected disabled>Choose Payment Method</option>
+                                <option value="S">Debit/Credit Card</option>
+                                <option value="S">Ovo</option>
+                                <option value="S">Gopay</option>
+                            </select>
+                        </div>
+
                     </form>
                 </div>
             </div>  

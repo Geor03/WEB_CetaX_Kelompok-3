@@ -37,24 +37,25 @@
           </ul>
         </div>
   
-        <?php if( $_SESSION['role'] != null){?>
-          <div class="logout">
+        <!-- <?php
+        if( $_SESSION['role'] != null){?>
+            <div class="logout">
         
-          <p>Hello, <?= $_SESSION['Name'] ?></p>
-    
-          <a href="php/logout.php">Log Out</a>
-          </div>
+            <p>Hello, <?= $_SESSION['Name'] ?></p>
+
+            <a href="php/logout.php">Log Out</a>
+            </div>
         <?php
         }
         else{
         ?>
         <div class="login">
-          <a id="login-btn" href="login.php">Log In</a>
-          <a id="sign-btn" href="signup.php">Sign Up</a>
+            <a id="login-btn" href="login.php">Log In</a>
+            <a id="sign-btn" href="signup.php">Sign Up</a>
         </div>
         <?php   
-          }
-        ?>
+        }
+        ?> -->
     </nav>
 
     <!-- Content -->
@@ -88,7 +89,7 @@
         <div class="swiper mySwiper container"> 
             <div class="swiper-wrapper contain">
 
-                <div class="swiper-slide card">
+                <div class="swiper-slide card-abt">
                     <div class="card-content">
                         <div class="card-image">
                             <img src="images/tech1.jpg" alt="">
@@ -101,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide card">
+                <div class="swiper-slide card-abt">
                     <div class="card-content">
                         <div class="card-image">
                             <img src="images/tech2.png" alt="">
@@ -114,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide card">
+                <div class="swiper-slide card-abt">
                     <div class="card-content">
                         <div class="card-image">
                             <img src="images/tech3.jpg" alt="">
@@ -127,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide card">
+                <div class="swiper-slide card-abt">
                     <div class="card-content">
                         <div class="card-image">
                             <img src="images/tech4.jpg" alt="">
@@ -140,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide card">
+                <div class="swiper-slide card-abt">
                     <div class="card-content">
                         <div class="card-image">
                             <img src="images/tech5.png" alt="">
@@ -153,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide card">
+                <div class="swiper-slide card-abt">
                     <div class="card-content">
                         <div class="card-image">
                             <img src="images/tech5.png" alt="">

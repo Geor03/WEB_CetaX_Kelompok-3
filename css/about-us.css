@@ -180,8 +180,8 @@ nav {
 }
 
 /* Card */
-.card {
-    margin: 30px 15px;
+.card-abt {
+    margin: 40px 15px;
 }
 
 .card-content {
@@ -191,29 +191,35 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .card-image img {
     width: 230px;
+    z-index: 1;
 }
 
 .card-title {
     text-align: center;
+    z-index: 1;
 }
 
 .card-title h1 {
     font-size: 1.5rem;
+    z-index: 1;
 }
 
 .card-title p {
     font-size: 1rem;
+    z-index: 1;
 }
 
 /* Swiper */
 .swiper-button-next,
 .swiper-button-prev {
-    padding-top: 50%;
+    padding-top: 200%;
+    margin-top: 100%;
 }
 
 .swiper-pagination {

@@ -178,6 +178,7 @@ nav {
 /* Content */
 .content-order {
     width: 100vw;
+    height: 120vh;
     display: flex;
     justify-content: space-around;
 }
@@ -213,6 +214,54 @@ nav {
 }
 
 /* Right Content */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: #37b6ff;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.select::-ms-expand {
+    display: none;
+}
+
+.select {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: white;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: #37b6ff;
+}
+
 .right-content {
     margin: 50px;
 }
@@ -282,8 +331,13 @@ form .txt_field {
     width: 100%;
 }
 
-#size {
-    text-transform: uppercase;
+#file .file-upload{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#payment {
+    margin-top: 20px;
 }
 
 .btn {

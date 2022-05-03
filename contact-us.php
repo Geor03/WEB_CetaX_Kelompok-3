@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
+    <link rel="stylesheet" href="css/contact-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
@@ -32,7 +33,8 @@
             <li><a href="contact-us.php">Contact Us</a></li>         
            </ul>
         </div> 
-        <?php if( $_SESSION['role'] != null){?>
+
+        <!-- <?php if( $_SESSION['role'] != null){?>
           <div class="logout">
         
           <p>Hello, <?= $_SESSION['Name'] ?></p>
@@ -49,11 +51,11 @@
         </div>
         <?php   
           }
-        ?>
+        ?> -->
     </nav>
 
     <!-- Content -->
-    <div class="container">
+    <div class="container-ctc">
       <div class="head">
         <div class="head-text">
           <h1>Contact Us</h1>
@@ -69,43 +71,44 @@
       </div>
 
       <div id="information" class="information">
-        <div class="form">
+        <div class="form_contact">
           <h3>Sent your message</h3>
           <form>
             <div class="input-row">
               <div class="input-group">
-                <input type="text" required>
-                <span></span>
-                <label>Name</label>
+                <input class="ctc" type="text" required>
+                <span class="ctc-span"></span>
+                <label class="ctc-name">Name</label>
               </div>
 
               <div class="input-group">
-                <input type="text" required>
-                <span></span>
-                <label>Phone</label>
+                <input class="ctc" type="text" required>
+                <span class="ctc-span"></span>
+                <label class="ctc-name">Phone</label>
               </div>
             </div>
 
             <div class="input-row">
               <div class="input-group">
-                <input type="text" required>
-                <span></span>
-                <label>Email</label>
+                <input class="ctc" type="text" required>
+                <span class="ctc-span"></span>
+                <label class="ctc-name">Email</label>
               </div>
 
               <div class="input-group">
-                <input type="text" required>
-                <span></span>
-                <label>Subject</label>
+                <input class="ctc" type="text" required>
+                <span class="ctc-span"></span>
+                <label class="ctc-name">Subject</label>
               </div>
             </div>
 
-            <label>Message</label>
+            <label class="ctc-name">Message</label>
             <textarea rows="10" placeholder="Your Message"></textarea>
 
             <button type="submit">SEND</button>
           </form>
         </div>
+
         <div class="info">
           <h3>Reach Us</h3>
 
@@ -134,66 +137,66 @@
     
     <!-- Footer -->
 
-<footer>
-  <div class="cetax">
-      <h3>CetaX</h3>
-      
-      <div class="footer-img">
-        <a href="https://www.facebook.com/login/">
-          <img src="images/fb.png" alt="">
-        </a>
-      
-        <a href="https://www.instagram.com/accounts/login/?hl=en">
-          <img src="images/ig.png" alt="">
-        </a>
-      
-        <a href="https://www.youtube.com/">
-          <img src="images/yt.png" alt="">
-        </a>
+    <footer>
+      <div class="cetax">
+          <h3>CetaX</h3>
+          
+          <div class="footer-img">
+            <a href="https://www.facebook.com/login/">
+              <img src="images/fb.png" alt="">
+            </a>
+          
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+              <img src="images/ig.png" alt="">
+            </a>
+          
+            <a href="https://www.youtube.com/">
+              <img src="images/yt.png" alt="">
+            </a>
+          </div>
+        
+          <div class="copyright">
+            <p>
+              &#169 2022 All Right Resource | Kelompok 2
+            </p>
+          </div>
       </div>
-    
-      <div class="copyright">
-        <p>
-          &#169 2022 All Right Resource | Kelompok 2
-        </p>
+
+      <div class="location">
+          <h3>Location info</h3>
+          <p>
+            Jl. Scientia Boulevard, Curug Sangereng, 
+            Kec. Klp. Dua, Kabupaten Tangerang, Banten 
+            15810
+          </p>
       </div>
-  </div>
 
-  <div class="location">
-      <h3>Location info</h3>
-      <p>
-        Jl. Scientia Boulevard, Curug Sangereng, 
-        Kec. Klp. Dua, Kabupaten Tangerang, Banten 
-        15810
-      </p>
-  </div>
+      <div class="contact-us">
+          <h3>Contact Us</h3>
+          <p>
+            Phone 0812-9898-2929 <br>
+            Customer Service 021-55231
+          </p>
+      </div>
 
-  <div class="contact-us">
-      <h3>Contact Us</h3>
-      <p>
-        Phone 0812-9898-2929 <br>
-        Customer Service 021-55231
-      </p>
-  </div>
-
-  <div class="useful-link">
-      <h3>Useful Link</h3>
-      <a href="product.php">
-        Product
-      </a>
-      <a href="portfolio.php">
-        Portfolio
-      </a>
-      <a href="about-us.php">
-        About Us
-      </a>
-      <a href="">
-        FAQs
-      </a>
-      <a href="">
-          Terms & Condition
-      </a>
-  </div>
-</footer>
+      <div class="useful-link">
+          <h3>Useful Link</h3>
+          <a href="product.php">
+            Product
+          </a>
+          <a href="portfolio.php">
+            Portfolio
+          </a>
+          <a href="about-us.php">
+            About Us
+          </a>
+          <a href="">
+            FAQs
+          </a>
+          <a href="">
+              Terms & Condition
+          </a>
+      </div>
+    </footer>
 </body>
 </html>
