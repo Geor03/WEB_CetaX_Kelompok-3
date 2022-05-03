@@ -1,5 +1,6 @@
 <?php
   include_once 'css/all-style.php';
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@
           </ul>
         </div>
   
-        <!-- <?php
+        <?php
         if( $_SESSION['role'] != null){?>
             <div class="logout">
         
@@ -55,7 +56,7 @@
         </div>
         <?php   
         }
-        ?> -->
+        ?>
     </nav>
 
     <!-- Content -->

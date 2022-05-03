@@ -133,14 +133,8 @@
                             </select>
                         </div>
 
-                        <div id="file">
-                            <div class="file-upload">
-                                <input type="file">
-                            </div>
-                        </div>
-
-                        <div class="select" id="shipping">
-                            <select name="shipping" id="shipping">
+                        <div class="select">
+                            <select name="shipping" class="ship">
                                 <option selected disabled>Choose Shipping Method</option>
                                 <option value="S">Same Day</option>
                                 <option value="S">Next Day</option>

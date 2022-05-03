@@ -74,7 +74,7 @@
     <h1 id="title">Portfolio Category</h1>
 
     <!-- Content -->
-    <div class="container">
+    <div class="container-port">
         <!-- First Row -->
         <div class="portfolio-card">
           <?php foreach($final as $key=>$product) :?>
@@ -166,10 +166,6 @@
             
                 <a href="https://www.youtube.com/">
                   <img src="images/yt.png" alt="">
-                </a>
-            
-                <a href="">
-                  <img src="" alt="">
                 </a>
             </div>
 

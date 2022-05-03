@@ -1,5 +1,6 @@
 <?php
   include_once 'css/all-style.php';
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <!-- Links -->
     <link rel="stylesheet" href="css/contact-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@
            </ul>
         </div> 
 
-        <!-- <?php if( $_SESSION['role'] != null){?>
+        <?php if( $_SESSION['role'] != null){?>
           <div class="logout">
         
           <p>Hello, <?= $_SESSION['Name'] ?></p>
@@ -51,7 +52,7 @@
         </div>
         <?php   
           }
-        ?> -->
+        ?>
     </nav>
 
     <!-- Content -->
@@ -71,7 +72,7 @@
       </div>
 
       <div id="information" class="information">
-        <div class="form_contact">
+        <div class="form-contact">
           <h3>Sent your message</h3>
           <form>
             <div class="input-row">

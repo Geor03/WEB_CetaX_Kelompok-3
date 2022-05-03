@@ -217,7 +217,7 @@
           <h1>Our Portfolio</h1>
           <a id="click" href="portfolio.php">Click Here →</a>
 
-          <a href="portfolio.html">
+          <a href="portfolio.php">
             <img src="images/baju2.png" alt="">
           </a>
         </div>
