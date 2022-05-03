@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/admin-edit-page.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+
+    <title>Edit Product</title>
+</head>
+<body>
+    
+    <div class="content-edit-page">
+        <div class="form-box">
+
+            <div class="form-text">
+
+                <h1>Login</h1>
+                <form action="php/login-process.php" method="post">
+                    <div class="txt_field">
+                        <input type="text" name="user" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+
+                    <div class="txt_field">
+                        <input type="password" name="pw" required>
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+
+                    <input type="submit" value="Login" class="link" name="Login">
+
+                    <div class="signUp-link">
+                        Not a member? <a href="signup.php">Sign Up</a>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="img">
+                <img src="images/aset.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
