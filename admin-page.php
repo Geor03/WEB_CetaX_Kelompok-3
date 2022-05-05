@@ -154,6 +154,10 @@
         close.addEventListener('click', () => {
             edit_container.classList.remove('show');
         });
+
+        $('.icon').on('click', function(){
+            navbar.slideToggle();
+        });
     </script>
 
 </body>

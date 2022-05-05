@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Link -->
-  <!-- <link rel="stylesheet" href="/css/index.css"> -->
+  <link rel="stylesheet" href="/css/index.css">
   <script src="js/index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,10 +63,10 @@
       }
       else{
     ?>
-      <div class="login">
+      <!-- <div class="login">
         <a id="login-btn" href="login.php">Log In</a>
         <a id="sign-btn" href="signup.php">Sign Up</a>
-      </div>
+      </div> -->
     <?php   
       }
     ?>
