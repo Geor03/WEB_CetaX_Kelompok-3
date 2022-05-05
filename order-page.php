@@ -74,7 +74,7 @@
     <!-- Content -->
     <h1 id="order-title"><?php echo stripslashes($final->product_name)?></h1>
     
-    <div class="content-order">
+    <div class="content-order" style="height: 100vh;">
         <!-- Product & Product Description -->
         <div class="left-content">
             <img src="images/baju3.png" alt="">
@@ -109,7 +109,7 @@
                     <h1>Product Options</h1>
                     <form action="php/login-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
                         <div class="select">
-                            <select name="size" id="size">
+                            <select name="size" id="size" style="background: #663399; color: white;">
                                 <option selected disabled>Choose Size</option>
                                 <option value="S">S</option>
                                 <option value="M">M</option>
@@ -125,7 +125,7 @@
                         </div>
 
                         <div class="select">
-                            <select name="material" id="material">
+                            <select name="material" id="material" style="background: #663399; color: white;">
                                 <option selected disabled>Choose Material</option>
                                 <option value="Cotton 20s">Cotton 20s</option>
                                 <option value="Cotton 24s">Cotton 24s</option>
@@ -134,7 +134,7 @@
                         </div>
 
                         <div class="select">
-                            <select name="shipping" class="ship">
+                            <select name="shipping" class="ship" style="background: #663399; color: white;">
                                 <option selected disabled>Choose Shipping Method</option>
                                 <option value="Same Day">Same Day</option>
                                 <option value="Next Day">Next Day</option>
@@ -142,7 +142,7 @@
                         </div>
 
                         <div class="select" id="payment">
-                            <select name="payment" id="payment">
+                            <select name="payment" id="payment" style="background: #663399; color: white;">
                                 <option selected disabled>Choose Payment Method</option>
                                 <option value="1">Gopay</option>
                                 <option value="2">Ovo</option>
@@ -159,7 +159,7 @@
 
     <div class="btn">
         <div class="btn-purchase">
-            <input type="submit" value="Purchase Now">
+            <input type="submit" value="Purchase Now" style="color: white;">
         </div>
     </div>
     
