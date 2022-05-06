@@ -100,46 +100,6 @@
             </div>
 
         </section>
-
-        <div class="edit-container" id="open-edit">
-            <div class="content">
-                <h3>Edit Product</h3>
-                <button id="close">X</button>
-            </div>
-
-            <div class="form-text">
-                    <form action="php/signup-process.php" method="post">
-                        <div class="txt_field">
-                            <input type="text" name="name" required>
-                            <span></span>
-                            <label>Product Name</label>
-                        </div>
-                        <div class="txt_field">
-                            <input type="text" name="price" required>
-                            <span></span>
-                            <label>Price</label>
-                        </div>
-
-                        <div class="txt_field">
-                            <input type="text" name="stock" required>
-                            <span></span>
-                            <label>Stock</label>
-                        </div>
-
-                        <div class="txt_field" id="file">
-                            <div class="file-upload">
-                                <input type="file">
-                            </div>
-                        </div>
-
-                        <div class="btn-choose">
-                            <input type="submit" value="Update">
-                            <input type="submit" id="remove" value="Delete">
-                        </div>
-                    </form>
-            </div>
-        </div>
-
     </div>
 
     <script>
