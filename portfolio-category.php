@@ -101,7 +101,7 @@
           <?php endforeach ?>
         </div>
 
-        <!-- Second Row -->
+        <!-- Second Row
         <div class="portfolio-card">
             <div class="portfolio-box">
                 <a href="images/compm1.png">
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <!-- Third Row -->
+        Third Row 
         <div class="portfolio-card">
             <div class="portfolio-box">
                 <a href="images/coomp1.jpg">
@@ -147,7 +147,7 @@
                 </a>
                 <h3>Student Year Book</h3>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Footer -->
