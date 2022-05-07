@@ -390,6 +390,10 @@ footer {
         width: 100px;
     }
 
+    .logout p {
+        font-size: 12px;
+    }
+
     /* Content */
     .container {
         flex-wrap: wrap;

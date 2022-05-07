@@ -557,8 +557,6 @@ footer {
 
 /* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
-
     .logo img {
         width: 30px;
         margin-right: 10px;
@@ -580,6 +578,10 @@ footer {
         text-align: center;
         font-size: 12px;
         width: 100px;
+    }
+
+    .logout p {
+        font-size: 12px;
     }
 
     /* CONTENT */
