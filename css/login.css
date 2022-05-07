@@ -351,3 +351,61 @@ footer {
 .useful-link a:hover {
     color: black;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #welcome {
+        margin-bottom: 70%;
+        font-size: 3rem;
+        margin-top: 35%;
+    }
+
+    /* Form */
+    .img img {
+        display: none;
+    }
+
+    .form-box {
+        width: 400px;
+        justify-content: center;
+    }
+
+    .form-text {
+        margin-left: 0;
+    }
+
+    .form-text h1 {
+        margin-top: 40px;
+    }
+
+    /* Footer */
+    .cetax {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-img a img {
+        width: 40px;
+    }
+    
+    .copyright p {
+        width: 200px;
+    }
+
+    .location {
+        margin-right: 20px;
+    }
+
+    .location p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .contact-us p{
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .useful-link {
+        margin-right: 10px;
+    }
+}
