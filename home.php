@@ -63,10 +63,10 @@
       }
       else{
     ?>
-      <!-- <div class="login">
+      <div class="login">
         <a id="login-btn" href="login.php">Log In</a>
         <a id="sign-btn" href="signup.php">Sign Up</a>
-      </div> -->
+      </div>
     <?php   
       }
     ?>
@@ -166,7 +166,6 @@
         </div>
       </div>
       <?php endforeach ?>
-    </div>
 
       <!-- <div class="card">
         <div class="img-box">
@@ -203,7 +202,8 @@
             <a href="" class="buy">Buy Now</a>
         </div>
       </div> -->
-   
+
+    </div>
 
     <!-- Why Us & Portfolio -->
     <div class="box-why">
@@ -258,7 +258,7 @@
 
         <div class="copyright">
           <p>
-            &#169 2022 All Right Resource | Kelompok 2
+            &#169 2022 All Right Resource <br>| Kelompok 2
           </p>
         </div>
       </div>
