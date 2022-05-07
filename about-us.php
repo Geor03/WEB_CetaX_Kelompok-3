@@ -87,7 +87,7 @@
         </div>
 
         <!-- Swiper -->
-        <div class="swiper mySwiper container"> 
+        <div class="swiper mySwiper container-abt"> 
             <div class="swiper-wrapper contain">
 
                 <div class="swiper-slide card-abt">

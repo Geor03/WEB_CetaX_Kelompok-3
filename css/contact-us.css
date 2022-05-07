@@ -150,6 +150,32 @@ nav {
     color: white;
 }
 
+/* Log Out */
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.logout p {
+    margin-right: 10px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: black;
+    background-color: #c4c4c4;
+    box-shadow: inset 0 0 0 0;
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+.logout a:hover {
+    box-shadow: inset 150px 0 0 0 red;
+    cursor: pointer;
+}
+
 /* Content */
 
 .head {
@@ -191,7 +217,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-basis: 60%;
-    padding: 40px 60px;
+    padding: 40px 0px;
 }
 
 .info {
@@ -200,6 +226,56 @@ nav {
     background-color: #e0d6eb;
     color: black;
     border-radius: 30px;
+}
+
+/* New */
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 10px;
+}
+
+.txt_field input {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    color: #adadad;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: rebeccapurple;
+    transition: .5s;
+    left: 0;
+    top: 40px;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: rebeccapurple;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
 }
 
 .input-row {
@@ -358,4 +434,101 @@ footer {
 
 .useful-link a:hover {
     color: black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        margin-left: 5px;
+    }
+    
+    .logo img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Navigation */
+    .kanan ul li a {
+        font-size: 12px;
+    }
+    /* Log Out */
+    .logout {
+        margin-right: -10px;
+    }
+
+    .logout a {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .logout p {
+        font-size: 12px;
+    }
+
+    /* Head */
+    .head {
+        margin: 0 5px;
+        margin-top: -100px;
+    }
+
+    .head-text h1 {
+        font-size: 24px;
+    }
+
+    .head img {
+        width: 350px;
+    }
+
+    /* Information */
+    .information {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        flex-basis: 40%;
+        padding: 40px;
+        padding-right: 83px;
+        background-color: #e0d6eb;
+        color: black;
+        border-radius: 30px;
+    }
+
+    /* Footer */
+    .cetax {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-img a img {
+        width: 40px;
+    }
+    
+    .copyright p {
+        width: 200px;
+    }
+
+    .location {
+        margin-right: 20px;
+    }
+
+    .location p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .contact-us p{
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .useful-link {
+        margin-right: 10px;
+    }
 }

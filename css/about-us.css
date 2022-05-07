@@ -131,6 +131,32 @@ nav {
     color: white;
 }
 
+/* Log Out */
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.logout p {
+    margin-right: 10px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: black;
+    background-color: #c4c4c4;
+    box-shadow: inset 0 0 0 0;
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+.logout a:hover {
+    box-shadow: inset 150px 0 0 0 red;
+    cursor: pointer;
+}
+
 /* Content */
 
 .banner {
@@ -154,11 +180,6 @@ nav {
     font-size: 3rem;
 }
 
-.about-cetax img {
-    padding-top: 20px;
-    width: 60px;
-}
-
 .about-cetax p {
     padding: 20px;
 }
@@ -180,6 +201,10 @@ nav {
 }
 
 /* Card */
+.container-abt {
+    display: flex;
+}
+
 .card-abt {
     margin: 40px 15px;
     max-width: 600px;
@@ -283,4 +308,142 @@ footer {
 
 .useful-link a:hover {
     color: black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        margin-left: 5px;
+    }
+    
+    .logo img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Navigation */
+    .kanan ul li a {
+        font-size: 12px;
+    }
+    /* Log Out */
+    .logout {
+        margin-right: -10px;
+    }
+
+    .logout a {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .logout p {
+        font-size: 12px;
+    }
+
+    /* Content */
+    .banner {
+        margin: 0 30px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner img {
+        width: 300px;
+    }
+
+    /* Cetax Title */
+    .about-cetax h1 {
+        font-size: 30px;
+        margin-left: -30%;
+    }
+
+    .cetax-is {
+        margin-top: 50px;
+        max-width: 600px;
+        margin-left: 10%;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.4px);
+        -webkit-backdrop-filter: blur(7.4px);
+    }
+
+    /* Card */
+    .card-content {
+        width: 200px;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-abt {
+        margin: 40px 0px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .card-image img {
+        width: 180px;
+        z-index: 1;
+    }
+    
+    .card-title h1 {
+        font-size: 0.8rem;
+        z-index: 1;
+    }
+
+    .card-title p {
+        font-size: 0.8rem;
+        z-index: 1;
+    }
+
+    /* Swiper */
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding-top: 80%;
+    }
+    
+    /* Footer */
+    .cetax {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-img a img {
+        width: 40px;
+    }
+    
+    .copyright p {
+        width: 200px;
+    }
+
+    .location {
+        margin-right: 20px;
+    }
+
+    .location p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .contact-us p{
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .useful-link {
+        margin-right: 10px;
+    }
 }
