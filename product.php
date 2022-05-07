@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   include_once 'css/all-style.php';
   session_start();
   if( $_SESSION['role'] == null){
@@ -16,7 +16,7 @@
   $result->execute();
   $final = $result->fetchAll();
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,14 +50,14 @@
           </ul>
         </div>
   
-        <!-- <?php if( $_SESSION['role'] != null){?> -->
+        <?php if( $_SESSION['role'] != null){?>
             <div class="logout">
           
-            <!-- <p>Hello, <?= $_SESSION['Name'] ?></p> -->
+            <p>Hello, <?= $_SESSION['Name'] ?></p>
       
             <a href="php/logout.php">Log Out</a>
             </div>
-        <!-- <?php
+        <?php
           }
           else{
         ?>
@@ -67,13 +67,13 @@
           </div>
         <?php   
           }
-        ?> -->
+        ?>
     </nav>
 
       <!-- Content -->
       <div class="container">
         <!-- Box 1 -->
-        <!-- <?php foreach($final as $key=>$product) :?> -->
+        <?php foreach($final as $key=>$product) :?>
         <div class="box">
           <!-- Slide image -->
           <div class="slide-img">
@@ -92,9 +92,9 @@
               <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="price">$<?php echo stripslashes($product->price)?></a>
           </div>
         </div>
-        <!-- <?php endforeach ?> -->
+        <?php endforeach ?>
 
-        <div class="box">
+        <!-- <div class="box">
           <div class="slide-img">
               <img src="images/mug.jpg" alt="">
               <div class="overlay">
@@ -108,7 +108,7 @@
               </div>
               <a href="order-page.php" class="price">Mug Printing</a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       </div>
