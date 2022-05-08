@@ -176,7 +176,7 @@ nav {
 }
 
 #form-box-signup {
-    height: 800px;
+    height: 900px;
 }
 
 .form-box {
@@ -200,6 +200,10 @@ nav {
 .form-text h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#login-title {
+    margin-top: 20px;
 }
 
 form .txt_field {

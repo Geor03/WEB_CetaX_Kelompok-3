@@ -46,7 +46,7 @@
 
             <div class="form-text">
 
-                <h1>Login</h1>
+                <h1 id="login-title">Login</h1>
                 <form action="php/login-process.php" method="post">
                     <div class="txt_field">
                         <input type="text" name="user" required>

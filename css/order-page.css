@@ -459,6 +459,7 @@ footer {
 
     /* Order Title */
     #order-title {
+        margin-left: 35px;
         font-size: 30px;
     }
 
@@ -483,7 +484,7 @@ footer {
         font-size: 30px;
     }
 
-    .txt_field {
+    #qty-order {
         width: 240px;
     }
 

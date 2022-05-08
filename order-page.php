@@ -118,7 +118,7 @@
                             </select>
                         </div>
 
-                        <div class="txt_field">
+                        <div class="txt_field" id="qty-order">
                             <input type="text" name="qty" required>
                             <span></span>
                             <label>Quantity</label>
