@@ -60,6 +60,15 @@
                     <label>Stock</label>
                 </div>
 
+                <div class="select">
+                    <select name="material" id="material" style="background: #663399; color: white;">
+                        <option selected disabled>Choose Material</option>
+                        <option value="Cotton 20s">Cotton 20s</option>
+                        <option value="Cotton 24s">Cotton 24s</option>
+                        <option value="Cotton 30s">Cotton 30s</option>
+                    </select>
+                </div>
+
                 <div class="txt_field" id="file">
                     <div class="file-upload">
                         <input type="file" name="file">
