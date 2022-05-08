@@ -578,6 +578,7 @@ footer {
     .kanan ul li a {
         font-size: 12px;
     }
+
     /* Log Out */
     .logout {
         margin-right: -30;
@@ -693,5 +694,184 @@ footer {
 
     .useful-link {
         margin-right: 10px;
+    }
+}
+
+/* Handphone Size L */
+@media screen and (max-width: 767px) { 
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+    
+    .logo img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    .kanan {
+        /* position: absolute; */
+        /* margin-top: 150px; */
+        justify-content: center;
+    }
+
+    .kanan ul li{
+        margin-left: 5px;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+        padding: 0;
+        margin: 13px;
+    }
+
+    /* Log Out */
+    .logout {
+       margin-right: -30;
+       margin-left: 130px;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .logout p {
+        font-size: 16px;
+    }
+
+    /* CONTENT */
+    .slider{
+        max-width: 350px;
+    }
+
+    .slides{
+        height: 150px;
+    }
+
+    .slide img{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .nav-manual{
+        margin-left: 30px;
+    }
+
+    .nav-auto{
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 30px;
+    }
+
+    /* Product Title */
+    .title h1 {
+        margin-left: -10px;
+        text-align: center;
+    }
+
+    /* Card Product */
+    .product {
+        margin: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card .img-box img {
+        width: 160px;
+    }
+
+    /* Why Us & Portfolio */
+    .box-why {
+        flex-wrap: wrap;
+    }
+
+    .portfolio {
+        width: 300px;
+        height: 350px;
+        margin-top: 70px;
+        margin-right: 20px;
+    }
+
+    .portfolio h1 {
+        margin-top: 30px;
+        margin-left: 40px;
+        color: white;
+    }
+
+    .portfolio a img {
+        width: 250px;
+        height: 200px;
+        margin: 20px 25px;
+        border-radius: 15px;
+    }
+
+    /* Clients */
+    #client-title {
+        margin-top: 100px;
+    }
+
+    .img-clients {
+        flex-wrap: wrap;
+    }
+
+    .img-clients img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    #mcd {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .cetax {
+        margin-top: 15px;
+        margin-left: 80px;
+    }
+
+    .location {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .contact-us {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .useful-link {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 100px;
+        margin-bottom: 15px;
     }
 }

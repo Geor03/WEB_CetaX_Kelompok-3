@@ -465,3 +465,64 @@ footer {
         margin-right: 10px;
     }
 }
+
+/* Handphone Size L */
+@media screen and (max-width: 767px) { 
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+    
+    .logo img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    .kanan {
+        /* position: absolute; */
+        /* margin-top: 150px; */
+        justify-content: center;
+    }
+
+    .kanan ul li{
+        margin-left: 5px;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+        padding: 0;
+        margin: 13px;
+    }
+
+    /* Log Out */
+    .logout {
+       margin-right: -30;
+       margin-left: 130px;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .logout p {
+        font-size: 16px;
+    }
+}
