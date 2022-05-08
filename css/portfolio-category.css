@@ -236,3 +236,101 @@ footer {
 .useful-link a:hover {
     color: black;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        margin-left: 5px;
+    }
+    
+    .logo img {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Navigation */
+    .kanan ul li{
+        margin-left: 5px;
+    }
+
+    .kanan ul li a {
+        font-size: 12px;
+    }
+    /* Log Out */
+    .logout {
+        margin-right: -30;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .logout p {
+        font-size: 12px;
+    }
+
+    /* Portfolio Card */
+    .portfolio-card {
+        flex-wrap: wrap;
+    }
+
+    .portfolio-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .portfolio-box img {
+        max-width: 125px;
+        min-width: 125px;
+        max-height: 100px;
+        min-height: 100px;
+    }
+    
+    .portfolio-box h3 {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .cetax {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-img a img {
+        width: 40px;
+    }
+    
+    .copyright p {
+        width: 200px;
+    }
+
+    .location {
+        margin-right: 20px;
+    }
+
+    .location p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .contact-us p{
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .useful-link {
+        margin-right: 10px;
+    }
+}
