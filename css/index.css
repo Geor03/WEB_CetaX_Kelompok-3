@@ -697,7 +697,7 @@ footer {
     }
 }
 
-/* Handphone Size L */
+/* Handphone Size */
 @media screen and (max-width: 767px) { 
     nav {
         flex-wrap: wrap;
@@ -849,29 +849,30 @@ footer {
     /* Footer */
     footer {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .cetax {
         margin-top: 15px;
-        margin-left: 80px;
+        margin-left: 10px;
     }
 
     .location {
         margin-top: 15px;
         text-align: center;
-        margin-left: 30px;
+        margin-left: 60px;
     }
 
     .contact-us {
         margin-top: 15px;
         text-align: center;
-        margin-left: 60px;
+        margin-left: 20px;
     }
 
     .useful-link {
         margin-top: 15px;
         text-align: center;
-        margin-left: 100px;
+        margin-left: 110px;
         margin-bottom: 15px;
     }
 }

@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   include_once 'css/all-style.php';
   session_start();
   if( $_SESSION['role'] == null){
@@ -16,7 +16,7 @@
   $result->execute();
   $final = $result->fetchAll();
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -257,7 +257,7 @@
   
           <div class="copyright">
             <p>
-              &#169 2022 All Right Resource | Kelompok 2
+              &#169 2022 All Right Resource <br>| Kelompok 2
             </p>
           </div>
         </div>

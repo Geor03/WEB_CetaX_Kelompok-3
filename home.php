@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   include_once 'css/all-style.php';
   session_start();
   if( $_SESSION['role'] == null){
@@ -14,7 +14,7 @@
   $result = $pdo->prepare(" SELECT * FROM table_product LIMIT 3");
   $result->execute();
   $final = $result->fetchAll();
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -153,7 +153,7 @@
     <!-- Product -->
     
     <div class="product">
-      <!-- <?php foreach($final as $key=>$product) :?>
+      <?php foreach($final as $key=>$product) :?>
       <div class="card">
         <div class="img-box">
             <img src="<?php echo stripslashes($product->product_photo) ?>" alt="">
@@ -165,9 +165,9 @@
             <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy">Buy Now</a>
         </div>
       </div>
-      <?php endforeach ?> -->
+      <?php endforeach ?>
 
-      <div class="card">
+      <!-- <div class="card">
         <div class="img-box">
             <img src="images/comp3.png" alt="">
         </div>
@@ -201,7 +201,7 @@
             <h2 class="price">$299.<small>99</small></h2>
             <a href="" class="buy">Buy Now</a>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
