@@ -42,30 +42,30 @@
         </center>
 
         <div class="form-edit">
-            <form action="php/admin-page.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
+            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
                 <div class="txt_field">
-                    <input type="text" name="product_name" required>
+                    <input type="text" name="product_name" value="<?php echo stripslashes($final->product_name)?>" required>
                     <span></span>
                     <label>Product Name</label>
                 </div>
                 <div class="txt_field">
-                    <input type="text" name="price" required>
+                    <input type="text" name="price" value="<?php echo stripslashes($final->price)?>" required>
                     <span></span>
                     <label>Price</label>
                 </div>
 
                 <div class="txt_field">
-                    <input type="text" name="stock" required>
+                    <input type="text" name="stock" value="<?php echo stripslashes($final->stock_qty)?>" required>
                     <span></span>
                     <label>Stock</label>
                 </div>
 
                 <div class="select">
-                    <select name="material" id="material" style="background: #663399; color: white;">
+                    <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Choose Material</option>
-                        <option value="Cotton 20s">Cotton 20s</option>
-                        <option value="Cotton 24s">Cotton 24s</option>
-                        <option value="Cotton 30s">Cotton 30s</option>
+                        <option value="1">magazine</option>
+                        <option value="2">clothing</option>
+                        <option value="3">automobile</option>
                     </select>
                 </div>
 
@@ -76,8 +76,8 @@
                 </div>
 
                 <div class="btn-choose">
-                    <input type="submit" value="Update">
-                    <input type="submit" id="remove" value="Delete">
+                    <input type="submit" name = "submit" value="Update">
+                    <a href = "php/admin-delete-process.php?product=<?php echo stripslashes($final->id_product)?>"><input type="submit" id="remove" value="Delete" ></a>
                 </div>
             </form>
     </div>
