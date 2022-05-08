@@ -111,8 +111,8 @@
         </div> -->
       </div>
 
-      </div>
-        <!--Box 2
+      <!--</div>
+        Box 2
         <div class="box">
            Slide image
           <div class="slide-img">
