@@ -107,7 +107,7 @@
             <div class="product-op">
                 <div class="form-text">
                     <h1>Product Options</h1>
-                    <form action="php/login-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
+                    <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
                         <div class="select">
                             <select name="size" id="size" style="background: #663399; color: white;">
                                 <option selected disabled>Choose Size</option>
@@ -150,18 +150,18 @@
                                 <option value="4">Debit/Credit Card</option>
                             </select>
                         </div>
-
+                        <div class="btn">
+                            <div class="btn-purchase">
+                                <input type="submit" value="Purchase Now" style="color: white;">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>  
         </div>
     </div>
 
-    <div class="btn">
-        <div class="btn-purchase">
-            <input type="submit" value="Purchase Now" style="color: white;">
-        </div>
-    </div>
+    
     
     <!-- Footer -->
 
