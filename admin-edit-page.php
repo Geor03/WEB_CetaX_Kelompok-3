@@ -42,7 +42,7 @@
         </center>
 
         <div class="form-edit">
-            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
+            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
                     <input type="text" name="product_name" value="<?php echo stripslashes($final->product_name)?>" required>
                     <span></span>
@@ -63,15 +63,16 @@
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Choose Material</option>
-                        <option value="1">magazine</option>
-                        <option value="2">clothing</option>
-                        <option value="3">automobile</option>
+                        <option value="1">T-shirt</option>
+                        <option value="2">Mug</option>
+                        <option value="3">Tote bag</option>
+                        <option value="4">Mini Sticker</option>
                     </select>
                 </div>
 
                 <div class="txt_field" id="file">
                     <div class="file-upload">
-                        <input type="file" name="file">
+                        <input type="file" name="image">
                     </div>
                 </div>
 

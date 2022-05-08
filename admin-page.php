@@ -82,8 +82,8 @@
                             </td>
 
                             <td class="people-des">
-                                <h5>T-Shirt</h5>
-                                <p>5 Items</p>
+                                <h5><?php echo stripslashes($product->category_product) ?></h5>
+                                <p><?php echo stripslashes($product->stock_qty) ?></p>
                             </td>
 
                             <td class="active"><p>Active</p></td>
