@@ -59,7 +59,7 @@
   
         <a href="php/logout.php">Log Out</a>
         </div>
-    <!-- <?php
+    <?php
       }
       else{
     ?>
@@ -69,7 +69,7 @@
       </div>
     <?php   
       }
-    ?> -->
+    ?>
   </nav>
 
   <!-- Content -->
