@@ -413,3 +413,78 @@ footer {
         margin-right: 10px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .logo img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .login a {
+        font-size: 14px;
+    }
+
+    /* Form */
+    .img img {
+        display: none;
+    }
+
+    .form-box {
+        width: 350px;
+        margin-left: 35px;
+        justify-content: center;
+    }
+
+    .form-text {
+        margin-left: 0px;
+    }
+
+    .form-text h1 {
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cetax {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .location {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .contact-us {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .useful-link {
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 110px;
+        margin-bottom: 15px;
+    }
+}
