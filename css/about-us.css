@@ -476,7 +476,12 @@ footer {
         font-size: 18px;
     }
 
-    /* Navigation */
+    /* Navigation */    
+    nav {
+        align-items: center;
+        margin-left: 20px;
+    }
+
     .kanan {
         /* position: absolute; */
         /* margin-top: 150px; */
@@ -488,7 +493,7 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 14px;
+        font-size: 12px;
         padding: 0;
         margin: 13px;
     }
@@ -549,9 +554,13 @@ footer {
     }
 
     .card-abt {
-        margin: 40px 215px;
+        margin: 40px 75px;
         max-width: 600px;
         width: 100%;
+    }
+
+    .contain {
+        margin-bottom: -2000px;
     }
 
     /* Swiper */

@@ -697,7 +697,7 @@ footer {
     }
 }
 
-/* Handphone Size */
+/* Handphone Size L */
 @media screen and (max-width: 767px) { 
     nav {
         flex-wrap: wrap;
@@ -729,7 +729,7 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 14px;
+        font-size: 12px;
         padding: 0;
         margin: 13px;
     }

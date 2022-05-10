@@ -122,7 +122,7 @@
               <td>Phone</td>
               <td>0812-9898-2929</td>
             </tr>
-            <tr>
+            <tr class="address-tbl">
               <td id="address">Address</td>
               <td>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0467677334577!2d106.61613675061027!3d-6.257569895448427!2m3!1f0!
