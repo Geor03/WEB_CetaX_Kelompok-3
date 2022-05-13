@@ -239,66 +239,69 @@
     <!-- Footer -->
 
     <footer>
-      <div class="cetax">
-        <h3>CetaX</h3>
+      <div class="container-footer">
+        <div class="cetax">
+          <h3>CetaX</h3>
 
-        <div class="footer-img">
-          <a href="https://www.facebook.com/login/">
-            <img src="images/fb.png" alt="">
-          </a>
+          <div class="footer-img">
+            <a href="https://www.facebook.com/login/">
+              <img src="images/fb.png" alt="">
+            </a>
 
-          <a href="https://www.instagram.com/accounts/login/?hl=en">
-            <img src="images/ig.png" alt="">
-          </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+              <img src="images/ig.png" alt="">
+            </a>
 
-          <a href="https://www.youtube.com/">
-            <img src="images/yt.png" alt="">
-          </a>
+            <a href="https://www.youtube.com/">
+              <img src="images/yt.png" alt="">
+            </a>
+          </div>
+
+          <div class="copyright">
+            <p>
+              &#169 2022 All Right Resource <br>| Kelompok 2
+            </p>
+          </div>
         </div>
 
-        <div class="copyright">
+        <div class="location">
+          <h3>Location info</h3>
           <p>
-            &#169 2022 All Right Resource <br>| Kelompok 2
+            Jl. Scientia Boulevard, Curug Sangereng, 
+            Kec. Klp. Dua, Kabupaten Tangerang, Banten 
+            15810
           </p>
         </div>
-      </div>
 
-      <div class="location">
-        <h3>Location info</h3>
-        <p>
-          Jl. Scientia Boulevard, Curug Sangereng, 
-          Kec. Klp. Dua, Kabupaten Tangerang, Banten 
-          15810
-        </p>
-      </div>
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <p>
+            Phone 0812-9898-2929 <br>
+            Customer Service 021-55231
+          </p>
+        </div>
 
-      <div class="contact-us">
-        <h3>Contact Us</h3>
-        <p>
-          Phone 0812-9898-2929 <br>
-          Customer Service 021-55231
-        </p>
-      </div>
-
-      <div class="useful-link">
-        <h3>Useful Link</h3>
-        <a href="product.php">
-            Product
-        </a>
-        <a href="portfolio.php">
-          Portfolio
-        </a>
-        <a href="about-us.php">
-          About Us
-        </a>
-        <a href="">
-          FAQs
-        </a>
-        <a href="">
-          Terms & Condition
-        </a>
+        <div class="useful-link">
+          <h3>Useful Link</h3>
+          <a href="product.php">
+              Product
+          </a>
+          <a href="portfolio.php">
+            Portfolio
+          </a>
+          <a href="about-us.php">
+            About Us
+          </a>
+          <a href="">
+            FAQs
+          </a>
+          <a href="">
+            Terms & Condition
+          </a>
+        </div>
       </div>
     </footer>
+  </div>
 
 </body>
 </html>

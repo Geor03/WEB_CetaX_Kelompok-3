@@ -1,6 +1,6 @@
-<!-- <?php
+<?php
   include_once 'css/all-style.php';
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +53,7 @@
                       </div>
 
                       <div class="txt_field">
-                          <input type="text" name="email" required>
+                          <input type="email" name="email" required>
                           <span></span>
                           <label>Email</label>
                       </div>
@@ -193,7 +193,7 @@
             }, 3000);
         }
 
-        init();  
+        init(); 
     </script>
 </body>
 </html>

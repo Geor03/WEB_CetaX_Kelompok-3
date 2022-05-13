@@ -6,9 +6,9 @@
 
 html, body {
     scroll-behavior: smooth;
-    
-    max-width: 100%;
     overflow-x: hidden;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 /* Navbar */

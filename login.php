@@ -1,7 +1,6 @@
 <?php
- include_once 'css/all-style.php';
- session_start();
- 
+  include_once 'css/all-style.php';
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -49,18 +48,18 @@
                 <h1 id="login-title">Login</h1>
                 <form action="php/login-process.php" method="post">
                     <div class="txt_field">
-                        <input type="text" name="user" required>
+                        <input type="text" name="user" id="user" required>
                         <span></span>
                         <label>Username</label>
                     </div>
 
                     <div class="txt_field">
-                        <input type="password" name="pw" required>
+                        <input type="password" name="pw" id="pass" required>
                         <span></span>
                         <label>Password</label>
                     </div>
 
-                    <input type="submit" value="Login" class="link" name="Login">
+                    <input type="submit" value="Login" class="link" name="Login" onClick="enterPassword()">
 
                     <div class="signUp-link">
                         Not a member? <a href="signup.php">Sign Up</a>
@@ -157,7 +156,19 @@
         }, 3000);
     }
 
-    init();  
+    init(); 
+				
+    function enterPassword() {
+        var password = document.getElementById("pass").value;
+        var username = document.getElementById("user").value;
+        if (password == "hello" && username == "1234") {
+          return true; 
+          }
+        else if (password !== "hello" && username !== "1234") {
+          alert("Either Username or Password is incorrect");
+          return false;
+      }
+    }
 </script>
 
 </body>

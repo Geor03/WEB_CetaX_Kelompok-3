@@ -36,3 +36,18 @@ if($row = $result->fetch()) {
 } else {
     header('Location: ../login.php');
 }
+
+if(isset($_POST['act_login'])){
+    if($user=="" || $pw==""){
+        $msg=array("Error", "Username / Password Wrong !");
+    } else {
+        if(!$LS->login($user, $pw)){
+        $msg=array("Error", "Username / Password Wrong !");
+        }
+    }
+}
+
+if ($msg <> '') {
+   echo $msg;
+   exit();
+}
