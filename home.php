@@ -45,6 +45,7 @@
       <ul class="navbar">
           <li><a href="home.php">Home</a></li>
           <li><a href="product.php">Product</a></li>
+          <li><a href="portfolio.php">Portfolio</a></li>
           <li><a href="about-us.php">About Us</a></li>
           <li><a href="contact-us.php">Contact Us</a></li>
       </ul>
