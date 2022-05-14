@@ -70,174 +70,178 @@
         ?>
     </nav>
 
+    <div class="container-product">
       <!-- Content -->
-      <div class="container">
-        <!-- Box 1 -->
-        <?php foreach($final as $key=>$product) :?>
-        <div class="box">
-          <!-- Slide image -->
-          <div class="slide-img">
-              <img src="<?php echo stripslashes($product->product_photo)?>" alt="">
-              <div class="overlay">
-                  <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy-btn">Buy Now</a>
-              </div>
-          </div>
+        <div class="container">
+          <!-- Box 1 -->
+          <?php foreach($final as $key=>$product) :?>
+          <div class="box">
+            <!-- Slide image -->
+            <div class="slide-img">
+                <img src="<?php echo stripslashes($product->product_photo)?>" alt="">
+                <div class="overlay">
+                    <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
 
-          <div class="detail-box">
-              <!-- Type -->
-              <div class="type">
-                  <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>"><?php echo stripslashes($product->product_name)?></a>
-              </div>
-              <!-- Price -->
-              <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="price">$<?php echo stripslashes($product->price)?></a>
+            <div class="detail-box">
+                <!-- Type -->
+                <div class="type">
+                    <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>"><?php echo stripslashes($product->product_name)?></a>
+                </div>
+                <!-- Price -->
+                <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="price">$<?php echo stripslashes($product->price)?></a>
+            </div>
           </div>
-        </div>
-        <?php endforeach ?>
+          <?php endforeach ?>
 
-        <!-- <div class="box">
-          <div class="slide-img">
-              <img src="images/mug.jpg" alt="">
-              <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
-              </div>
-          </div>
+          <!-- <div class="box">
+            <div class="slide-img">
+                <img src="images/mug.jpg" alt="">
+                <div class="overlay">
+                    <a href="order-page.php" class="buy-btn">Learn More</a>
+                </div>
+            </div>
 
-          <div class="detail-box">
-              <div class="type">
-                  <a href="order-page.php">Mug</a>
-              </div>
-              <a href="order-page.php" class="price">Mug Printing</a>
-          </div>
-        </div> -->
-      </div>
-
-      <!--</div>
-        Box 2
-        <div class="box">
-           Slide image
-          <div class="slide-img">
-              <img src="images/totebag.jpg" alt="">
-              <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
-              </div>
-          </div>
-
-          <div class="detail-box">
-              <div class="type">
-                  <a href="order-page.php">Tote Bag</a>
-              </div>
-              <a href="order-page.php" class="price">Tote Bag Printing</a>
-          </div>
+            <div class="detail-box">
+                <div class="type">
+                    <a href="order-page.php">Mug</a>
+                </div>
+                <a href="order-page.php" class="price">Mug Printing</a>
+            </div>
+          </div> -->
         </div>
 
-        <div class="box">
-          <div class="slide-img">
-              <img src="images/mug.jpg" alt="">
-              <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
-              </div>
+        <!--</div>
+          Box 2
+          <div class="box">
+            Slide image
+            <div class="slide-img">
+                <img src="images/totebag.jpg" alt="">
+                <div class="overlay">
+                    <a href="order-page.php" class="buy-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="type">
+                    <a href="order-page.php">Tote Bag</a>
+                </div>
+                <a href="order-page.php" class="price">Tote Bag Printing</a>
+            </div>
           </div>
 
-          <div class="detail-box">
-              <div class="type">
-                  <a href="order-page.php">Mug</a>
-              </div>
-              <a href="order-page.php" class="price">Mug Printing</a>
-          </div>
-        </div>
-      </div>
+          <div class="box">
+            <div class="slide-img">
+                <img src="images/mug.jpg" alt="">
+                <div class="overlay">
+                    <a href="order-page.php" class="buy-btn">Learn More</a>
+                </div>
+            </div>
 
-
-    <div class="container-2">
-        <div class="box">
-          <div class="slide-img">
-              <img src="images/sticker.jpg" alt="">
-              <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
-              </div>
-          </div>
-
-          <div class="detail-box">
-              <div class="type">
-                  <a href="order-page.php">Mini Sticker</a>
-              </div>
-              <a href="order-page.php" class="price">Mini Sticker Printing</a>
+            <div class="detail-box">
+                <div class="type">
+                    <a href="order-page.php">Mug</a>
+                </div>
+                <a href="order-page.php" class="price">Mug Printing</a>
+            </div>
           </div>
         </div>
 
-        <div class="box">
-          <div class="slide-img">
-              <img src="images/stickerdeco.jpg" alt="">
-              <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
-              </div>
+
+      <div class="container-2">
+          <div class="box">
+            <div class="slide-img">
+                <img src="images/sticker.jpg" alt="">
+                <div class="overlay">
+                    <a href="order-page.php" class="buy-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="type">
+                    <a href="order-page.php">Mini Sticker</a>
+                </div>
+                <a href="order-page.php" class="price">Mini Sticker Printing</a>
+            </div>
           </div>
 
-          <div class="detail-box">
-              <div class="type">
-                  <a href="order-page.php">Sticker Deco</a>
-              </div>
-              <a href="order-page.php" class="price">Sticker Deco Printing</a>
+          <div class="box">
+            <div class="slide-img">
+                <img src="images/stickerdeco.jpg" alt="">
+                <div class="overlay">
+                    <a href="order-page.php" class="buy-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="type">
+                    <a href="order-page.php">Sticker Deco</a>
+                </div>
+                <a href="order-page.php" class="price">Sticker Deco Printing</a>
+            </div>
           </div>
-        </div>
 
-        <div class="box">
-          <div class="slide-img">
-              <img src="images/hoodie.jpg" alt="">
-              <div class="overlay">
-                  <a href="order-page.php" class="buy-btn">Learn More</a>
-              </div>
+          <div class="box">
+            <div class="slide-img">
+                <img src="images/hoodie.jpg" alt="">
+                <div class="overlay">
+                    <a href="order-page.php" class="buy-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <div class="type">
+                    <a href="order-page.php">Hoodie</a>
+                </div>
+                <a href="order-page.php" class="price">Hoodie Printing</a>
+            </div>
           </div>
+      </div>-->
 
-          <div class="detail-box">
-              <div class="type">
-                  <a href="order-page.php">Hoodie</a>
-              </div>
-              <a href="order-page.php" class="price">Hoodie Printing</a>
+      <!-- How to Order -->
+      <h1 id="order-title">How to Order</h1>
+      <div class="order">
+        <div class="order-box">
+          <div class="order-img">
+            <img src="images/1.png" alt="">
           </div>
+          <h1>Step #1</h1>
+          <p>Choose and click the desired product</p>
         </div>
-    </div>-->
 
-    <!-- How to Order -->
-    <h1 id="order-title">How to Order</h1>
-    <div class="order">
-      <div class="order-box">
-        <div class="order-img">
-          <img src="images/1.png" alt="">
+        <div class="order-box">
+          <div class="order-img">
+            <img src="images/2.png" alt="">
+          </div>
+          <h1>Step #1</h1>
+          <p>Specify the product details including product options 
+            and your own design</p>
         </div>
-        <h1>Step #1</h1>
-        <p>Choose and click the desired product</p>
-      </div>
 
-      <div class="order-box">
-        <div class="order-img">
-          <img src="images/2.png" alt="">
+        <div class="order-box">
+          <div class="order-img">
+            <img src="images/3.png" alt="">
+          </div>
+          <h1>Step #1</h1>
+          <p>Click purchase now</p>
         </div>
-        <h1>Step #1</h1>
-        <p>Specify the product details including product options 
-          and your own design</p>
-      </div>
 
-      <div class="order-box">
-        <div class="order-img">
-          <img src="images/3.png" alt="">
+        <div class="order-box">
+          <div class="order-img">
+            <img src="images/4.png" alt="">
+          </div>
+          <h1>Step #1</h1>
+          <p>Enter your shipping information and choose payment methods</p>
         </div>
-        <h1>Step #1</h1>
-        <p>Click purchase now</p>
-      </div>
-
-      <div class="order-box">
-        <div class="order-img">
-          <img src="images/4.png" alt="">
-        </div>
-        <h1>Step #1</h1>
-        <p>Enter your shipping information and choose payment methods</p>
       </div>
     </div>
+      
 
     <!-- Footer -->
 
     <footer>
+      <div class="container-footer-product">
         <div class="cetax">
           <h3>CetaX</h3>
   
@@ -297,6 +301,8 @@
             Terms & Condition
           </a>
         </div>
+      </div>
+        
       </footer>
 
     <script src="js/product.js"></script>

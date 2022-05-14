@@ -36,7 +36,7 @@
     <!-- Welcome -->
 
     <center><h1 id="welcome">Welcome Back!</h1></center>
-
+  <div class="container-login">
     <!-- Load Form page -->
 
     <div class="form">
@@ -75,12 +75,12 @@
         </div>
 
     </div>
-
-</div>
+  </div>
 
 <!-- Footer -->
 
 <footer>
+  <div class="container-footer-login">
     <div class="cetax">
         <h3>CetaX</h3>
         
@@ -140,6 +140,8 @@
             Terms & Condition
         </a>
     </div>
+  </div>
+    
   </footer>
 
 <!-- Inner JS -->

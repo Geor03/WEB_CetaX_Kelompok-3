@@ -235,6 +235,7 @@
         <img src="images/starbucks.png" alt="">
       </div>
     </div>
+  </div>
 
     <!-- Footer -->
 
@@ -301,7 +302,6 @@
         </div>
       </div>
     </footer>
-  </div>
 
 </body>
 </html>
