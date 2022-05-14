@@ -8,3 +8,4 @@
 <link rel="stylesheet" type="text/css" href="css/order-page.css">
 <link rel="stylesheet" type="text/css" href="css/contact-us.css">
 <link rel="stylesheet" type="text/css" href="css/admin-edit-page.css">
+<link rel="stylesheet" type="text/css" href="css/confirmation-page.css">
