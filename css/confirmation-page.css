@@ -294,6 +294,10 @@ select>option {
     gap: 2rem;
 }
 
+.product-det h1 {
+    margin-top: 35px;
+}
+
 .product-det p {
     margin-bottom: 10px;
 }
@@ -304,6 +308,11 @@ select>option {
 }
 
 .form-text h1 {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.title-options {
     text-align: left;
     width: 300px;
     margin-bottom: 20px;

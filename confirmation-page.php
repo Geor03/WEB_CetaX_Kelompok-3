@@ -96,35 +96,22 @@
                         Size <br>
                         L
                     </p>
+
+                    <p>
+                        Material <br>
+                        Cotton 24s
+                    </p>
                 </div>
 
                 <div class="product-op">
                     <div class="form-text">
-                        <h1>Product Options</h1>
+                        <h1 class="title-options">Shipping Options</h1>
                         <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
-                            <div class="select">
-                                <select name="size" id="size" style="background: #663399; color: white;">
-                                    <option selected disabled>Choose Size</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                </select>
-                            </div>
-
-                            <div class="txt_field" id="qty-order">
-                                <input type="text" name="qty" required>
-                                <span></span>
-                                <label>Quantity</label>
-                            </div>
-
-                            <div class="select">
-                                <select name="material" id="material" style="background: #663399; color: white;">
-                                    <option selected disabled>Choose Material</option>
-                                    <option value="Cotton 20s">Cotton 20s</option>
-                                    <option value="Cotton 24s">Cotton 24s</option>
-                                    <option value="Cotton 30s">Cotton 30s</option>
-                                </select>
+                            <div class="address-inform">
+                                <p>
+                                    Address <br>
+                                    Jalan Mawar
+                                </p>
                             </div>
 
                             <div class="select">
@@ -135,6 +122,7 @@
                                 </select>
                             </div>
 
+                            <h1 class="title-options">Payment Options</h1>
                             <div class="select" id="payment">
                                 <select name="payment" id="payment" style="background: #663399; color: white;">
                                     <option selected disabled>Choose Payment Method</option>
