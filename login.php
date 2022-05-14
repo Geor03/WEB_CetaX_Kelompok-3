@@ -162,11 +162,11 @@
         var password = document.getElementById("pass").value;
         var username = document.getElementById("user").value;
         if (password == "hello" && username == "1234") {
-          return true; 
+          return echo; 
           }
         else if (password !== "hello" && username !== "1234") {
           alert("Either Username or Password is incorrect");
-          return false;
+          return echo;
       }
     }
 </script>
