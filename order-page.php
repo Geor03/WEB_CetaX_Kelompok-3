@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   include_once 'css/all-style.php';
   session_start();
   if( $_SESSION['role'] == null){
@@ -16,7 +16,7 @@
   $result = $pdo->prepare("SELECT * FROM table_product WHERE id_product = $productId");
   $result->execute();
   $final = $result->fetch();
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,160 +71,172 @@
         ?>
     </nav>
 
-    <!-- Content -->
-    <h1 id="order-title"><?php echo stripslashes($final->product_name)?></h1>
-    
-    <div class="content-order" style="height: 100vh;">
-        <!-- Product & Product Description -->
-        <div class="left-content">
-            <img src="images/baju3.png" alt="">
 
-            <div class="product-desc">
-                <h3>Product Description</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure 
-                    repudiandae natus enim? Explicabo quae eum dignissimos possimus consectetur 
-                    nam optio cumque temporibus perspiciatis commodi, fugit, animi unde voluptatibus perferendis atque?
-                </p>
-            </div>
-        </div>
+    <div class="container-order">
+        <!-- Content -->
+        <h1 id="order-title"><?php echo stripslashes($final->product_name)?></h1>
+        
+        <div class="content-order" style="height: auto;">
+            <!-- Product & Product Description -->
+            <div class="left-content">
+                <img src="images/baju3.png" alt="">
 
-        <div class="right-content">
-          <!-- Product Detail & Product Options -->
-            <div class="product-det">
-                <h1>Product Detail</h1>
-                <p>
-                    Price <br>
-                    <s>IDR 60.000</s> $<?php echo stripslashes($final->price)?>
-                </p>
-
-                <p>
-                    Estimated Production Time <br>
-                    &plusmn 3 days
-                </p>
-            </div>
-
-            <div class="product-op">
-                <div class="form-text">
-                    <h1>Product Options</h1>
-                    <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
-                        <div class="select">
-                            <select name="size" id="size" style="background: #663399; color: white;">
-                                <option selected disabled>Choose Size</option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                            </select>
-                        </div>
-
-                        <div class="txt_field" id="qty-order">
-                            <input type="text" name="qty" required>
-                            <span></span>
-                            <label>Quantity</label>
-                        </div>
-
-                        <div class="select">
-                            <select name="material" id="material" style="background: #663399; color: white;">
-                                <option selected disabled>Choose Material</option>
-                                <option value="Cotton 20s">Cotton 20s</option>
-                                <option value="Cotton 24s">Cotton 24s</option>
-                                <option value="Cotton 30s">Cotton 30s</option>
-                            </select>
-                        </div>
-
-                        <div class="select">
-                            <select name="shipping" class="ship" style="background: #663399; color: white;">
-                                <option selected disabled>Choose Shipping Method</option>
-                                <option value="Same Day">Same Day</option>
-                                <option value="Next Day">Next Day</option>
-                            </select>
-                        </div>
-
-                        <div class="select" id="payment">
-                            <select name="payment" id="payment" style="background: #663399; color: white;">
-                                <option selected disabled>Choose Payment Method</option>
-                                <option value="1">Gopay</option>
-                                <option value="2">Ovo</option>
-                                <option value="3">Shopeepay</option>
-                                <option value="4">Debit/Credit Card</option>
-                            </select>
-                        </div>
-                        <div class="btn">
-                            <div class="btn-purchase">
-                                <input type="submit" value="Purchase Now" style="color: white;">
-                            </div>
-                        </div>
-                    </form>
+                <div class="product-desc">
+                    <h3>Product Description</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure 
+                        repudiandae natus enim? Explicabo quae eum dignissimos possimus consectetur 
+                        nam optio cumque temporibus perspiciatis commodi, fugit, animi unde voluptatibus perferendis atque?
+                    </p>
                 </div>
-            </div>  
+            </div>
+
+            <div class="right-content">
+            <!-- Product Detail & Product Options -->
+                <div class="product-det">
+                    <h1>Product Detail</h1>
+                    <p>
+                        Price <br>
+                        <s>IDR 60.000</s> $<?php echo stripslashes($final->price)?>
+                    </p>
+
+                    <p>
+                        Estimated Production Time <br>
+                        &plusmn 3 days
+                    </p>
+                </div>
+
+                <div class="product-op">
+                    <div class="form-text">
+                        <h1>Product Options</h1>
+                        <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
+                            <div class="select">
+                                <select name="size" id="size" style="background: #663399; color: white;">
+                                    <option selected disabled>Choose Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <div class="txt_field" id="qty-order">
+                                <input type="text" name="qty" required>
+                                <span></span>
+                                <label>Quantity</label>
+                            </div>
+
+                            <div class="select">
+                                <select name="material" id="material" style="background: #663399; color: white;">
+                                    <option selected disabled>Choose Material</option>
+                                    <option value="Cotton 20s">Cotton 20s</option>
+                                    <option value="Cotton 24s">Cotton 24s</option>
+                                    <option value="Cotton 30s">Cotton 30s</option>
+                                </select>
+                            </div>
+
+                            <div class="select">
+                                <select name="shipping" class="ship" style="background: #663399; color: white;">
+                                    <option selected disabled>Choose Shipping Method</option>
+                                    <option value="Same Day">Same Day</option>
+                                    <option value="Next Day">Next Day</option>
+                                </select>
+                            </div>
+
+                            <div class="select" id="payment">
+                                <select name="payment" id="payment" style="background: #663399; color: white;">
+                                    <option selected disabled>Choose Payment Method</option>
+                                    <option value="1">Gopay</option>
+                                    <option value="2">Ovo</option>
+                                    <option value="3">Shopeepay</option>
+                                    <option value="4">Debit/Credit Card</option>
+                                </select>
+                            </div>
+
+                            <div class="file-upload">
+                                <input type="file" name="image">
+                            </div>
+
+                            <div class="btn">
+                                <div class="btn-purchase">
+                                    <input type="submit" value="Purchase Now" style="color: white;">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
         </div>
     </div>
+    
 
     
     
     <!-- Footer -->
 
     <footer>
-        <div class="cetax">
-            <h3>CetaX</h3>
+        <div class="container-footer-order">
+            <div class="cetax">
+                <h3>CetaX</h3>
 
-            <div class="footer-img">
-                <a href="https://www.facebook.com/login/">
-                    <img src="images/fb.png" alt="">
-                </a>
+                <div class="footer-img">
+                    <a href="https://www.facebook.com/login/">
+                        <img src="images/fb.png" alt="">
+                    </a>
 
-                <a href="https://www.instagram.com/accounts/login/?hl=en">
-                    <img src="images/ig.png" alt="">
-                </a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en">
+                        <img src="images/ig.png" alt="">
+                    </a>
 
-                <a href="https://www.youtube.com/">
-                    <img src="images/yt.png" alt="">
-                </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="images/yt.png" alt="">
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>
+                        &#169 2022 All Right Resource | Kelompok 2
+                    </p>
+                </div>
             </div>
 
-            <div class="copyright">
+            <div class="location">
+                <h3>Location info</h3>
                 <p>
-                    &#169 2022 All Right Resource | Kelompok 2
+                Jl. Scientia Boulevard, Curug Sangereng, 
+                Kec. Klp. Dua, Kabupaten Tangerang, Banten 
+                15810
                 </p>
             </div>
-        </div>
 
-        <div class="location">
-            <h3>Location info</h3>
-            <p>
-            Jl. Scientia Boulevard, Curug Sangereng, 
-            Kec. Klp. Dua, Kabupaten Tangerang, Banten 
-            15810
-            </p>
-        </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>
+                Phone 0812-9898-2929 <br>
+                Customer Service 021-55231
+                </p>
+            </div>
 
-        <div class="contact-us">
-            <h3>Contact Us</h3>
-            <p>
-            Phone 0812-9898-2929 <br>
-            Customer Service 021-55231
-            </p>
+            <div class="useful-link">
+                <h3>Useful Link</h3>
+                <a href="product.php">
+                    Product
+                </a>
+                <a href="portfolio.php">
+                Portfolio
+                </a>
+                <a href="about-us.php">
+                About Us
+                </a>
+                <a href="">
+                FAQs
+                </a>
+                <a href="">
+                Terms & Condition
+                </a>
+            </div>
         </div>
-
-        <div class="useful-link">
-            <h3>Useful Link</h3>
-            <a href="product.php">
-                Product
-            </a>
-            <a href="portfolio.php">
-            Portfolio
-            </a>
-            <a href="about-us.php">
-            About Us
-            </a>
-            <a href="">
-            FAQs
-            </a>
-            <a href="">
-            Terms & Condition
-            </a>
-        </div>
+        
     </footer>
 
 

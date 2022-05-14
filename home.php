@@ -144,66 +144,70 @@
         </div>
     </div>
 
-    <!-- Top Products -->
 
-    <div class="title">
-      <h1>Top Products</h1>
+    <div class="container-product-home">
+      <!-- Top Products -->
+
+      <div class="title">
+        <h1>Top Products</h1>
+      </div>
+
+      <!-- Product -->
+      
+      <div class="product">
+        <?php foreach($final as $key=>$product) :?>
+        <div class="card">
+          <div class="img-box">
+              <img src="<?php echo stripslashes($product->product_photo) ?>" alt="">
+          </div>
+
+          <div class="price-box">
+              <h3><?php echo stripslashes($product->product_name) ?></h3>
+              <h2 class="price">$<?php echo stripslashes($product->price) ?></h2>
+              <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy">Buy Now</a>
+          </div>
+        </div>
+        <?php endforeach ?>
+
+        <!-- <div class="card">
+          <div class="img-box">
+              <img src="images/comp3.png" alt="">
+          </div>
+
+          <div class="price-box">
+              <h3>Santa Monica</h3>
+              <h2 class="price">$299.<small>99</small></h2>
+              <a href="" class="buy">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img-box">
+              <img src="images/comp2.png" alt="">
+          </div>
+
+          <div class="price-box">
+              <h3>Crop Top</h3>
+              <h2 class="price">$299.<small>99</small></h2>
+              <a href="" class="buy">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img-box">
+              <img src="images/bag.png" alt="">
+          </div>
+
+          <div class="price-box">
+              <h3>Louis Vuitton</h3>
+              <h2 class="price">$299.<small>99</small></h2>
+              <a href="" class="buy">Buy Now</a>
+          </div>
+        </div> -->
+
+      </div>
     </div>
-
-    <!-- Product -->
     
-    <div class="product">
-      <?php foreach($final as $key=>$product) :?>
-      <div class="card">
-        <div class="img-box">
-            <img src="<?php echo stripslashes($product->product_photo) ?>" alt="">
-        </div>
-
-        <div class="price-box">
-            <h3><?php echo stripslashes($product->product_name) ?></h3>
-            <h2 class="price">$<?php echo stripslashes($product->price) ?></h2>
-            <a href="order-page.php?product=<?php echo stripslashes($product->id_product)?>" class="buy">Buy Now</a>
-        </div>
-      </div>
-      <?php endforeach ?>
-
-      <!-- <div class="card">
-        <div class="img-box">
-            <img src="images/comp3.png" alt="">
-        </div>
-
-        <div class="price-box">
-            <h3>Santa Monica</h3>
-            <h2 class="price">$299.<small>99</small></h2>
-            <a href="" class="buy">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img-box">
-            <img src="images/comp2.png" alt="">
-        </div>
-
-        <div class="price-box">
-            <h3>Crop Top</h3>
-            <h2 class="price">$299.<small>99</small></h2>
-            <a href="" class="buy">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img-box">
-            <img src="images/bag.png" alt="">
-        </div>
-
-        <div class="price-box">
-            <h3>Louis Vuitton</h3>
-            <h2 class="price">$299.<small>99</small></h2>
-            <a href="" class="buy">Buy Now</a>
-        </div>
-      </div> -->
-
-    </div>
 
     <!-- Why Us & Portfolio -->
     <div class="box-why">

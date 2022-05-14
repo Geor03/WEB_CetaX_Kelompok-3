@@ -71,93 +71,97 @@
         ?>
     </nav>
 
-    <!-- Magazine -->
-    <h1 id="magazine-title">Magazine Company</h1>
-    <div class="magazine">
-      <?php foreach($magazines as $key=>$magazine) :?>
-        <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="<?php echo stripslashes($magazine->portfolio_photo) ?>"alt="">
-            </div>
-        </div>
+    <div class="container-port">
+      <!-- Magazine -->
+      <h1 id="magazine-title">Magazine Company</h1>
+      <div class="magazine">
+        <?php foreach($magazines as $key=>$magazine) :?>
+          <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="<?php echo stripslashes($magazine->portfolio_photo) ?>"alt="">
+              </div>
+          </div>
 
-        <!-- <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="images/vogue2.jpg" alt="">
-            </div>
-        </div>
+          <!-- <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="images/vogue2.jpg" alt="">
+              </div>
+          </div>
 
-        <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="images/vogue3.jpg" alt="">
-            </div>
-        </div> -->
-      <?php endforeach ?>
+          <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="images/vogue3.jpg" alt="">
+              </div>
+          </div> -->
+        <?php endforeach ?>
+      </div>
+
+      <div id="magazine-btn">
+          <a href="portfolio-category.php?category=<?php echo stripslashes($magazines[1]->id_portfolioCategory) ?>">See More</a>
+      </div>
+
+      <!-- Clothing Company -->
+      <h1 id="magazine-title">Clothing Company</h1>
+      <div class="magazine">
+        <?php foreach($shirts as $key=>$shirt) :?>
+          <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="<?php echo stripslashes($shirt->portfolio_photo) ?>" alt="">
+              </div> 
+          </div>
+
+          <!-- <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="images/baju2.png" alt="">
+              </div>
+          </div>
+
+          <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="images/baju3.png" alt="">
+              </div>
+          </div> -->
+        <?php endforeach ?>
+      </div>
+
+      <div id="magazine-btn">
+          <a href="portfolio-category.php?category=<?php echo stripslashes($shirts[1]->id_portfolioCategory ) ?>">See More</a>
+      </div>
+
+      <!-- Automobile Company -->
+      <h1 id="magazine-title">Automobile Company</h1>
+      <div class="magazine">
+        <?php foreach($autos as $key=>$auto) :?>
+          <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="<?php echo stripslashes($auto->portfolio_photo) ?>" alt="">
+              </div>
+          </div>
+
+          <!-- <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="images/compm2.png" alt="">
+              </div>
+          </div>
+
+          <div class="magazine-box">
+              <div class="magazine-img">
+                  <img src="images/compm3.png" alt="">
+              </div>
+          </div> -->
+        <?php endforeach ?>
+      </div>
+
+      <div id="magazine-btn">
+          <a href="portfolio-category.php?category=<?php echo stripslashes($autos[1]->id_portfolioCategory) ?>">See More</a>
+      </div>
     </div>
-
-    <div id="magazine-btn">
-        <a href="portfolio-category.php?category=<?php echo stripslashes($magazines[1]->id_portfolioCategory) ?>">See More</a>
-    </div>
-
-    <!-- Clothing Company -->
-    <h1 id="magazine-title">Clothing Company</h1>
-    <div class="magazine">
-      <?php foreach($shirts as $key=>$shirt) :?>
-        <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="<?php echo stripslashes($shirt->portfolio_photo) ?>" alt="">
-            </div> 
-        </div>
-
-        <!-- <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="images/baju2.png" alt="">
-            </div>
-        </div>
-
-        <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="images/baju3.png" alt="">
-            </div>
-        </div> -->
-      <?php endforeach ?>
-    </div>
-
-    <div id="magazine-btn">
-        <a href="portfolio-category.php?category=<?php echo stripslashes($shirts[1]->id_portfolioCategory ) ?>">See More</a>
-    </div>
-
-    <!-- Automobile Company -->
-    <h1 id="magazine-title">Automobile Company</h1>
-    <div class="magazine">
-      <?php foreach($autos as $key=>$auto) :?>
-        <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="<?php echo stripslashes($auto->portfolio_photo) ?>" alt="">
-            </div>
-        </div>
-
-        <!-- <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="images/compm2.png" alt="">
-            </div>
-        </div>
-
-        <div class="magazine-box">
-            <div class="magazine-img">
-                <img src="images/compm3.png" alt="">
-            </div>
-        </div> -->
-      <?php endforeach ?>
-    </div>
-
-    <div id="magazine-btn">
-        <a href="portfolio-category.php?category=<?php echo stripslashes($autos[1]->id_portfolioCategory) ?>">See More</a>
-    </div>
+    
 
 <!-- Footer -->
 
     <footer>
+      <div class="container-footer-port">
         <div class="cetax">
             <h3>CetaX</h3>
             <div class="footer-img">
@@ -216,6 +220,8 @@
             Terms & Condition
           </a>
         </div>
+      </div>
+        
     </footer>
 
 </body>

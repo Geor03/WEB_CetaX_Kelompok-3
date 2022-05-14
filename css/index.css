@@ -331,6 +331,12 @@ nav {
     align-items: center;
 }
 
+.container-product-home {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .product {
     display: flex;
     justify-content: space-between;
@@ -445,6 +451,9 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #why-us {
@@ -509,9 +518,8 @@ nav {
 /* Footer */
 
 footer {
-    background-color: #f7f8f8;
     width: 100vw;
-    margin: 0 auto;
+    background-color: #f7f8f8;
 }
 
 .container-footer {

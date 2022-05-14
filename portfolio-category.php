@@ -71,10 +71,11 @@
         ?>
     </nav>
 
-    <h1 id="title">Portfolio Category</h1>
+    
 
     <!-- Content -->
-    <div class="container-port">
+    <div class="container-port-cat">
+      <h1 id="title">Portfolio Category</h1>
         <!-- First Row -->
         <div class="portfolio-card">
           <?php foreach($final as $key=>$product) :?>
@@ -97,7 +98,7 @@
                     <img src="images/comp3.png" alt="">
                 </a>
                 <h3>Pull and Bear</h3> 
-            </div>-->
+            </div> -->
           <?php endforeach ?>
         </div>
 
@@ -153,6 +154,7 @@
     <!-- Footer -->
 
     <footer>
+      <div class="container-footer-port-cat">
         <div class="cetax">
             <h3>CetaX</h3>
             <div class="footer-img">
@@ -211,6 +213,8 @@
             Terms & Condition
           </a>
         </div>
+      </div>
+        
     </footer>
 </body>
 </html>
