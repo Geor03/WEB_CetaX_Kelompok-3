@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Link -->
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
       if( $_SESSION['role'] != null){?>
         <div class="logout">
       
-        <p>Hello, <?= $_SESSION['Name'] ?> Marco</p>
+        <p>Hello, <?= $_SESSION['Name'] ?></p>
   
         <a href="php/logout.php">Log Out</a>
         </div>
