@@ -295,7 +295,7 @@
           <a href="about-us.php">
             About Us
           </a>
-          <a href="">
+          <a href="faq.php">
             FAQs
           </a>
           <a href="">
