@@ -60,10 +60,16 @@
                       </div>
 
                       <div class="txt_field">
-                          <input type="password" name="pw" required>
+                          <input type="password" name="pw" id="pw" required>
                           <span></span>
                           <label>Password</label>
                       </div>
+
+                      <div class="txt_field">
+                        <input type="password" name="confirm_pw" id="confirmPw" required>
+                        <span></span>
+                        <label>Confirmation Password</label>
+                    </div>
 
                       <div class="txt_field">
                         <input type="text" name="Fname" required>
@@ -95,7 +101,7 @@
                         <label>Postal Code</label>
                       </div>
 
-                      <input type="submit" value="Sign Up">
+                      <input type="submit" value="Sign Up" onclick="return Validate()">
 
                       <div class="signUp-link">
                           You're a member? <a href="login.php">Log in</a>
@@ -193,6 +199,16 @@
         }
 
         init(); 
+
+        function Validate() {
+          var password = document.getElementById("pw").value;
+          var confirmPassword = document.getElementById("confirmPw").value;
+          if (password != confirmPassword) {
+              alert("Passwords do not match.");
+              return false;
+          }
+        return true;
+    }
     </script>
 </body>
 </html>
