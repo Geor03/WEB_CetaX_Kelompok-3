@@ -46,7 +46,7 @@ nav {
     color: white;
     text-decoration: none;
     letter-spacing: 0.5px;
-    font-size: 15px;
+    font-size: 18px;
     transition: 0.2s;
 }
 
@@ -161,6 +161,7 @@ nav {
 
 .logout p {
     margin-right: 10px;
+    font-size: 18px;
 }
 
 .logout a {
@@ -334,7 +335,7 @@ nav {
 .container-product-home {
     max-width: 1100px;
     width: 100%;
-    margin: 0 auto;
+    margin: 6rem auto;
 }
 
 .product {
@@ -584,7 +585,7 @@ footer {
     color: black;
 }
 
-/* Laptop */
+/* Laptop Small*/
 @media screen and (min-width: 1024px) {
     /* Navbar */
     nav {
@@ -623,7 +624,7 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     /* Log Out */
@@ -637,11 +638,57 @@ footer {
 
     .logout a {
         margin-right: 0px;
+        font-size: 14px;
     }
 
     .logout p {
-        font-size: 12px;
+        font-size: 14px;
     }
+
+    /* CONTENT */
+    .slider{
+        max-width: 700px;
+    }
+
+    .slides{
+        height: 300px;
+    }
+
+    .slide img{
+        width: 100%;
+    }
+
+    /* Slide */
+    .nav-manual {
+        max-width: 700px;
+    }
+
+    .nav-auto{
+        max-width: 700px;
+        margin-top: 330px;
+    }
+
+    /* Product */
+    .container-product-home {
+        max-width: 900px;
+    }
+
+    /* Why */
+    .box-why {
+        max-width: 900px;
+    }
+
+    /* Clients */
+    .clients {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .container-footer {
+        max-width: 900px;
+    }
+
 }
 
 /* Tab */
@@ -670,6 +717,7 @@ footer {
 
     .kanan ul li a {
         font-size: 10px;
+        padding: 0px 10px;
     }
 
     /* Log Out */
@@ -849,7 +897,7 @@ footer {
     .kanan ul li a {
         font-size: 12px;
         padding: 0;
-        margin: 10px;
+        margin: 5px;
     }
 
     /* Log Out */
@@ -896,7 +944,7 @@ footer {
 
     .nav-auto{
         max-width: 350px;
-        margin: 10.35rem auto;
+        margin: 10.38rem auto;
     }
 
     /* Container Product */
@@ -976,10 +1024,6 @@ footer {
     }
 
     /* Footer */
-    footer {
-        
-    }
-
     .container-footer {
         max-width: 200px;
         margin: 10px auto;
