@@ -54,11 +54,11 @@
         <?php if( $_SESSION['role'] != null){?>
             <div class="logout">
           
-            <p>Hello, <?= $_SESSION['Name'] ?> Marco</p>
+            <p>Hello, <?= $_SESSION['Name'] ?></p>
       
             <a href="php/logout.php">Log Out</a>
             </div>
-        <!-- <?php
+        <?php
           }
           else{
         ?>
@@ -68,14 +68,14 @@
           </div>
         <?php   
           }
-        ?> -->
+        ?>
     </nav>
 
     <div class="container-product">
       <!-- Content -->
         <div class="container">
           <!-- Box 1 -->
-          <!-- <?php foreach($final as $key=>$product) :?> -->
+          <?php foreach($final as $key=>$product) :?>
           <div class="box">
             <!-- Slide image -->
             <div class="slide-img">
