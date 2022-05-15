@@ -301,7 +301,7 @@
           <a href="faq.php">
             FAQs
           </a>
-          <a href="">
+          <a href="tnc.php">
             Terms & Condition
           </a>
         </div>

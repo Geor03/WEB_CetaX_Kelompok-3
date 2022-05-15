@@ -16,7 +16,7 @@ nav {
     align-items: center;
     background-color: white;
     max-width: 1700px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 /* Logo */
@@ -170,56 +170,22 @@ nav {
 }
 
 /* Content */
-.container-faq {
+.container-tnc {
     max-width: 1700px;
     margin: 0 auto;
 }
 
-.faq-title {
+.tnc-title {
     max-width: 1550px;
     margin: 2rem auto;
 }
 
-.faq-category {
-    max-width: 1550px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
-}
-
-.box-faq {
-    padding: 50px 80px;
-    margin: 3rem;
-    background-color: #808080;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.box-faq img {
-    max-width: 200px;
-    margin: 10px auto;
-    border-radius: 50%;
-}
-
-.box-faq h3 {
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-}
-
-#box-long {
-    padding: 50px 70px;
-}
-
-.faq-section {
+.tnc-section {
     max-width: 1550px;
     margin: 0 auto;
 }
 
-.box-faq-section {
+.box-tnc-section {
     max-width: 1550px;
     margin: 20px auto;
     background-color: white;
@@ -227,7 +193,7 @@ nav {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
 }
 
-.box-faq-section .heading-faq-box {
+.box-tnc-section .heading-tnc-box {
     background: #7800CF;
     border-radius: 7px 7px 0px 0px;
     padding: 10px;
@@ -235,7 +201,7 @@ nav {
     text-align: center;
 }
 
-.faqs {
+.tnc {
     padding: 0px 20px 20px;
 }
 
@@ -265,7 +231,7 @@ footer {
     width: 100vw;
 }
 
-.container-footer-faq {
+.container-footer-tnc {
     max-width: 1600px;
     width: 100%;
     height: auto;
