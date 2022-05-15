@@ -54,11 +54,11 @@
         <?php if( $_SESSION['role'] != null){?>
             <div class="logout">
           
-            <p>Hello, <?= $_SESSION['Name'] ?></p>
+            <p>Hello, <?= $_SESSION['Name'] ?> Marco</p>
       
             <a href="php/logout.php">Log Out</a>
             </div>
-        <?php
+        <!-- <?php
           }
           else{
         ?>
@@ -68,14 +68,14 @@
           </div>
         <?php   
           }
-        ?>
+        ?> -->
     </nav>
 
     <div class="container-product">
       <!-- Content -->
         <div class="container">
           <!-- Box 1 -->
-          <?php foreach($final as $key=>$product) :?>
+          <!-- <?php foreach($final as $key=>$product) :?> -->
           <div class="box">
             <!-- Slide image -->
             <div class="slide-img">
@@ -215,7 +215,7 @@
           <div class="order-img">
             <img src="images/2.png" alt="">
           </div>
-          <h1>Step #1</h1>
+          <h1>Step #2</h1>
           <p>Specify the product details including product options 
             and your own design</p>
         </div>
@@ -224,7 +224,7 @@
           <div class="order-img">
             <img src="images/3.png" alt="">
           </div>
-          <h1>Step #1</h1>
+          <h1>Step #3</h1>
           <p>Click purchase now</p>
         </div>
 
@@ -232,7 +232,7 @@
           <div class="order-img">
             <img src="images/4.png" alt="">
           </div>
-          <h1>Step #1</h1>
+          <h1>Step #4</h1>
           <p>Enter your shipping information and choose payment methods</p>
         </div>
       </div>
