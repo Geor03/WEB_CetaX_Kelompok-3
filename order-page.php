@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   include_once 'css/all-style.php';
   session_start();
   if( $_SESSION['role'] == null){
@@ -16,7 +16,7 @@
   $result = $pdo->prepare("SELECT * FROM table_product WHERE id_product = $productId");
   $result->execute();
   $final = $result->fetch();
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@
 
             <a href="php/logout.php">Log Out</a>
             </div>
-        <!-- <?php
+        <?php
         }
         else{
         ?>
@@ -69,7 +69,7 @@
         </div>
         <?php   
         }
-        ?> -->
+        ?>
     </nav>
 
 
