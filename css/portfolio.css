@@ -266,6 +266,81 @@ footer {
     color: black;
 }
 
+@media screen and (min-width: 1024px) {
+    /* Navbar */
+    nav {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .brand {
+        margin-left: 10px;
+    }
+
+    #color {
+        margin-left: 0;
+        color: grey;
+    }
+
+    /* Navigation */
+    .navbar {
+        margin: 0;
+    }
+
+    .kanan {
+        margin: 0 auto;
+    }
+
+    .kanan ul li{
+        margin: 0 auto;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+    }
+
+    /* Log Out */
+    .logout {
+        margin: 0 auto;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .logout p {
+        font-size: 14px;
+    }
+
+    /* Content */
+    .container-port {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .container-footer-product {
+        max-width: 900px;
+    }
+
+    .location {
+        margin-right: 0px;
+    }
+}
+
+/* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .logo {
         margin-left: 5px;
@@ -286,7 +361,8 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 12px;
+        font-size: 10px;
+        padding: 0px 10px;
     }
     /* Log Out */
     .logout {
@@ -308,5 +384,46 @@ footer {
 
     .logout p {
         font-size: 12px;
+    }
+
+    /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .cetax {
+        margin-left: -10px;
+        font-size: 14px;
+    }
+    
+    .footer-img a img {
+        width: 40px;
+    }
+    
+    .copyright p {
+        width: 200px;
+    }
+
+    .location {
+        margin-right: 20px;
+    }
+
+    .location p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .contact-us p{
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .useful-link {
+        margin-right: 50px;
     }
 }

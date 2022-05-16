@@ -190,11 +190,11 @@ nav {
 }
 
 /* Order Title */
-#order-title {
+/* #order-title {
     display: flex;
     align-items: flex-start;
     margin: 50px 250px;
-}
+} */
 
 /* Content */
 .left-content {
@@ -430,6 +430,84 @@ footer {
     color: black;
 }
 
+@media screen and (min-width: 1024px) {
+    /* Navbar */
+    nav {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .brand {
+        margin-left: 10px;
+    }
+
+    #color {
+        margin-left: 0;
+        color: grey;
+    }
+
+    /* Navigation */
+    .navbar {
+        margin: 0;
+    }
+
+    .kanan {
+        margin: 0 auto;
+    }
+
+    .kanan ul li{
+        margin: 0 auto;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+    }
+
+    /* Log Out */
+    .logout {
+        margin: 0 auto;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .logout p {
+        font-size: 14px;
+    }
+
+    /* Content */
+    .container-order {
+        max-width: 1000px;
+    }
+
+    #order-title {
+        max-width: 850px;
+        margin: 2rem auto;
+    }
+
+    /* Footer */
+    .container-footer-product {
+        max-width: 900px;
+    }
+
+    .location {
+        margin-right: 0px;
+    }
+}
+
 /* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .logo {
@@ -451,7 +529,8 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 12px;
+        font-size: 10px;
+        padding: 0px 10px;
     }
     /* Log Out */
     .logout {
@@ -475,46 +554,33 @@ footer {
         font-size: 12px;
     }
 
-    /* Order Title */
-    #order-title {
-        margin-left: 35px;
-        font-size: 30px;
+    /* Content */
+    .container-order {
+        max-width: 700px;
+        margin: 0 auto;
     }
 
-    /* Content Order */
     .content-order {
-        margin: 0 20px;
+        flex-wrap: wrap;
     }
 
-    .left-content {
-        margin-right: 10px;
-    }
-
-    .select {
-        width: 15em;
-    }
-
-    .form-text h1 {
-        font-size: 30px;
-    }
-
-    .product-det h1 {
-        font-size: 30px;
-    }
-
-    #qty-order {
-        width: 240px;
-    }
-
-    .btn-purchase {
-        margin-top: -50px;
-        margin-right: 60px;
-        margin-bottom: 50px;
+    #order-title {
+        max-width: 380px;
+        margin: 3rem auto;
     }
 
     /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
     .cetax {
-        margin-left: 10px;
+        margin-left: -10px;
         font-size: 14px;
     }
     
@@ -541,7 +607,7 @@ footer {
     }
 
     .useful-link {
-        margin-right: 10px;
+        margin-right: 50px;
     }
 }
 
