@@ -569,6 +569,10 @@ footer {
         margin: 3rem auto;
     }
 
+    .right-content {
+        text-align: center;
+    }
+
     /* Footer */
     footer {
         margin: 0 auto;
