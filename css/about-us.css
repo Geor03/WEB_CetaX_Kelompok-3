@@ -245,9 +245,9 @@ nav {
 }
 
 /* Swiper */
-.swiper-pagination {
+/* .swiper-pagination {
     display: none;
-}
+} */
 
 /* Footer */
 
@@ -385,9 +385,35 @@ footer {
         margin: 0 auto;
     }
 
+    .contain {
+        margin-left: 40px;
+    }
+
     .card-abt {
         max-width: 1900px;
-        margin: 4rem 3rem;
+        margin: 4rem auto;
+    }
+
+    .card-content {
+        width: 200px;
+        height: 350px;
+        margin-right: 0px;
+    }
+
+    .card-image img {
+        width: 180px;
+    }
+
+    .card-title {
+        max-width: 150px;
+    }
+
+    .card-title h1 {
+        font-size: 20px;
+    }
+
+    .container-manual {
+        display: none;
     }
 
     /* Footer */
@@ -513,6 +539,10 @@ footer {
     .card-title p {
         font-size: 0.8rem;
         z-index: 1;
+    }
+
+    .container-manual {
+        display: none;
     }
     
     /* Footer */
@@ -667,15 +697,15 @@ footer {
         text-align: center;
     }
 
-    .contain {
-        display: flex;
+    .container-abt {
+        display: none;
     }
 
-    .card-abt {
-        margin: 40px 16rem;
-        max-width: 600px;
-        width: 100%;
+    .container-manual {
+        max-width: 300px;
+        margin: 1rem auto;
     }
+    
 
 
     /* Footer */

@@ -47,7 +47,7 @@
 
             <a href="php/logout.php">Log Out</a>
             </div>
-        <!-- <?php
+        <?php
         }
         else{
         ?>
@@ -57,7 +57,7 @@
         </div>
         <?php   
         }
-        ?> -->
+        ?>
     </nav>
 
     <!-- Content -->
@@ -175,6 +175,89 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Client Manual -->
+        <div class="container-manual">
+
+          <div class="card-abt">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="images/tech1.jpg" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>Clothes Printing Technology</h1>
+                    <p>Technology for printing clothes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-abt">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="images/tech2.png" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>Polaroid Printer Technology</h1>
+                    <p>Technology for printing clothes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-abt">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="images/tech3.jpg" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>Sticker Printing Technology</h1>
+                    <p>Technology for printing clothes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-abt">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="images/tech4.jpg" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>Mug Printing Technology</h1>
+                    <p>Technology for printing clothes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-abt">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="images/tech5.png" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>Textile Printing Technology</h1>
+                    <p>Technology for printing clothes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-abt">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="images/tech5.png" alt="">
+                </div>
+
+                <div class="card-title">
+                    <h1>Textile Printing Technology</h1>
+                    <p>Technology for printing clothes</p>
+                </div>
+            </div>
+        </div>
+
         </div>
 
 
