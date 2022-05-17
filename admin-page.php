@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   include_once 'css/all-style.php';
   session_start();
   $host = 'localhost';
@@ -16,7 +16,7 @@
     header('Location: login.php');
   }
   
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +31,7 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-admin">
         <!-- Navigation Menu -->
         <section id="menu">
             <div class="logo">
@@ -41,20 +41,15 @@
 
             <div class="items">
                 <li><i class="fa-solid fa-chart-pie"></i><a href="admin-page.php">Dashboard</a></li>
+                <li><i class="fa-solid fa-shirt"></i><a href="#">Product</a></li>
+                <li><i class="fa-solid fa-file-lines"></i><a href="#">Portfolio</a></li>
                 <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>
             </div>
         </section>
 
         <!-- Navigation -->
         <section id="interface">
-            <div class="navigation">
-                <div class="n1">
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Search">
-                    </div>
-                </div>
-            </div>
+            <div class="navigation-admin">Admin</div>
 
             <!-- Dashboard Title -->
             <h3 class="i-name">
