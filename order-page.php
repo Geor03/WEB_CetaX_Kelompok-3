@@ -80,7 +80,14 @@
         <div class="content-order" style="height: auto;">
             <!-- Product & Product Description -->
             <div class="left-content">
-                <img src="images/baju3.png" alt="">
+                <div id="slider">
+                    <figure>
+                        <img src="images/baju1.png" alt="">
+                        <img src="images/baju2-fix.png" alt="">
+                        <img src="images/baju3.png" alt="">
+                    </figure>
+                </div>
+                
 
                 <div class="product-desc">
                     <h3>Product Description</h3>
