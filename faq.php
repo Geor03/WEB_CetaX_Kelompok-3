@@ -46,7 +46,7 @@
     
             <a href="php/logout.php">Log Out</a>
             </div>
-        <!-- <?php
+        <?php
         } else {
         ?>
         <div class="login">
@@ -55,7 +55,7 @@
         </div>
         <?php   
         }
-        ?> -->
+        ?>
     </nav>
     
     <div class="container-faq">

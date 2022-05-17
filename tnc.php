@@ -74,35 +74,35 @@
                 <p class="heading-tnc-box">Terms & Conditions</p>
                 <div class="tnc">
                     <details>
-                        <summary>T&C #1</summary>
+                        <summary>Terms & Conditions #1</summary>
                         <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
                              sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
-                        <summary>T&C #2</summary>
+                        <summary>Terms & Conditions #2</summary>
                         <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
                              sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
-                        <summary>T&C #3</summary>
+                        <summary>Terms & Conditions #3</summary>
                         <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
                              sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
-                        <summary>T&C #4</summary>
+                        <summary>Terms & Conditions #4</summary>
                         <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
                              sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
-                        <summary>T&C #5</summary>
+                        <summary>Terms & Conditions #5</summary>
                         <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
                              sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
