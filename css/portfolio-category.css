@@ -434,13 +434,6 @@ footer {
     .portfolio-box {
         text-align: center;
     }
-
-    .portfolio-box img {
-        max-width: 125px;
-        min-width: 125px;
-        max-height: 100px;
-        min-height: 100px;
-    }
     
     .portfolio-box h3 {
         font-size: 14px;
