@@ -94,7 +94,7 @@
 
             <div class="right-content">
             <!-- Product Detail & Product Options -->
-                <div class="product-det">
+                <div class="product-det-order">
                     <h1>Product Detail</h1>
                     <p>
                         Price <br>

@@ -314,7 +314,98 @@ footer {
     color: black;
 }
 
+/* Laptop Small */
+@media screen and (min-width: 1024px) {
+    /* Navbar */
+    nav {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .brand {
+        margin-left: 10px;
+    }
+
+    #color {
+        margin-left: 0;
+        color: grey;
+    }
+
+    /* Navigation */
+    .navbar {
+        margin: 0;
+    }
+
+    .kanan {
+        
+        margin: 0 auto;
+    }
+
+    .kanan ul li{
+        margin: 0 auto;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+    }
+
+    /* Log Out */
+    .logout {
+        margin: 0 auto;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .logout p {
+        font-size: 14px;
+    }
+
+    /* Content */
+    .content-about {
+        max-width: 1000px;
+        margin: 1rem auto;
+    }
+
+    .container-abt {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .card-abt {
+        max-width: 1900px;
+        margin: 4rem 3rem;
+    }
+
+    /* Footer */
+    .container-footer {
+        max-width: 900px;
+    }
+
+    .location {
+        margin-right: 0px;
+    }
+}
+
+/* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        margin: 20px auto;
+    }
+
     .logo {
         margin-left: 5px;
     }
@@ -334,11 +425,13 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 12px;
+        font-size: 10px;
+        padding: 0px 10px;
     }
+
     /* Log Out */
     .logout {
-        margin-right: -30;
+        margin-right: -30px;
     }
 
     .logout p {
@@ -372,23 +465,23 @@ footer {
     }
 
     /* Cetax Title */
+    .about-cetax {
+        margin: 2rem auto;
+    }
+
     .about-cetax h1 {
         font-size: 30px;
-        margin-left: -30%;
     }
 
     .cetax-is {
-        margin-top: 50px;
-        max-width: 600px;
-        margin-left: 10%;
-        padding: 20px;
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.4px);
-        -webkit-backdrop-filter: blur(7.4px);
+        text-align: center;
     }
 
     /* Card */
+    .container-abt {
+        max-width: 800px;
+    }
+
     .card-content {
         width: 200px;
         height: 250px;
@@ -397,6 +490,7 @@ footer {
         flex-direction: column;
         align-items: center;
         overflow: hidden;
+        margin-left: 1rem;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
 
@@ -420,16 +514,19 @@ footer {
         font-size: 0.8rem;
         z-index: 1;
     }
-
-    /* Swiper */
-    .swiper-button-next,
-    .swiper-button-prev {
-        padding-top: 80%;
-    }
     
     /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
     .cetax {
-        margin-left: 10px;
+        margin-left: -10px;
         font-size: 14px;
     }
     
@@ -456,7 +553,7 @@ footer {
     }
 
     .useful-link {
-        margin-right: 10px;
+        margin-right: 50px;
     }
 }
 
@@ -464,11 +561,12 @@ footer {
 @media screen and (max-width: 767px) { 
     nav {
         flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .logo {
-        margin-top: 10px;
-        margin-left: 130px;
+        margin: 20px auto;
     }
     
     .logo img {
@@ -480,16 +578,19 @@ footer {
         font-size: 18px;
     }
 
-    /* Navigation */    
-    nav {
-        align-items: center;
-        margin-left: 20px;
+    /* Navigation */
+    .kanan {
+        margin: 20px auto;
     }
 
     .kanan {
         /* position: absolute; */
         /* margin-top: 150px; */
         justify-content: center;
+    }
+
+    .kanan ul {
+        margin: 0px 0px 0px 0px;
     }
 
     .kanan ul li{
@@ -499,13 +600,12 @@ footer {
     .kanan ul li a {
         font-size: 12px;
         padding: 0;
-        margin: 13px;
+        margin: 5px;
     }
 
     /* Log Out */
     .logout {
-        margin-right: -30;
-        margin-left: 90px;
+       margin: 10px auto;
     }
 
     .logout p {
@@ -519,6 +619,7 @@ footer {
         text-align: center;
         font-size: 16px;
         width: 100px;
+        margin: 0;
     }
 
     .logout p {
@@ -540,67 +641,72 @@ footer {
         width: 300px;
     }
 
+    .container-abt {
+        flex-wrap: wrap;
+    }
+
+    .about-cetax {
+        text-align: center;
+    }
+
     .about-cetax h1 {
         font-size: 30px;
-        margin-right: 120px; 
     }
 
     .cetax-is {
-        width: 300px;
-        max-width: 400px;
-        margin-left: 10%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .cetax-is h1 {
+        font-size: 30px;
     }
 
     .tech-title h1 {
-        font-size: px;
+        font-size: 30px;
         text-align: center;
-        margin-right: 10px;
+    }
+
+    .contain {
+        display: flex;
     }
 
     .card-abt {
-        margin: 40px 75px;
+        margin: 40px 16rem;
         max-width: 600px;
         width: 100%;
     }
 
-    .contain {
-        margin-bottom: -2000px;
-    }
-
-    /* Swiper */
-    .swiper-button-next,
-    .swiper-button-prev {
-        padding-top: 250%;
-    }
 
     /* Footer */
-    footer {
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: center;
+    .container-footer-about {
+        max-width: 200px;
+        margin: 10px auto;
+        flex-direction: column;
     }
 
     .cetax {
-        margin-top: 15px;
-        margin-left: 10px;
+        text-align: center;
+        margin: 10px auto;
     }
 
     .location {
-        margin-top: 15px;
         text-align: center;
-        margin-left: 60px;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .location p {
+        max-width: 200px;
     }
 
     .contact-us {
-        margin-top: 15px;
         text-align: center;
-        margin-left: 20px;
+        margin: 10px auto;
     }
 
     .useful-link {
-        margin-top: 15px;
         text-align: center;
-        margin-left: 110px;
-        margin-bottom: 15px;
+        margin: 10px auto;
     }
 }

@@ -272,7 +272,7 @@ select {
     margin: 50px;
 }
 
-.product-det p {
+.product-det-order p {
     margin-bottom: 10px;
 }
 
@@ -430,6 +430,7 @@ footer {
     color: black;
 }
 
+/* Laptop Small */
 @media screen and (min-width: 1024px) {
     /* Navbar */
     nav {
@@ -571,6 +572,11 @@ footer {
 
     .right-content {
         text-align: center;
+        margin: 0 auto;
+    }
+
+    .product-det-order {
+        margin: 1rem auto;
     }
 
     /* Footer */
@@ -691,6 +697,11 @@ footer {
 
     .content-order {
         flex-wrap: wrap;
+    }
+
+    .product-det-order {
+        text-align: center;
+        margin: 1rem auto;
     }
 
     /* Footer */
