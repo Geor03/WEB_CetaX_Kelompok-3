@@ -128,7 +128,7 @@
               <td>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0467677334577!2d106.61613675061027!3d-6.257569895448427!2m3!1f0!
                 2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb56b25975f9%3A0x50c7d605ba8542f5!2sMultimedia%20Nusantara%20University!5e0!3m2!1sen!2sid!4v1650260810499
-                !5m2!1sen!2sid" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                !5m2!1sen!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </td>
             </tr>
           </table>

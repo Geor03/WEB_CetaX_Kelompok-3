@@ -447,7 +447,111 @@ footer {
     color: black;
 }
 
+/* Laptop Small */
+@media screen and (min-width: 1024px) {
+    /* Navbar */
+    nav {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .brand {
+        margin-left: 10px;
+    }
+
+    #color {
+        margin-left: 0;
+        color: grey;
+    }
+
+    /* Navigation */
+    .navbar {
+        margin: 0;
+    }
+
+    .kanan {
+        
+        margin: 0 auto;
+    }
+
+    .kanan ul li{
+        margin: 0 auto;
+    }
+
+    .kanan ul li a {
+        font-size: 14px;
+    }
+
+    /* Log Out */
+    .logout {
+        margin: 0 auto;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .logout p {
+        font-size: 14px;
+    }
+
+    /* Content */
+    .head-text h1 {
+        font-size: 24px;
+    }
+
+    .head-text p {
+        font-size: 14px;
+    }
+
+    .head img {
+        width: 350px;
+    }
+
+    .info {
+        flex-basis: 30%;
+        padding: 40px;
+        padding-right: 83px;
+        background-color: #e0d6eb;
+        color: black;
+        border-radius: 30px;
+    }
+
+    .containerForm {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        padding: 40px 0px;
+    }
+
+    /* Footer */
+    .container-footer {
+        max-width: 900px;
+    }
+
+    .location {
+        margin-right: 0px;
+    }
+}
+
+/* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        margin: 20px auto;
+    }
+
     .logo {
         margin-left: 5px;
     }
@@ -467,11 +571,13 @@ footer {
     }
 
     .kanan ul li a {
-        font-size: 12px;
+        font-size: 10px;
+        padding: 0px 10px;
     }
+
     /* Log Out */
     .logout {
-        margin-right: -30;
+        margin-right: -30px;
     }
 
     .logout p {
@@ -493,8 +599,7 @@ footer {
 
     /* Head */
     .head {
-        margin: 0 5px;
-        margin-top: -100px;
+        margin: 3rem auto;
     }
 
     .head-text h1 {
@@ -506,11 +611,17 @@ footer {
     }
 
     /* Information */
+    .containerForm {
+        margin: 0 auto;
+    }
+
     .information {
         flex-wrap: wrap;
+        max-width: 515px;
     }
 
     .info {
+        width: 100%;
         flex-basis: 40%;
         padding: 40px;
         padding-right: 83px;
@@ -520,8 +631,17 @@ footer {
     }
 
     /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
     .cetax {
-        margin-left: 10px;
+        margin-left: -10px;
         font-size: 14px;
     }
     
@@ -548,7 +668,7 @@ footer {
     }
 
     .useful-link {
-        margin-right: 10px;
+        margin-right: 50px;
     }
 }
 
@@ -556,11 +676,12 @@ footer {
 @media screen and (max-width: 767px) { 
     nav {
         flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .logo {
-        margin-top: 10px;
-        margin-left: 130px;
+        margin: 20px auto;
     }
     
     .logo img {
@@ -572,16 +693,19 @@ footer {
         font-size: 18px;
     }
 
-    /* Navigation */    
-    nav {
-        align-items: center;
-        margin-left: 20px;
+    /* Navigation */
+    .kanan {
+        margin: 20px auto;
     }
 
     .kanan {
         /* position: absolute; */
         /* margin-top: 150px; */
         justify-content: center;
+    }
+
+    .kanan ul {
+        margin: 0px 0px 0px 0px;
     }
 
     .kanan ul li{
@@ -591,13 +715,12 @@ footer {
     .kanan ul li a {
         font-size: 12px;
         padding: 0;
-        margin: 13px;
+        margin: 5px;
     }
 
     /* Log Out */
     .logout {
-       margin-right: -30;
-       margin-left: 90px;
+       margin: 10px auto;
     }
 
     .logout p {
@@ -611,6 +734,7 @@ footer {
         text-align: center;
         font-size: 16px;
         width: 100px;
+        margin: 0;
     }
 
     .logout p {
@@ -620,25 +744,20 @@ footer {
     /* Content */
     .head {
         flex-wrap: wrap;
+        max-width: 350px;
+        margin: 3rem auto;
     }
 
     .head img {
         width: 300px;
-        margin-top: -100px;
+        margin: 2rem auto;
     }
 
     /* Information */
     .information {
         flex-wrap: wrap;
-    }
-
-    .info {
-        flex-basis: 40%;
-        padding: 40px;
-        padding-right: 16px;
-        background-color: #e0d6eb;
-        color: black;
-        border-radius: 30px;
+        max-width: 370px;
+        width: 100%;
     }
 
     td>iframe {
@@ -646,33 +765,34 @@ footer {
     }
 
     /* Footer */
-    footer {
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: center;
+    .container-footer-contact {
+        max-width: 200px;
+        margin: 10px auto;
+        flex-direction: column;
     }
 
     .cetax {
-        margin-top: 15px;
-        margin-left: 10px;
+        text-align: center;
+        margin: 10px auto;
     }
 
     .location {
-        margin-top: 15px;
         text-align: center;
-        margin-left: 60px;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .location p {
+        max-width: 200px;
     }
 
     .contact-us {
-        margin-top: 15px;
         text-align: center;
-        margin-left: 20px;
+        margin: 10px auto;
     }
 
     .useful-link {
-        margin-top: 15px;
         text-align: center;
-        margin-left: 110px;
-        margin-bottom: 15px;
+        margin: 10px auto;
     }
 }
