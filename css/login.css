@@ -101,8 +101,6 @@ nav {
 .login {
     display: flex;
     align-items: center;
-    margin: 10px;
-    margin-right: 50px;
 }
 
 #login-btn {
@@ -375,9 +373,27 @@ footer {
     color: black;
 }
 
+/* Laptop Small */
+@media screen and (min-width: 1024px) {
+    .form-box {
+        max-width: 900px;
+        margin: 4rem auto;
+    }
+
+    /* Footer */
+    .container-footer {
+        max-width: 900px;
+    }
+
+    .location {
+        margin-right: 0px;
+    }
+}
+
+/* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     #welcome {
-        margin-bottom: 70%;
+        margin-bottom: 50%;
         font-size: 3rem;
         margin-top: 35%;
     }
@@ -388,13 +404,12 @@ footer {
     }
 
     .form-box {
-        width: 400px;
-        margin: 0 auto;
-        justify-content: center;
+        max-width: 400px;
+        margin: 4rem auto;
     }
 
     .form-text {
-        margin-left: 0;
+        margin: 0 auto;
     }
 
     .form-text h1 {
@@ -402,8 +417,17 @@ footer {
     }
 
     /* Footer */
+    footer {
+        margin: 0 auto;
+    }
+
+    .container-footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
     .cetax {
-        margin-left: 10px;
+        margin-left: -10px;
         font-size: 14px;
     }
     
@@ -430,19 +454,19 @@ footer {
     }
 
     .useful-link {
-        margin-right: 10px;
+        margin-right: 50px;
     }
 }
 
 @media screen and (max-width: 767px) {
     nav {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
 
     .logo {
-        margin-top: 10px;
-        margin-left: 10px;
+        margin: auto;
     }
     
     .logo img {
@@ -464,13 +488,12 @@ footer {
     }
 
     .form-box {
-        width: 350px;
-        margin: 0 auto;
-        justify-content: center;
+        max-width: 350px;
+        margin: 4rem auto;
     }
 
     .form-text {
-        margin-left: 0px;
+        margin: 0 auto;
     }
 
     .form-text h1 {
@@ -506,5 +529,37 @@ footer {
         text-align: center;
         margin-left: 110px;
         margin-bottom: 15px;
+    }
+
+    /* Footer */
+    .container-footer-login {
+        max-width: 200px;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .cetax {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .location {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .location p {
+        max-width: 200px;
+    }
+
+    .contact-us {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .useful-link {
+        text-align: center;
+        margin: 10px auto;
     }
 }

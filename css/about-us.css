@@ -375,6 +375,11 @@ footer {
     }
 
     /* Content */
+    .banner {
+        max-width: 900px;
+        margin: 4rem auto;
+    }
+
     .content-about {
         max-width: 1000px;
         margin: 1rem auto;

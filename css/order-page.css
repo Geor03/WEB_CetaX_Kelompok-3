@@ -705,7 +705,7 @@ footer {
     }
 
     /* Footer */
-    .container-footer {
+    .container-footer-order {
         max-width: 200px;
         margin: 10px auto;
         flex-direction: column;

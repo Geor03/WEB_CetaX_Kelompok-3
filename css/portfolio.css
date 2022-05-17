@@ -270,7 +270,7 @@ footer {
     /* Navbar */
     nav {
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     /* Logo */
@@ -425,5 +425,113 @@ footer {
 
     .useful-link {
         margin-right: 50px;
+    }
+}
+
+/* Handphone Size L */
+@media screen and (max-width: 425px) {
+    nav {
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 20px auto;
+    }
+    
+    .logo img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    .kanan {
+        margin: 20px auto;
+    }
+
+    .kanan {
+        /* position: absolute; */
+        /* margin-top: 150px; */
+        justify-content: center;
+    }
+
+    .kanan ul {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .kanan ul li{
+        margin-left: 5px;
+    }
+
+    .kanan ul li a {
+        font-size: 12px;
+        padding: 0;
+        margin: 5px;
+    }
+
+    /* Log Out */
+    .logout {
+       margin: 10px auto;
+    }
+
+    .logout p {
+        margin-right: 5px;
+    }
+
+    .logout a {
+        box-shadow: inset 0 0 0 0;
+        border-radius: 20px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 16px;
+        width: 100px;
+        margin: 0;
+    }
+
+    .logout p {
+        font-size: 16px;
+    }
+
+    /* Content */
+    .magazine {
+        flex-wrap: wrap;
+        margin: 10px auto;
+    }
+
+    /* Footer */
+    .container-footer-port {
+        max-width: 200px;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .cetax {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .location {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .location p {
+        max-width: 200px;
+    }
+
+    .contact-us {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .useful-link {
+        text-align: center;
+        margin: 10px auto;
     }
 }
