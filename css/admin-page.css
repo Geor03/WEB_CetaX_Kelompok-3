@@ -58,10 +58,6 @@ body {
     border-left: 4px solid white;
 }
 
-.fa-memo {
-    color: rgb(134, 141, 151);
-}
-
 #menu .items li i {
     color: rgb(134, 141, 151);
     width: 30px;
@@ -180,9 +176,10 @@ tbody tr td {
     align-items: center;
 }
 
-.edit button {
+td.edit a {
     background: transparent;
     text-decoration: none;
+    padding: 0;
     border: 0px transparent;
     font-size: 14px;
     color: #554cd1;

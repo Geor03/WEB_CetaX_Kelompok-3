@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   include_once 'css/all-style.php';
   session_start();
   $host = 'localhost';
@@ -16,7 +16,7 @@
     header('Location: login.php');
   }
   
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,9 +84,7 @@
                             <td class="active"><p>Active</p></td>
 
                             <td class="edit">
-                                <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product)?>">
-                                    <button>Edit</button>
-                                </a>
+                                <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product)?>">Edit</a>
                             </td>
                         </tr>
                         <?php endforeach ?>
