@@ -421,7 +421,7 @@ footer {
         margin-right: 5px;
     }
 
-    .logout a {
+    .logout #log {
         box-shadow: inset 0 0 0 0;
         border-radius: 20px;
         padding: 5px 0px;
@@ -489,7 +489,7 @@ footer {
     }
 }
 
-/* Smartphone Size L */
+/* Handphone Size L */
 @media screen and (max-width: 767px) {
     nav {
         flex-wrap: wrap;
@@ -544,7 +544,7 @@ footer {
         margin-right: 5px;
     }
 
-    .logout a {
+    .logout #log {
         box-shadow: inset 0 0 0 0;
         border-radius: 20px;
         padding: 5px 0px;
