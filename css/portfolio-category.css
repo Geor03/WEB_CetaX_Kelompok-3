@@ -151,6 +151,13 @@ nav {
     color: white;
 }
 
+/* Profile */
+#profile {
+    background-color: transparent;
+    color: #000;
+    margin-right: 10px;
+}
+
 /* Log Out */
 .logout {
     display: flex;
@@ -159,9 +166,10 @@ nav {
 
 .logout p {
     margin-right: 10px;
+    font-size: 18px;
 }
 
-.logout a {
+.logout #log {
     text-decoration: none;
     color: black;
     background-color: #c4c4c4;
@@ -172,7 +180,7 @@ nav {
     transition: 0.5s;
 }
 
-.logout a:hover {
+.logout #log:hover {
     box-shadow: inset 150px 0 0 0 red;
     cursor: pointer;
 }
