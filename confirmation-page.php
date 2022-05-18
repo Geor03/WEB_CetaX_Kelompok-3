@@ -1,3 +1,8 @@
+<?php
+  include_once 'css/all-style.php';
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +47,7 @@
 
                 <a id="log" href="php/logout.php">Log Out</a>
             </div>
-        <?php
+        <!-- <?php
         } else {
         ?>
         <div class="login">
@@ -51,7 +56,7 @@
         </div>
         <?php   
         }
-        ?>
+        ?> -->
     </nav>
 
     <!-- Container Confirmation -->
@@ -63,6 +68,8 @@
         <div class="content-confirmation" style="height: auto;">
             <!-- Product & Product Description -->
             <div class="left-content">
+
+                <!-- FOTONYA GANTI SAMA FOTO YANG DI UPLOAD -->
                 <img src="images/baju3.png" alt="">
 
                 <div class="product-desc">
@@ -133,10 +140,6 @@
                                     <option value="3">Shopeepay</option>
                                     <option value="4">Debit/Credit Card</option>
                                 </select>
-                            </div>
-
-                            <div class="file-upload">
-                                <input type="file" name="image">
                             </div>
 
                             <div class="btn">
