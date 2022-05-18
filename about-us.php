@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -42,10 +43,11 @@
         <?php
         if( $_SESSION['role'] != null){?>
             <div class="logout">
-        
-            <p>Hello, <?= $_SESSION['Name'] ?></p>
+                <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
+                
+                <p>Hello, <?= $_SESSION['Name'] ?></p>
 
-            <a href="php/logout.php">Log Out</a>
+                <a id="log" href="php/logout.php">Log Out</a>
             </div>
         <?php
         }

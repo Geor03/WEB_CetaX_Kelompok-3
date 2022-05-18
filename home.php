@@ -26,6 +26,7 @@
   <!-- Link -->
   <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js"></script>
+  <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
@@ -55,12 +56,13 @@
     <?php
       if( $_SESSION['role'] != null){?>
         <div class="logout">
+          <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
       
-        <p>Hello, <?= $_SESSION['Name'] ?></p>
-  
-        <a href="php/logout.php">Log Out</a>
+          <p>Hello, <?= $_SESSION['Name'] ?></p>
+    
+          <a id="log" href="php/logout.php">Log Out</a>
         </div>
-    <?php
+    <!-- <?php
       }
       else{
     ?>
@@ -70,7 +72,7 @@
       </div>
     <?php   
       }
-    ?>
+    ?> -->
   </nav>
 
   <!-- Content -->
