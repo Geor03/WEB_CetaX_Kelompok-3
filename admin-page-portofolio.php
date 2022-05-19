@@ -9,7 +9,7 @@ $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-$result = $pdo->prepare(" SELECT tp.*,pc.category_product  FROM table_product tp INNER JOIN product_category pc ON tp.id_productCategory = pc.id_productCategory");
+$result = $pdo->prepare(" SELECT tp.*,pc.category_portofolio FROM table_portofolio tp INNER JOIN portofolio_category pc ON tp.id_pportofolioCategory = pc.id_portofolioCategory");
 $result->execute();
 $final = $result->fetchAll();
 if ($_SESSION['role'] == null) {
@@ -45,7 +45,7 @@ if ($_SESSION['role'] == null) {
                 <li><i class="fa-solid fa-chart-pie"></i><a href="admin-page.php">Product</a></li>
                 <li><i class="fa-solid fa-shirt"></i><a href="admin-page-portofolio.php">Portofolio</a></li>
                 <li><i class="fa-solid fa-file-lines"></i><a href="admin-page-order.php">Order</a></li>
-                <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>
+                <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>            
             </div>
         </section>
 
@@ -55,7 +55,7 @@ if ($_SESSION['role'] == null) {
 
             <!-- Dashboard Title -->
             <h3 class="i-name">
-                Product
+                Portofolio
             </h3>
 
             <!-- Items -->
@@ -74,13 +74,12 @@ if ($_SESSION['role'] == null) {
                             <tr>
                                 <td class="people">
                                     <div class="people-de">
-                                        <h5><?php echo stripslashes($product->product_name) ?></h5>
+                                        <h5><?php echo stripslashes($product->portofolio_name) ?></h5>
                                     </div>
                                 </td>
 
                                 <td class="people-des">
-                                    <h5><?php echo stripslashes($product->category_product) ?></h5>
-                                    <p><?php echo stripslashes($product->stock_qty) ?></p>
+                                    <h5><?php echo stripslashes($product->category_portofolio) ?></h5>                                
                                 </td>
 
                                 <td class="active">

@@ -28,7 +28,7 @@ $ext = end($exp);
 $query = $pdo->prepare("UPDATE `table_product` SET `id_product`='$id',`id_productCategory`='$category',`product_name`='$productname',`product_photo`='$targetFilePath',`price`='$price',`stock_qty`='$stock' WHERE id_product = $id");
 $result = $query->execute();
 if($result){
-    header('Location: ../admin-page.php');
+    echo "<script>alert('Edit Succesfully');window.location.href='../admin-page.php';</script>";
 }else{
-    header('Location: ../admin-page.php');
+    echo "<script>alert('Edit Failed');window.location.href='../admin-page.php';</script>";
 }

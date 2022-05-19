@@ -20,12 +20,12 @@ if (isset($_POST['payment'])) $payment = $_POST['payment'];
 $date = date("Y/m/d");
 $total_price = $final->price * $qty;
 
-if ($qty < $final->stock_qty) {
-    header('Location: ../home.php');
+if ($qty > $final->stock_qty) {
+    echo "<script>alert('Order Failed, demand is greater than stock');window.location.href='../home.php';</script>";
 }
 
 if ($result) {
     $query = $pdo->prepare("INSERT INTO `table_order`( `id_product`, `id_customer`, `size`, `quantity`, `material`, `shipping`, `total_price`, `id_paymentMethod`, `Date`) VALUES ('$id','$user_id','$size','$qty','$material','$shipment','$total_price','$payment','$date')");
     $result = $query->execute();
-    header('Location: ../home.php');
+    echo "<script>alert('Order Success');window.location.href='../home.php';</script>";
 }

@@ -1,4 +1,4 @@
 <?php
     session_start();
     session_destroy();
-    header('Location: ../home.php');
+    echo "<script>alert('');window.location.href='../home.php';</script>";

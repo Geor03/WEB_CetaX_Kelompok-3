@@ -55,7 +55,7 @@ if ($_SESSION['role'] == null) {
 
             <!-- Dashboard Title -->
             <h3 class="i-name">
-                Product
+                Order
             </h3>
 
             <!-- Items -->
