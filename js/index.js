@@ -1,7 +1,7 @@
 // Auto slide for Content start
 
 var counter = 1;
-setInterval(function(){
+setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++;
 
@@ -14,6 +14,6 @@ setInterval(function(){
 
 let navbar = $('.navbar');
 
-$('.icon').on('click', function(){
+$('.icon').on('click', function () {
     navbar.slideToggle();
 });

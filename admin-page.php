@@ -1,24 +1,25 @@
 <?php
-  include_once 'css/all-style.php';
-  session_start();
-  $host = 'localhost';
-  $dbname = 'cetax';
-  $username = 'root';
-  $password = '';
-  $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
-  $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+include_once 'css/all-style.php';
+session_start();
+$host = 'localhost';
+$dbname = 'cetax';
+$username = 'root';
+$password = '';
+$pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-  $result = $pdo->prepare(" SELECT tp.*,pc.category_product  FROM table_product tp INNER JOIN product_category pc ON tp.id_productCategory = pc.id_productCategory");
-  $result->execute();
-  $final = $result->fetchAll();
-  if( $_SESSION['role'] == null){
+$result = $pdo->prepare(" SELECT tp.*,pc.category_product  FROM table_product tp INNER JOIN product_category pc ON tp.id_productCategory = pc.id_productCategory");
+$result->execute();
+$final = $result->fetchAll();
+if ($_SESSION['role'] == null) {
     header('Location: login.php');
-  }
-  
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +31,7 @@
 
     <title>Admin Dashboard</title>
 </head>
+
 <body>
     <div class="container-admin">
         <!-- Navigation Menu -->
@@ -68,25 +70,27 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach($final as $key=>$product) :?>
-                        <tr>
-                            <td class="people">
-                                <div class="people-de">
-                                    <h5><?php echo stripslashes($product->product_name) ?></h5>
-                                </div>
-                            </td>
+                        <?php foreach ($final as $key => $product) : ?>
+                            <tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5><?php echo stripslashes($product->product_name) ?></h5>
+                                    </div>
+                                </td>
 
-                            <td class="people-des">
-                                <h5><?php echo stripslashes($product->category_product) ?></h5>
-                                <p><?php echo stripslashes($product->stock_qty) ?></p>
-                            </td>
+                                <td class="people-des">
+                                    <h5><?php echo stripslashes($product->category_product) ?></h5>
+                                    <p><?php echo stripslashes($product->stock_qty) ?></p>
+                                </td>
 
-                            <td class="active"><p>Active</p></td>
+                                <td class="active">
+                                    <p>Active</p>
+                                </td>
 
-                            <td class="edit">
-                                <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product)?>">Edit</a>
-                            </td>
-                        </tr>
+                                <td class="edit">
+                                    <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product) ?>">Edit</a>
+                                </td>
+                            </tr>
                         <?php endforeach ?>
                     </tbody>
                 </table>
@@ -108,10 +112,11 @@
             edit_container.classList.remove('show');
         });
 
-        $('.icon').on('click', function(){
+        $('.icon').on('click', function() {
             navbar.slideToggle();
         });
     </script>
 
 </body>
+
 </html>

@@ -32,4 +32,3 @@ if($result){
 }else{
     header('Location: ../admin-page.php');
 }
-?>

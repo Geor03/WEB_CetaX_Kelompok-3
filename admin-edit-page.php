@@ -1,25 +1,26 @@
 <?php
-  include_once 'css/all-style.php';
-  session_start();
-  if( $_SESSION['role'] == null){
+include_once 'css/all-style.php';
+session_start();
+if ($_SESSION['role'] == null) {
     header('Location: login.php');
-  }
-  $productId = $_GET['product'];
-  $host = 'localhost';
-  $dbname = 'cetax';
-  $username = 'root';
-  $password = '';
-  $pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
-  $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+}
+$productId = $_GET['product'];
+$host = 'localhost';
+$dbname = 'cetax';
+$username = 'root';
+$password = '';
+$pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-  $result = $pdo->prepare("SELECT * FROM table_product WHERE id_product = $productId");
-  $result->execute();
-  $final = $result->fetch();
+$result = $pdo->prepare("SELECT * FROM table_product WHERE id_product = $productId");
+$result->execute();
+$final = $result->fetch();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,28 +35,29 @@
 
     <title>Edit Product</title>
 </head>
+
 <body>
-    
+
     <div class="content-edit-page">
         <center>
             <h2>Edit Product</h2>
         </center>
 
         <div class="form-edit">
-            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post" enctype='multipart/form-data'>
+            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
-                    <input type="text" name="product_name" value="<?php echo stripslashes($final->product_name)?>" required>
+                    <input type="text" name="product_name" value="<?php echo stripslashes($final->product_name) ?>" required>
                     <span></span>
                     <label>Product Name</label>
                 </div>
                 <div class="txt_field">
-                    <input type="text" name="price" value="<?php echo stripslashes($final->price)?>" required>
+                    <input type="text" name="price" value="<?php echo stripslashes($final->price) ?>" required>
                     <span></span>
                     <label>Price</label>
                 </div>
 
                 <div class="txt_field">
-                    <input type="text" name="stock" value="<?php echo stripslashes($final->stock_qty)?>" required>
+                    <input type="text" name="stock" value="<?php echo stripslashes($final->stock_qty) ?>" required>
                     <span></span>
                     <label>Stock</label>
                 </div>
@@ -77,12 +79,13 @@
                 </div>
 
                 <div class="btn-choose">
-                    <input type="submit" name = "submit" value="Update">
-                    <a href = "php/admin-delete-process.php?product=<?php echo stripslashes($final->id_product)?>"><input type="submit" id="remove" value="Delete" ></a>
+                    <input type="submit" name="submit" value="Update">
+                    <a href="php/admin-delete-process.php?product=<?php echo stripslashes($final->id_product) ?>"><input type="submit" id="remove" value="Delete"></a>
                 </div>
             </form>
-    </div>
+        </div>
     </div>
 
 </body>
+
 </html>

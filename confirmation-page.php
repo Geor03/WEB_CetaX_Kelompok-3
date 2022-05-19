@@ -1,10 +1,11 @@
 <?php
-  include_once 'css/all-style.php';
-  session_start();
+include_once 'css/all-style.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,30 +20,32 @@
 
     <title>Confirmation Page</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
         <div class="logo">
             <img src="images/cetax 1.png" alt="">
-            <h1 class="brand">Ceta</h1><h1 class="brand" id="color">X</h1>
+            <h1 class="brand">Ceta</h1>
+            <h1 class="brand" id="color">X</h1>
         </div>
 
         <div class="kanan">
-        <ul class="navbar">
-            <li><a href="home.php">Home</a></li>
-            <li><a href="product.php">Product</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="about-us.php">About Us</a></li>
-            <li><a href="contact-us.php">Contact Us</a></li>
-        </ul>
+            <ul class="navbar">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="product.php">Product</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="contact-us.php">Contact Us</a></li>
+            </ul>
         </div>
 
 
         <?php
-        if( $_SESSION['role'] != null){?>
+        if ($_SESSION['role'] != null) { ?>
             <div class="logout">
                 <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
-                
+
                 <p>Hello, <?= $_SESSION['Name'] ?></p>
 
                 <a id="log" href="php/logout.php">Log Out</a>
@@ -50,21 +53,21 @@
         <?php
         } else {
         ?>
-        <div class="login">
-            <a id="login-btn" href="login.php">Log In</a>
-            <a id="sign-btn" href="signup.php">Sign Up</a>
-        </div>
-        <?php   
+            <div class="login">
+                <a id="login-btn" href="login.php">Log In</a>
+                <a id="sign-btn" href="signup.php">Sign Up</a>
+            </div>
+        <?php
         }
         ?>
     </nav>
 
     <!-- Container Confirmation -->
-    
+
     <div class="container-confirmation">
         <!-- Content -->
         <h1 id="confirmation-title">Confirmation Page</h1>
-        
+
         <div class="content-confirmation" style="height: auto;">
             <!-- Product & Product Description -->
             <div class="left-content">
@@ -75,20 +78,20 @@
                 <div class="product-desc">
                     <h3>Product Description</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure 
-                        repudiandae natus enim? Explicabo quae eum dignissimos possimus consectetur 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                        repudiandae natus enim? Explicabo quae eum dignissimos possimus consectetur
                         nam optio cumque temporibus perspiciatis commodi, fugit, animi unde voluptatibus perferendis atque?
                     </p>
                 </div>
             </div>
 
             <div class="right-content">
-            <!-- Product Detail & Product Options -->
+                <!-- Product Detail & Product Options -->
                 <div class="product-det">
                     <h1>Product Detail</h1>
                     <p>
                         Price <br>
-                        <s>IDR 60.000</s> $<?php echo stripslashes($final->price)?>
+                        <s>IDR 60.000</s> $<?php echo stripslashes($final->price) ?>
                     </p>
 
                     <p>
@@ -115,7 +118,7 @@
                 <div class="product-op">
                     <div class="form-text">
                         <h1 class="title-options">Shipping Options</h1>
-                        <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product)?>" method="post">
+                        <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post">
                             <div class="address-inform">
                                 <p>
                                     Address <br>
@@ -149,7 +152,7 @@
                             </div>
                         </form>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -185,17 +188,17 @@
             <div class="location">
                 <h3>Location info</h3>
                 <p>
-                Jl. Scientia Boulevard, Curug Sangereng, 
-                Kec. Klp. Dua, Kabupaten Tangerang, Banten 
-                15810
+                    Jl. Scientia Boulevard, Curug Sangereng,
+                    Kec. Klp. Dua, Kabupaten Tangerang, Banten
+                    15810
                 </p>
             </div>
 
             <div class="contact-us">
                 <h3>Contact Us</h3>
                 <p>
-                Phone 0812-9898-2929 <br>
-                Customer Service 021-55231
+                    Phone 0812-9898-2929 <br>
+                    Customer Service 021-55231
                 </p>
             </div>
 
@@ -205,21 +208,22 @@
                     Product
                 </a>
                 <a href="portfolio.php">
-                Portfolio
+                    Portfolio
                 </a>
                 <a href="about-us.php">
-                About Us
+                    About Us
                 </a>
                 <a href="faq.php">
-                FAQs
+                    FAQs
                 </a>
                 <a href="tnc.php">
-                Terms & Condition
+                    Terms & Condition
                 </a>
             </div>
         </div>
-        
+
     </footer>
 
 </body>
+
 </html>

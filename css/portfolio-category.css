@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -37,7 +38,7 @@ nav {
 
 /* Navigation */
 
-.kanan a{
+.kanan a {
     font-size: 18px;
     position: relative;
     padding: 0 10px;
@@ -48,7 +49,7 @@ nav {
     transition: 0.2s;
 }
 
-.kanan a::after{
+.kanan a::after {
     content: "";
     position: absolute;
     background-color: rebeccapurple;
@@ -59,25 +60,25 @@ nav {
     transition: 0.3s;
 }
 
-.kanan a:hover::after{
+.kanan a:hover::after {
     width: 100%;
 }
 
-.kanan ul{
+.kanan ul {
     padding: 0;
     margin: 0;
     float: right;
     margin-right: 30px;
 }
 
-.kanan ul li{
+.kanan ul li {
     position: relative;
     list-style: none;
     display: inline-block;
     margin-left: 20px;
 }
 
-.kanan ul li a{
+.kanan ul li a {
     display: block;
     padding: 0 15px;
     color: black;
@@ -87,13 +88,13 @@ nav {
     background: white;
 }
 
-.kanan ul ul{
+.kanan ul ul {
     position: absolute;
     top: 60px;
     display: none;
 }
 
-.kanan ul li:hover > ul{
+.kanan ul li:hover>ul {
     display: block;
 }
 
@@ -233,7 +234,7 @@ footer {
     width: 200px;
 }
 
-.contact-us p{
+.contact-us p {
     font-size: 14px;
     width: 200px;
 }
@@ -294,7 +295,7 @@ footer {
     font-weight: 500;
 }
 
-.contact-us p{
+.contact-us p {
     color: #c4c4c4;
 }
 
@@ -316,6 +317,7 @@ footer {
 
 /* Laptop Small */
 @media screen and (min-width: 1024px) {
+
     /* Navbar */
     nav {
         max-width: 1000px;
@@ -347,7 +349,7 @@ footer {
         margin: 0 auto;
     }
 
-    .kanan ul li{
+    .kanan ul li {
         margin: 0 auto;
     }
 
@@ -393,7 +395,7 @@ footer {
     .logo {
         margin-left: 5px;
     }
-    
+
     .logo img {
         width: 30px;
         margin-right: 5px;
@@ -404,7 +406,7 @@ footer {
     }
 
     /* Navigation */
-    .kanan ul li{
+    .kanan ul li {
         margin-left: 5px;
     }
 
@@ -412,6 +414,7 @@ footer {
         font-size: 10px;
         padding: 0px 10px;
     }
+
     /* Log Out */
     .logout {
         margin-right: -30;
@@ -442,7 +445,7 @@ footer {
     .portfolio-box {
         text-align: center;
     }
-    
+
     .portfolio-box h3 {
         font-size: 14px;
     }
@@ -461,11 +464,11 @@ footer {
         margin-left: -10px;
         font-size: 14px;
     }
-    
+
     .footer-img a img {
         width: 40px;
     }
-    
+
     .copyright p {
         width: 200px;
     }
@@ -479,7 +482,7 @@ footer {
         width: 200px;
     }
 
-    .contact-us p{
+    .contact-us p {
         font-size: 14px;
         width: 200px;
     }
@@ -500,7 +503,7 @@ footer {
     .logo {
         margin: 20px auto;
     }
-    
+
     .logo img {
         width: 50px;
         margin-right: 5px;
@@ -525,7 +528,7 @@ footer {
         margin: 0px 0px 0px 0px;
     }
 
-    .kanan ul li{
+    .kanan ul li {
         margin-left: 5px;
     }
 
@@ -537,7 +540,7 @@ footer {
 
     /* Log Out */
     .logout {
-       margin: 10px auto;
+        margin: 10px auto;
     }
 
     .logout p {

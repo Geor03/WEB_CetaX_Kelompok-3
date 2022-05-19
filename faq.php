@@ -1,10 +1,11 @@
 <?php
-  include_once 'css/all-style.php';
-  session_start();
+include_once 'css/all-style.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,31 +20,33 @@
 
     <title>FAQs</title>
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav>
         <div class="logo">
             <img src="images/cetax 1.png" alt="">
-            <h1 class="brand">Ceta</h1><h1 class="brand" id="color">X</h1>
+            <h1 class="brand">Ceta</h1>
+            <h1 class="brand" id="color">X</h1>
         </div>
 
         <div class="kanan">
-        <ul class="navbar">
-            <li><a href="home.php">Home</a></li>
-            <li><a href="product.php">Product</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="about-us.php">About Us</a></li>
-            <li><a href="contact-us.php">Contact Us</a></li>
-        </ul>
+            <ul class="navbar">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="product.php">Product</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="contact-us.php">Contact Us</a></li>
+            </ul>
         </div>
 
 
         <?php
-        if( $_SESSION['role'] != null){?>
+        if ($_SESSION['role'] != null) { ?>
             <div class="logout">
                 <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
-      
+
                 <p>Hello, <?= $_SESSION['Name'] ?></p>
 
                 <a id="log" href="php/logout.php">Log Out</a>
@@ -51,15 +54,15 @@
         <?php
         } else {
         ?>
-        <div class="login">
-            <a id="login-btn" href="login.php">Log In</a>
-            <a id="sign-btn" href="signup.php">Sign Up</a>
-        </div>
-        <?php   
+            <div class="login">
+                <a id="login-btn" href="login.php">Log In</a>
+                <a id="sign-btn" href="signup.php">Sign Up</a>
+            </div>
+        <?php
         }
         ?>
     </nav>
-    
+
     <div class="container-faq">
 
         <div class="faq-title">
@@ -108,37 +111,37 @@
                 <div class="faqs">
                     <details>
                         <summary>Question #1</summary>
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
+                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
-                             sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
+                            sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
                         <summary>Question #2</summary>
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
+                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
-                             sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
+                            sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
                         <summary>Question #3</summary>
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
+                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
-                             sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
+                            sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
                         <summary>Question #4</summary>
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
+                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
-                             sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
+                            sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
 
                     <details>
                         <summary>Question #5</summary>
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum 
+                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta cum
                             nostrum beatae, quis aut consequuntur veniam nemo praesentium, optio
-                             sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
+                            sapiente ut odio magnam mollitia fugiat veritatis omnis quod vel.</p>
                     </details>
                 </div>
             </div>
@@ -177,17 +180,17 @@
             <div class="location">
                 <h3>Location info</h3>
                 <p>
-                Jl. Scientia Boulevard, Curug Sangereng, 
-                Kec. Klp. Dua, Kabupaten Tangerang, Banten 
-                15810
+                    Jl. Scientia Boulevard, Curug Sangereng,
+                    Kec. Klp. Dua, Kabupaten Tangerang, Banten
+                    15810
                 </p>
             </div>
 
             <div class="contact-us">
                 <h3>Contact Us</h3>
                 <p>
-                Phone 0812-9898-2929 <br>
-                Customer Service 021-55231
+                    Phone 0812-9898-2929 <br>
+                    Customer Service 021-55231
                 </p>
             </div>
 
@@ -197,21 +200,22 @@
                     Product
                 </a>
                 <a href="portfolio.php">
-                Portfolio
+                    Portfolio
                 </a>
                 <a href="about-us.php">
-                About Us
+                    About Us
                 </a>
                 <a href="faq.php">
-                FAQs
+                    FAQs
                 </a>
                 <a href="tnc.php">
-                Terms & Condition
+                    Terms & Condition
                 </a>
             </div>
         </div>
-        
+
     </footer>
 
 </body>
+
 </html>

@@ -8,7 +8,7 @@ $host = 'localhost';
 $dbname = 'cetax';
 $username = 'root';
 $password = '';
-$pdo = new PDO("mysql: host=$host;dbname=$dbname",$username,$password);
+$pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 $sql = "SELECT * FROM table_customer WHERE username = ?";
@@ -16,20 +16,18 @@ $sql = "SELECT * FROM table_customer WHERE username = ?";
 $result = $pdo->prepare($sql);
 $result->execute([$user]);
 
-if($row = $result->fetch()) {
-    if($pw == $row->password) {
+if ($row = $result->fetch()) {
+    if ($pw == $row->password) {
         $_SESSION['username'] = $row->username;
         $_SESSION['role'] = $row->role;
         $_SESSION['user_id'] = $row->id;
         $_SESSION['Name'] = $row->first_name;
         // Jangan lupa ganti
-        if($_SESSION['role'] == "user"){
+        if ($_SESSION['role'] == "user") {
             header('Location: ../home.php');
+        } else if ($_SESSION['role'] == "admin") {
+            header('Location: ../admin-page.php'); //direct ke halaman admin
         }
-        else if($_SESSION['role'] == "admin"){
-            header('Location: ../admin-page.php');//direct ke halaman admin
-        }
-        
     } else {
         header('Location: ../login.php');
     }
@@ -37,17 +35,17 @@ if($row = $result->fetch()) {
     header('Location: ../login.php');
 }
 
-if(isset($_POST['act_login'])){
-    if($user=="" || $pw==""){
-        $msg=array("Error", "Username / Password Wrong !");
+if (isset($_POST['act_login'])) {
+    if ($user == "" || $pw == "") {
+        $msg = array("Error", "Username / Password Wrong !");
     } else {
-        if(!$LS->login($user, $pw)){
-        $msg=array("Error", "Username / Password Wrong !");
+        if (!$LS->login($user, $pw)) {
+            $msg = array("Error", "Username / Password Wrong !");
         }
     }
 }
 
 if ($msg <> '') {
-   echo $msg;
-   exit();
+    echo $msg;
+    exit();
 }

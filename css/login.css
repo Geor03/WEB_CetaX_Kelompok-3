@@ -4,7 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -29,7 +30,7 @@ nav {
 
 /* Navigation */
 
-.kanan a{
+.kanan a {
     font-size: 18px;
     position: relative;
     padding: 0 10px;
@@ -40,7 +41,7 @@ nav {
     transition: 0.2s;
 }
 
-.kanan a::after{
+.kanan a::after {
     content: "";
     position: absolute;
     background-color: rebeccapurple;
@@ -51,25 +52,25 @@ nav {
     transition: 0.3s;
 }
 
-.kanan a:hover::after{
+.kanan a:hover::after {
     width: 100%;
 }
 
-.kanan ul{
+.kanan ul {
     padding: 0;
     margin: 0;
     float: right;
     margin-right: 30px;
 }
 
-.kanan ul li{
+.kanan ul li {
     position: relative;
     list-style: none;
     display: inline-block;
     margin-left: 20px;
 }
 
-.kanan ul li a{
+.kanan ul li a {
     display: block;
     padding: 0 15px;
     color: black;
@@ -79,13 +80,13 @@ nav {
     background: white;
 }
 
-.kanan ul ul{
+.kanan ul ul {
     position: absolute;
     top: 60px;
     display: none;
 }
 
-.kanan ul li:hover > ul{
+.kanan ul li:hover>ul {
     display: block;
 }
 
@@ -198,7 +199,7 @@ nav {
     margin-left: 20%;
     margin-bottom: 50px;
     border-radius: 30px;
-    box-shadow: 7px 7px 20px rgba(94,104,121, .288);
+    box-shadow: 7px 7px 20px rgba(94, 104, 121, .288);
     background-color: #fff;
 }
 
@@ -254,14 +255,14 @@ form .txt_field {
     top: 40px;
 }
 
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label {
+.txt_field input:focus~label,
+.txt_field input:valid~label {
     top: -5px;
     color: rebeccapurple;
 }
 
-.txt_field input:focus ~ span::before,
-.txt_field input:valid ~ span::before {
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
     width: 100%;
 }
 
@@ -353,7 +354,7 @@ footer {
     font-weight: 500;
 }
 
-.contact-us p{
+.contact-us p {
     color: #c4c4c4;
 }
 
@@ -430,11 +431,11 @@ footer {
         margin-left: -10px;
         font-size: 14px;
     }
-    
+
     .footer-img a img {
         width: 40px;
     }
-    
+
     .copyright p {
         width: 200px;
     }
@@ -448,7 +449,7 @@ footer {
         width: 200px;
     }
 
-    .contact-us p{
+    .contact-us p {
         font-size: 14px;
         width: 200px;
     }
@@ -468,7 +469,7 @@ footer {
     .logo {
         margin: auto;
     }
-    
+
     .logo img {
         width: 50px;
         margin-right: 5px;
