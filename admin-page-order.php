@@ -9,7 +9,7 @@ $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-$result = $pdo->prepare(" SELECT tp.*,pc.category_product  FROM table_product tp INNER JOIN product_category pc ON tp.id_productCategory = pc.id_productCategory");
+$result = $pdo->prepare(" SELECT tableo.*,tp.*,tc.*  FROM table_order tableo INNER JOIN table_product tp ON tableo.id_product = tp.id_product INNER JOIN table_customer tc ON tableo.id_customer = tc.id_customer");
 $result->execute();
 $final = $result->fetchAll();
 if ($_SESSION['role'] == null) {

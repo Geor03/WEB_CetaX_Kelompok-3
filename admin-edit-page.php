@@ -42,7 +42,7 @@ $final = $result->fetch();
         <center>
             <h2>Edit Product</h2>
         </center>
-
+    
         <div class="form-edit">
             <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
@@ -65,16 +65,16 @@ $final = $result->fetch();
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Choose Material</option>
-                        <option value="1">T-shirt</option>
-                        <option value="2">Mug</option>
-                        <option value="3">Tote bag</option>
-                        <option value="4">Mini Sticker</option>
+                        <option value="1" <?php if($final->id_productCategory=="1") echo 'selected="selected"'; ?>>T-shirt</option>
+                        <option value="2" <?php if($final->id_productCategory=="2") echo 'selected="selected"'; ?>>Mug</option>
+                        <option value="3" <?php if($final->id_productCategory=="3") echo 'selected="selected"'; ?>>Tote bag</option>
+                        <option value="4" <?php if($final->id_productCategory=="4") echo 'selected="selected"'; ?>>Mini Sticker</option>
                     </select>
                 </div>
 
                 <div class="txt_field" id="file">
                     <div class="file-upload">
-                        <input type="file" name="image">
+                        <input type="file" name="image"/><input type="hidden" name="oldfile" value="<?=$final->product_photo ?>"><?php echo $final->product_photo?></input>
                     </div>
                 </div>
 

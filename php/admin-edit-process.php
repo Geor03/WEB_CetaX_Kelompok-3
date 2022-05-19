@@ -13,13 +13,20 @@ if(isset($_POST['product_name']))$productname = $_POST['product_name'];
 if(isset($_POST['price']))$price = $_POST['price'];
 if(isset($_POST['stock']))$stock = $_POST['stock'];
 if(isset($_POST['category']))$category = $_POST['category'];
+if(isset($_POST['oldfile']))$oldfile = $_POST['oldfile'];
 
 $fileName = $_FILES['image']['name'];
 $file_temp = $_FILES['image']['tmp_name'];
 $allowed_ext = array("jpg", "jpeg", "gif", "png");
-$targetFilePath = "images/".$fileName;
 $exp = explode(".", $fileName);
 $ext = end($exp);
+if($fileName!="") {
+    $targetFilePath = "images/".$fileName;
+}
+else if($fileName=="") {
+    $targetFilePath =$oldfile;
+}
+
 
 
     

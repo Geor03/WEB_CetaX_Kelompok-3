@@ -9,7 +9,7 @@ $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-$result = $pdo->prepare(" SELECT tp.*,pc.category_portofolio FROM table_portofolio tp INNER JOIN portofolio_category pc ON tp.id_pportofolioCategory = pc.id_portofolioCategory");
+$result = $pdo->prepare(" SELECT tp.*, pc.category_portfolio FROM table_portfolio tp INNER JOIN portfolio_category pc ON tp.id_portfolioCategory = pc.id_portfolioCategory");
 $result->execute();
 $final = $result->fetchAll();
 if ($_SESSION['role'] == null) {
@@ -75,12 +75,12 @@ if ($_SESSION['role'] == null) {
                             <tr>
                                 <td class="people">
                                     <div class="people-de">
-                                        <h5><?php echo stripslashes($product->portofolio_name) ?></h5>
+                                        <h5><?php echo stripslashes($product->portfolio_name) ?></h5>
                                     </div>
                                 </td>
 
                                 <td class="people-des">
-                                    <h5><?php echo stripslashes($product->category_portofolio) ?></h5>                                
+                                    <h5><?php echo stripslashes($product->category_portfolio) ?></h5>                                
                                 </td>
 
                                 <td class="active">
@@ -88,7 +88,7 @@ if ($_SESSION['role'] == null) {
                                 </td>
 
                                 <td class="edit">
-                                    <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product) ?>">Edit</a>
+                                    <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_portfolio) ?>">Edit</a>
                                 </td>
                             </tr>
                         <?php endforeach ?>

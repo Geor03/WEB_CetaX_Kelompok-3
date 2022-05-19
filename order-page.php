@@ -86,7 +86,7 @@ $final = $result->fetch();
             <div class="left-content">
                 <div id="slider">
                     <figure>
-                        <img src="images/baju1.png" alt="">
+                        <img src="<?php echo stripslashes($final->product_photo) ?>" alt="">
                         <img src="images/baju2-fix.png" alt="">
                         <img src="images/baju3.png" alt="">
                     </figure>
@@ -96,9 +96,7 @@ $final = $result->fetch();
                 <div class="product-desc">
                     <h3>Product Description</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                        repudiandae natus enim? Explicabo quae eum dignissimos possimus consectetur
-                        nam optio cumque temporibus perspiciatis commodi, fugit, animi unde voluptatibus perferendis atque?
+                        <?php echo stripslashes($final->Description) ?>
                     </p>
                 </div>
             </div>
@@ -109,7 +107,7 @@ $final = $result->fetch();
                     <h1>Product Detail</h1>
                     <p>
                         Price <br>
-                        <s>IDR 60.000</s> $<?php echo stripslashes($final->price) ?>
+                        <!-- <s>IDR 60.000</s> --> IDR <?= number_format(stripslashes($final->price),2,",",".") ?>
                     </p>
 
                     <p>

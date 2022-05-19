@@ -12,7 +12,7 @@ $password = '';
 $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
-$sql = "SELECT * FROM table_portfolio WHERE id_portfolioCategory = $category";
+$sql = "SELECT tp.*, pc.category_portfolio FROM table_portfolio tp INNER JOIN portfolio_category pc ON tp.id_portfolioCategory = pc.id_portfolioCategory WHERE tp.id_portfolioCategory = $category";
 $result = $pdo->prepare($sql);
 $result->execute();
 $final = $result->fetchAll();
@@ -80,7 +80,7 @@ $final = $result->fetchAll();
 
   <!-- Content -->
   <div class="container-port-cat">
-    <h1 id="title"><?php $category?> Category</h1>
+    <h1 id="title"><?php echo stripslashes($final[1]->category_portfolio)?> Category</h1>
     <!-- First Row -->
     <div class="portfolio-card">
       <?php foreach ($final as $key => $product) : ?>
