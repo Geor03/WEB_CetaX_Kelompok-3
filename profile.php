@@ -47,7 +47,7 @@
 
             <a id="log" href="php/logout.php">Log Out</a>
         </div>
-        <!-- <?php
+        <?php
             } else {
             ?>
             <div class="login">
@@ -56,7 +56,7 @@
             </div>
             <?php
             }
-            ?> -->
+            ?>
     </nav>
 
     <!-- Containers -->
@@ -91,7 +91,7 @@
                         <div class="txt_field">
                             <input type="password" name="pw" id="pw" required>
                             <span></span>
-                            <label>Password</label>
+                            <label>New Password</label>
                         </div>
 
                         <div class="txt_field">

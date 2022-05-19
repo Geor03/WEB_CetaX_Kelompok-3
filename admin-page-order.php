@@ -29,7 +29,7 @@ if ($_SESSION['role'] == null) {
     <link rel="stylesheet" href="css/admin-page.css">
     <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
 
-    <title>Admin Dashboard</title>
+    <title>Edit Order</title>
 </head>
 
 <body>
@@ -85,10 +85,6 @@ if ($_SESSION['role'] == null) {
 
                                 <td class="active">
                                     <p>Active</p>
-                                </td>
-
-                                <td class="edit">
-                                    <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_product) ?>">Edit</a>
                                 </td>
                             </tr>
                         <?php endforeach ?>
