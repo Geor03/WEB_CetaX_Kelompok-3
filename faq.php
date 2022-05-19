@@ -45,7 +45,7 @@ session_start();
         <?php
         if ($_SESSION['role'] != null) { ?>
             <div class="logout">
-                <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
+                <a id="profile" href="profile.php"><i class="fa-solid fa-user"></i></a>
 
                 <p>Hello, <?= $_SESSION['Name'] ?></p>
 

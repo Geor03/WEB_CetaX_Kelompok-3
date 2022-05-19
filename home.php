@@ -59,13 +59,13 @@ $final = $result->fetchAll();
     <?php
     if ($_SESSION['role'] != null) { ?>
       <div class="logout">
-        <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
+        <a id="profile" href="profile.php">Profile</ai class="fa-solid fa-user"></i></a>
 
         <p>Hello, <?= $_SESSION['Name'] ?></p>
 
         <a id="log" href="php/logout.php">Log Out</a>
       </div>
-      <!-- <?php
+      <?php
           } else {
             ?>
       <div class="login">
@@ -74,7 +74,7 @@ $final = $result->fetchAll();
       </div>
     <?php
           }
-    ?> -->
+    ?>
   </nav>
 
   <!-- Content -->
