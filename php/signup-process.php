@@ -18,5 +18,5 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 $query = $pdo->prepare("INSERT INTO `table_customer`( `username`, `email`, `password`, `first_name`, `last_name`, `no_telp`, `address`, `role`, `postalcode`) values ('$user','$email','$pass','$Fname','$Lname','$phone','$address','$role', '$postal')");
 $result = $query->execute();
 if ($result) {
-    header('Location: ../login.php');
+    echo "<script>alert('Signup Succesfully');window.location.href='../login.php';</script>";
 }

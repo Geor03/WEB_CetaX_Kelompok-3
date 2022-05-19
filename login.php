@@ -64,7 +64,7 @@ session_start();
               <label>Password</label>
             </div>
 
-            <input type="submit" value="Login" class="link" name="Login" onClick="enterPassword()">
+            <input type="submit" value="Login" class="link" name="Login">
 
             <div class="signUp-link">
               Not a member? <a href="signup.php">Sign Up</a>
@@ -165,16 +165,6 @@ session_start();
 
     init();
 
-    function enterPassword() {
-      var password = document.getElementById("pass").value;
-      var username = document.getElementById("user").value;
-      if (password == "hello" && username == "1234") {
-        return echo;
-      } else if (password !== "hello" && username !== "1234") {
-        alert("Either Username or Password is incorrect");
-        return echo;
-      }
-    }
   </script>
 
 </body>

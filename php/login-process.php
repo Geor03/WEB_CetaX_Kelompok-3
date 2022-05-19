@@ -24,28 +24,14 @@ if ($row = $result->fetch()) {
         $_SESSION['Name'] = $row->first_name;
         // Jangan lupa ganti
         if ($_SESSION['role'] == "user") {
-            header('Location: ../home.php');
+            echo "<script>alert('Login Succesfully');window.location.href='../home.php';</script>";
+
         } else if ($_SESSION['role'] == "admin") {
-            header('Location: ../admin-page.php'); //direct ke halaman admin
+            echo "<script>alert('Login Succesfully');window.location.href='../admin-page.php';</script>"; //direct ke halaman admin        
         }
     } else {
-        header('Location: ../login.php');
+        echo "<script type='text/javascript'>alert('Either Password or username is incorrect'); window.location.href='../login.php';</script>";
     }
 } else {
-    header('Location: ../login.php');
-}
-
-if (isset($_POST['act_login'])) {
-    if ($user == "" || $pw == "") {
-        $msg = array("Error", "Username / Password Wrong !");
-    } else {
-        if (!$LS->login($user, $pw)) {
-            $msg = array("Error", "Username / Password Wrong !");
-        }
-    }
-}
-
-if ($msg <> '') {
-    echo $msg;
-    exit();
+    echo "<script type='text/javascript'>alert('Either Password or username is incorrect'); window.location.href='../login.php';</script>";
 }

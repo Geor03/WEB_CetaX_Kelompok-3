@@ -80,7 +80,7 @@ $final = $result->fetchAll();
 
   <!-- Content -->
   <div class="container-port-cat">
-    <h1 id="title">Portfolio Category</h1>
+    <h1 id="title"><?php $category?> Category</h1>
     <!-- First Row -->
     <div class="portfolio-card">
       <?php foreach ($final as $key => $product) : ?>
