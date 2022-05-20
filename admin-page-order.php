@@ -31,7 +31,7 @@ if ($_SESSION['role'] == null) {
 
     <title>Edit Order</title>
 </head>
-<!-- Test -->
+
 <body>
     <div class="container-admin">
         <!-- Navigation Menu -->
