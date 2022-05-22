@@ -27,7 +27,6 @@ if ($_SESSION['role'] == null) {
 
     <!-- Links -->
     <link rel="stylesheet" href="css/admin-edit-portfolio.css">
-    <link rel="stylesheet" href="css/admin-page.css">
     <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
 
     <title>Edit Portfolio</title>
@@ -44,7 +43,7 @@ if ($_SESSION['role'] == null) {
 
             <div class="items">
                 <li><i class="fa-solid fa-chart-pie"></i><a href="admin-page.php">Product</a></li>
-                <li><i class="fa-solid fa-shirt"></i><a href="admin-page-portofolio.php">Portofolio</a></li>
+                <li id="port"><i class="fa-solid fa-shirt"></i><a href="admin-page-portofolio.php">Portofolio</a></li>
                 <li><i class="fa-solid fa-file-lines"></i><a href="admin-page-order.php">Order</a></li>
                 <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>
             </div>
@@ -57,11 +56,11 @@ if ($_SESSION['role'] == null) {
             <div class="container-dashboard">
                 <!-- Dashboard Title -->
                 <h3 class="i-name">
-                    Portofolio
+                    Portfolio
                 </h3>
 
                 <!-- Button  -->
-                <a href="#">+  Add New</a>
+                <a href="admin-add-portfolio.php">+  Add New</a>
             </div>
 
 

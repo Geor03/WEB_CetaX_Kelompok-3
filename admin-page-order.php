@@ -26,7 +26,7 @@ if ($_SESSION['role'] == null) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/admin-page.css">
+    <link rel="stylesheet" href="css/admin-edit-order.css">
     <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
 
     <title>Edit Order</title>

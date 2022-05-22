@@ -53,10 +53,15 @@ if ($_SESSION['role'] == null) {
         <section id="interface">
             <div class="navigation-admin">Admin</div>
 
-            <!-- Dashboard Title -->
-            <h3 class="i-name">
-                Product
-            </h3>
+            <div class="container-dashboard">
+                <!-- Dashboard Title -->
+                <h3 class="i-name">
+                    Product
+                </h3>
+
+                <!-- Button  -->
+                <a href="admin-add-product.php">+  Add New</a>
+            </div>
 
             <!-- Items -->
             <div class="board">

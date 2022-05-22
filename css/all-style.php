@@ -10,3 +10,5 @@
 <link rel="stylesheet" type="text/css" href="css/admin-edit-page.css">
 <link rel="stylesheet" type="text/css" href="css/confirmation-page.css">
 <link rel="stylesheet" type="text/css" href="css/tnc.css">
+<link rel="stylesheet" type="text/css" href="css/order-edit-portfolio.css">
+<link rel="stylesheet" type="text/css" href="css/order-edit-order.css">
