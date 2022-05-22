@@ -119,7 +119,7 @@ $final = $result->fetch();
                 <div class="product-op">
                     <div class="form-text">
                         <h1>Product Options</h1>
-                        <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post">
+                        <form action="php/order-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post" enctype='multipart/form-data'>
                             <div class="select">
                                 <select name="size" id="size" style="background: #663399; color: white;">
                                     <option selected disabled>Choose Size</option>
@@ -164,7 +164,7 @@ $final = $result->fetch();
                             </div>
 
                             <div class="file-upload">
-                                <input type="file" name="image">
+                                <input type="file" name="image" id="image">
                             </div>
 
                             <div class="btn">

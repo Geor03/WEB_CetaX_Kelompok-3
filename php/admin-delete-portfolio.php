@@ -11,7 +11,7 @@ $id = $_GET['portfolio'];
 $query = $pdo->prepare("DELETE FROM `table_portfolio` WHERE id_portfolio = $id");
 $result = $query->execute();
 if($result){
-    echo "<script>alert('Delete Succesfully');window.location.href='../admin-page.php';</script>";
+    echo "<script>alert('Delete Succesfully');window.location.href='../admin-page-portfolio.php';</script>";
 }else{
-    echo "<script>alert('Delete Failed');window.location.href='../admin-page.php';</script>";
+    echo "<script>alert('Delete Failed');window.location.href='../admin-page-portfolio.php';</script>";
 }

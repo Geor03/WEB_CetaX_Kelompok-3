@@ -210,7 +210,7 @@ include_once 'css/all-style.php';
       var confirmPassword = document.getElementById("confirmPw").value;
       if (password != confirmPassword) {
         alert("Passwords do not match.");
-        return false;
+        alert('Order Failed, demand is greater than stock');window.location.href='../profile-page.php';
       }
       return true;
     }

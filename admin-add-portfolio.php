@@ -28,14 +28,14 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
 
-    <title>Edit Product</title>
+    <title>Add Portfolio</title>
 </head>
 
 <body>
 
     <div class="content-edit-page">
         <center>
-            <h2>Edit Portfolio</h2>
+            <h2>Add Portfolio</h2>
         </center>
 
         <div class="form-edit">
@@ -49,10 +49,9 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Add Category</option>
-                        <option value="1">T-shirt</option>
-                        <option value="2">Mug</option>
-                        <option value="3">Tote bag</option>
-                        <option value="4">Mini Sticker</option>
+                        <option value="1">Magazine</option>
+                        <option value="2">Clothing</option>
+                        <option value="3">Automobile</option>
                     </select>
                 </div>
 

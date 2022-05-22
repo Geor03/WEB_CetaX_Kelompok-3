@@ -33,7 +33,7 @@ $final = $result->fetch();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
 
-    <title>Edit Product</title>
+    <title>Edit Portfolio</title>
 </head>
 
 <body>
@@ -54,10 +54,9 @@ $final = $result->fetch();
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Choose Category</option>
-                        <option value="1" <?php if($final->id_portfolioCategory=="1") echo 'selected="selected"'; ?>>T-shirt</option>
-                        <option value="2" <?php if($final->id_portfolioCategory=="2") echo 'selected="selected"'; ?>>Mug</option>
-                        <option value="3" <?php if($final->id_portfolioCategory=="3") echo 'selected="selected"'; ?>>Tote bag</option>
-                        <option value="4" <?php if($final->id_portfolioCategory=="4") echo 'selected="selected"'; ?>>Mini Sticker</option>
+                        <option value="1" <?php if($final->id_portfolioCategory=="1") echo 'selected="selected"'; ?>>Magazine</option>
+                        <option value="2" <?php if($final->id_portfolioCategory=="2") echo 'selected="selected"'; ?>>Clothing</option>
+                        <option value="3" <?php if($final->id_portfolioCategory=="3") echo 'selected="selected"'; ?>>Automobile</option>
                     </select>
                 </div>
 
@@ -69,9 +68,9 @@ $final = $result->fetch();
 
                 <div class="btn-choose">
                     <input type="submit" name="submit" value="Update">
-                    <a href="php/admin-delete-portfolio.php?portfolio=<?php echo stripslashes($final->id_portfolio) ?>"><input type="submit" id="remove" value="Delete"></a>
                 </div>
             </form>
+            <a href="php/admin-delete-portfolio.php?portfolio=<?php echo stripslashes($final->id_portfolio) ?>"><input type="submit" id="remove" value="Delete"></a>
         </div>
     </div>
 

@@ -15,8 +15,15 @@ $username = 'root';
 $password = '';
 $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-$query = $pdo->prepare("INSERT INTO `table_customer`( `username`, `email`, `password`, `first_name`, `last_name`, `no_telp`, `address`, `role`, `postalcode`) values ('$user','$email','$pass','$Fname','$Lname','$phone','$address','$role', '$postal')");
-$result = $query->execute();
-if ($result) {
+$query = $pdo->prepare("SELECT * FROM table_customer WHERE username = ?");
+$query->execute([$user]);
+$result = $query->fetch();
+
+if($result){
+    echo "<script>alert('Signup Failed, Username existed');window.location.href='../login.php';</script>";
+}
+else{
+    $query = $pdo->prepare("INSERT INTO `table_customer`( `username`, `email`, `password`, `first_name`, `last_name`, `no_telp`, `address`, `role`, `postalcode`) values ('$user','$email','$pass','$Fname','$Lname','$phone','$address','$role', '$postal')");
+    $result = $query->execute();
     echo "<script>alert('Signup Succesfully');window.location.href='../login.php';</script>";
 }

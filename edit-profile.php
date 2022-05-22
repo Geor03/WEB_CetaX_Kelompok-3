@@ -158,17 +158,17 @@ $final = $result->fetch()
     </div>
 
     <!-- Inner JS -->
-    <script>
+    <!-- <script>
         function Validate() {
             var password = document.getElementById("pw").value;
             var confirmPassword = document.getElementById("confirmPw").value;
             if (password != confirmPassword) {
-                alert("Passwords do not match.");
-                return false;
+                alert('Failed to edit password didn\'t match');
+                window.location.href='../profile-page.php';
             }
             return true;
         }
-    </script>
+    </script> -->
 </body>
 
 </html>

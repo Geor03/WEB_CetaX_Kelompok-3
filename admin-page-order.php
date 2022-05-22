@@ -43,7 +43,7 @@ if ($_SESSION['role'] == null) {
 
             <div class="items">
                 <li><i class="fa-solid fa-chart-pie"></i><a href="admin-page.php">Product</a></li>
-                <li><i class="fa-solid fa-shirt"></i><a href="admin-page-portofolio.php">Portofolio</a></li>
+                <li><i class="fa-solid fa-shirt"></i><a href="admin-page-portfolio.php">Portofolio</a></li>
                 <li><i class="fa-solid fa-file-lines"></i><a href="admin-page-order.php">Order</a></li>
                 <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>
             </div>
@@ -80,13 +80,14 @@ if ($_SESSION['role'] == null) {
 
                                 <td class="people-des">
                                     <h5><?php echo stripslashes($product->email) ?></h5>
-                                    <h5><?php echo stripslashes($product->size) ?></h5>
+                                    <p><?php echo stripslashes($product->size) ?></p>
                                     <p><?php echo stripslashes($product->quantity) ?></p>
                                     <p><?php echo stripslashes($product->material) ?></p>
                                     <p><?php echo stripslashes($product->shipping) ?></p>
                                     <p><?php echo stripslashes($product->total_price) ?></p>
                                     <p><?php echo stripslashes($product->payment_name) ?></p>
                                     <p><?php echo stripslashes($product->Date) ?></p>
+                                    <p><?php echo stripslashes($product->product_photo) ?></p>
                                 </td>
 
                                 <td class="active">

@@ -43,7 +43,7 @@ $final = $result->fetch();
             <h2>Edit Product</h2>
         </center>
     
-        <div class="form-edit-page">
+        <div class="form-edit">
             <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
                     <input type="text" name="product_name" value="<?php echo stripslashes($final->product_name) ?>" required>
@@ -64,7 +64,7 @@ $final = $result->fetch();
 
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
-                        <option selected disabled>Choose Material</option>
+                        <option selected disabled>Choose Category</option>
                         <option value="1" <?php if($final->id_productCategory=="1") echo 'selected="selected"'; ?>>T-shirt</option>
                         <option value="2" <?php if($final->id_productCategory=="2") echo 'selected="selected"'; ?>>Mug</option>
                         <option value="3" <?php if($final->id_productCategory=="3") echo 'selected="selected"'; ?>>Tote bag</option>
@@ -80,9 +80,9 @@ $final = $result->fetch();
 
                 <div class="btn-choose">
                     <input type="submit" name="submit" value="Update">
-                    <a href="php/admin-delete-process.php?product=<?php echo stripslashes($final->id_product) ?>"><input type="submit" id="remove" value="Delete"></a>
                 </div>
             </form>
+            <a href="php/admin-delete-process.php?product=<?php echo stripslashes($final->id_product) ?>"><input type="submit" id="remove" value="Delete"></a>  
         </div>
     </div>
 

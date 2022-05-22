@@ -21,21 +21,19 @@ $allowed_ext = array("jpg", "jpeg", "gif", "png");
 $exp = explode(".", $fileName);
 $ext = end($exp);
 if($fileName!="") {
-    $targetFilePath = "images/".$fileName;
+    $targetFilePath = "../uploads/".basename($fileName);
+    move_uploaded_file($file_temp, $targetFilePath);
+    $targetFilePath ="uploads/".basename($fileName);
 }
 else if($fileName=="") {
-    $targetFilePath =$oldfile;
+    $targetFilePath = $oldfile;
 }
-
-
-
-    
 // Insert image file name into database
 //$insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
-$query = $pdo->prepare("UPDATE `table_product` SET `id_product`='$id',`id_productCategory`='$category',`product_name`='$productname',`product_photo`='$targetFilePath',`price`='$price',`stock_qty`='$stock' WHERE id_product = $id");
+$query = $pdo->prepare("UPDATE `table_portfolio` SET `id_portfolioCategory`='$category',`portfolio_name`='$productname',`portfolio_photo`='$targetFilePath' WHERE id_portfolio = $id");
 $result = $query->execute();
 if($result){
-    echo "<script>alert('Edit Succesfully');window.location.href='../admin-page.php';</script>";
+    echo "<script>alert('Edit Succesfully');window.location.href='../admin-page-portfolio.php';</script>";
 }else{
-    echo "<script>alert('Edit Failed');window.location.href='../admin-page.php';</script>";
+    echo "<script>alert('Edit Failed');window.location.href='../admin-page-portfolio.php';</script>";
 }

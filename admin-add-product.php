@@ -28,7 +28,7 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
 
-    <title>Edit Product</title>
+    <title>Add Product</title>
 </head>
 
 <body>
@@ -38,8 +38,8 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
             <h2>Add Product</h2>
         </center>
 
-        <div class="form-edit-page">
-            <form action="php/admin-edit-process.php"
+        <div class="form-edit">
+            <form action="php/admin-add-product-process.php"
                 method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
                     <input type="text" name="product_name" 
@@ -61,7 +61,7 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
-                        <option selected disabled>Choose Material</option>
+                        <option selected disabled>Choose Category</option>
                         <option value="1">T-shirt</option>
                         <option value="2">Mug</option>
                         <option value="3">Tote bag</option>
