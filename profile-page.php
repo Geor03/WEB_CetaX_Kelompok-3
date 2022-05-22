@@ -4,7 +4,7 @@ session_start();
 $id = $_SESSION['user_id'];
 if ($_SESSION['role'] == null) {
     header('Location: login.php');
-  }
+}
 $host = 'localhost';
 $dbname = 'cetax';
 $username = 'root';
@@ -57,26 +57,26 @@ $final = $result->fetch()
 
 
         <?php
-            if ($_SESSION['role'] != null) { ?>
-        <div class="logout">
-            <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
+        if ($_SESSION['role'] != null) { ?>
+            <div class="logout">
+                <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
 
-            <p>Hello,
-                <?= $_SESSION['Name'] ?>
-            </p>
+                <p>Hello,
+                    <?= $_SESSION['Name'] ?>
+                </p>
 
-            <a id="log" href="php/logout.php">Log Out</a>
-        </div>
+                <a id="log" href="php/logout.php">Log Out</a>
+            </div>
         <?php
-            } else {
-            ?>
+        } else {
+        ?>
             <div class="login">
                 <a id="login-btn" href="login.php">Log In</a>
                 <a id="sign-btn" href="signup.php">Sign Up</a>
             </div>
-            <?php
-            }
-            ?>
+        <?php
+        }
+        ?>
     </nav>
 
     <!-- Containers -->
@@ -95,16 +95,16 @@ $final = $result->fetch()
 
                 <div class="profileForm">
                     <h1>Profile</h1>
-                    
+
                     <!-- Profile Information -->
                     <div class="profile-info">
-                        <p>Full Name <br> <?= stripslashes($final->first_name . $final->last_name) ?></p>
+                        <p>Full Name <br> <?= stripslashes($final->first_name . ' ' . $final->last_name) ?></p>
 
                         <p>Email <br> <?= stripslashes($final->email) ?></p>
 
                         <p>Phone <br> <?= stripslashes($final->no_telp) ?></p>
 
-                        <p>Address <br> <?= stripslashes($final->address)?></p>
+                        <p>Address <br> <?= stripslashes($final->address) ?></p>
 
                         <p>Postal code <br> <?= stripslashes($final->postalcode) ?></p>
                     </div>

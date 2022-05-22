@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_POST['user'])) $user = $_POST['user'];
 if (isset($_POST['email'])) $email = $_POST['email'];
 if (isset($_POST['pw'])) $pass = password_hash($_POST['pw'], PASSWORD_BCRYPT);
