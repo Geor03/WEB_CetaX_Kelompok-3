@@ -4,7 +4,6 @@ session_start();
 if ($_SESSION['role'] == null) {
     header('Location: login.php');
 }
-$productId = $_GET['product'];
 $host = 'localhost';
 $dbname = 'cetax';
 $username = 'root';
@@ -40,7 +39,7 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
         </center>
 
         <div class="form-edit-page">
-            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product) ?>"
+            <form action="php/admin-edit-process.php"
                 method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
                     <input type="text" name="product_name" 

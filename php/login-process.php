@@ -2,7 +2,7 @@
 session_start();
 
 $user = $_POST['user'];
-$pw = $_POST['pw'];
+$pw = stripslashes($_POST['pw']);
 
 $host = 'localhost';
 $dbname = 'cetax';
@@ -17,7 +17,7 @@ $result = $pdo->prepare($sql);
 $result->execute([$user]);
 
 if ($row = $result->fetch()) {
-    if ($pw == $row->password) {
+    if (password_verify($pw, $row->password)) {
         $_SESSION['username'] = $row->username;
         $_SESSION['role'] = $row->role;
         $_SESSION['user_id'] = $row->id;

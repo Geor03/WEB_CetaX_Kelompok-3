@@ -1,3 +1,10 @@
+<?php
+session_start();
+include_once 'css/all-style.php';
+if ($_SESSION['role'] == null) {
+  header('Location: login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +82,7 @@
 
                 <div class="profileForm">
                     <h1>Profile</h1>
-                    <form action="php/signup-process.php" method="post">
+                    <form action="php/edit-profile-process.php" method="post">
                         <div class="txt_field">
                             <input type="text" name="user" required>
                             <span></span>

@@ -1,6 +1,9 @@
 <?php
 session_start();
 include_once 'css/all-style.php';
+if ($_SESSION['role'] == null) {
+  header('Location: login.php');
+}
 $host = 'localhost';
 $dbname = 'cetax';
 $username = 'root';

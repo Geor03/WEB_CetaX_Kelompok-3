@@ -39,7 +39,7 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
         </center>
 
         <div class="form-edit">
-            <form action="php/admin-edit-portfolio-process.php?product=<?php echo stripslashes($final->id_portfolio) ?>" method="post" enctype='multipart/form-data'>
+            <form action="php/admin-add-portfolio-process.php" method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
                     <input type="text" name="product_name" required>
                     <span></span>

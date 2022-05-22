@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['user'])) $user = $_POST['user'];
 if (isset($_POST['email'])) $email = $_POST['email'];
-if (isset($_POST['pw'])) $pass = $_POST['pw'];
+if (isset($_POST['pw'])) $pass = password_hash($_POST['pw'], PASSWORD_BCRYPT);
 if (isset($_POST['Fname'])) $Fname = $_POST['Fname'];
 if (isset($_POST['Lname'])) $Lname = $_POST['Lname'];
 if (isset($_POST['phone'])) $phone = $_POST['phone'];
