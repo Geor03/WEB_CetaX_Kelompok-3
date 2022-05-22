@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_POST['user'])) $user = $_POST['user'];
 if (isset($_POST['email'])) $email = $_POST['email'];
 if (isset($_POST['pw'])) $pass = password_hash($_POST['pw'], PASSWORD_BCRYPT);
@@ -15,7 +16,7 @@ $username = 'root';
 $password = '';
 $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-$query = $pdo->prepare("UPDATE `table_customer` SET `username`='$user',`email`='$email',`password`='$pass',`first_name`='$Fname',`last_name`='$Lname',`no_telp`='$phone',`address`='$address', `role`='[value-9]',`postalcode`='$postal' WHERE `id` = $id");
+$query = $pdo->prepare("UPDATE `table_customer` SET `username`='$user',`email`='$email',`password`='$pass',`first_name`='$Fname',`last_name`='$Lname',`no_telp`='$phone',`address`='$address',`postalcode`='$postal' WHERE `id` = $id");
 $result = $query->execute();
 if ($result) {
     echo "<script>alert('Edit profile Succesfully');window.location.href='../profile-page.php';</script>";
