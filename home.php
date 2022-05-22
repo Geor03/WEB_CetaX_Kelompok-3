@@ -166,7 +166,7 @@ $final = $result->fetchAll();
 
             <div class="price-box">
               <h3><?php echo stripslashes($product->product_name) ?></h3>
-              <h2 class="price">$<?php echo stripslashes($product->price) ?></h2>
+              <h2 class="price">IDR <?php echo stripslashes($product->price) ?></h2>
               <a href="order-page.php?product=<?php echo stripslashes($product->id_product) ?>" class="buy">Buy Now</a>
             </div>
           </div>
