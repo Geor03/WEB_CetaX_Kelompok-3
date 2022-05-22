@@ -1,6 +1,21 @@
 <?php
 include_once 'css/all-style.php';
 session_start();
+$id = $_SESSION['user_id'];
+if ($_SESSION['role'] == null) {
+    header('Location: login.php');
+  }
+$host = 'localhost';
+$dbname = 'cetax';
+$username = 'root';
+$password = '';
+$pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+$sql = "SELECT * FROM table_customer WHERE id= $id";
+$result = $pdo->prepare($sql);
+$result->execute();
+$final = $result->fetch()
 ?>
 
 <!DOCTYPE html>
@@ -80,15 +95,15 @@ session_start();
 
                 <div class="profileForm">
                     <h1>Profile</h1>
-                    <form action="php/signup-process.php" method="post">
+                    <form action="php/edit-profile-process.php" method="post">
                         <div class="txt_field">
-                            <input type="text" name="user" required>
+                            <input type="text" name="user" value="<?= stripslashes($final->username) ?>" required>
                             <span></span>
                             <label>Username</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="email" name="email" required>
+                            <input type="email" name="email" value="<?= stripslashes($final->email) ?>"required>
                             <span></span>
                             <label>Email</label>
                         </div>
@@ -106,31 +121,31 @@ session_start();
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="Fname" required>
+                            <input type="text" name="Fname" value="<?= stripslashes($final->first_name) ?>"required>
                             <span></span>
                             <label>First Name</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="Lname" required>
+                            <input type="text" name="Lname" value="<?= stripslashes( $final->last_name) ?>"required>
                             <span></span>
                             <label>Last Name</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="phone" required>
+                            <input type="text" name="phone" value="<?= stripslashes($final->no_telp) ?>"required>
                             <span></span>
                             <label>Phone Number</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="address" required>
+                            <input type="text" name="address" value="<?= stripslashes($final->address) ?>" required>
                             <span></span>
                             <label>Address</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="postal" required>
+                            <input type="text" name="postal" value="<?= stripslashes($final->postalcode) ?>"required>
                             <span></span>
                             <label>Postal Code</label>
                         </div>
