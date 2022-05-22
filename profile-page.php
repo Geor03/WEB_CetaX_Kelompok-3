@@ -1,6 +1,21 @@
 <?php
 include_once 'css/all-style.php';
 session_start();
+$id = $_SESSION['user_id'];
+if ($_SESSION['role'] == null) {
+    header('Location: login.php');
+  }
+$host = 'localhost';
+$dbname = 'cetax';
+$username = 'root';
+$password = '';
+$pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+$sql = "SELECT * FROM table_customer WHERE id= $id";
+$result = $pdo->prepare($sql);
+$result->execute();
+$final = $result->fetch()
 ?>
 
 <!DOCTYPE html>
@@ -83,15 +98,15 @@ session_start();
                     
                     <!-- Profile Information -->
                     <div class="profile-info">
-                        <p>Full Name <br> Marco</p>
+                        <p>Full Name <br> <?= stripslashes($final->first_name . $final->last_name) ?></p>
 
-                        <p>Email <br> example@email.com</p>
+                        <p>Email <br> <?= stripslashes($final->email) ?></p>
 
-                        <p>Phone <br> 1234566</p>
+                        <p>Phone <br> <?= stripslashes($final->no_telp) ?></p>
 
-                        <p>Address <br> Jalan Mawar</p>
+                        <p>Address <br> <?= stripslashes($final->address)?></p>
 
-                        <p>Postal code <br> 12345</p>
+                        <p>Postal code <br> <?= stripslashes($final->postalcode) ?></p>
                     </div>
 
                     <a href="edit-profile.php">Edit Profile</a>
