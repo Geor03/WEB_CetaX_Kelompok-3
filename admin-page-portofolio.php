@@ -46,7 +46,7 @@ if ($_SESSION['role'] == null) {
                 <li><i class="fa-solid fa-chart-pie"></i><a href="admin-page.php">Product</a></li>
                 <li><i class="fa-solid fa-shirt"></i><a href="admin-page-portofolio.php">Portofolio</a></li>
                 <li><i class="fa-solid fa-file-lines"></i><a href="admin-page-order.php">Order</a></li>
-                <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>            
+                <li><i class="fa-solid fa-right-from-bracket"></i><a href="php/logout.php">Log out</a></li>
             </div>
         </section>
 
@@ -54,10 +54,16 @@ if ($_SESSION['role'] == null) {
         <section id="interface">
             <div class="navigation-admin">Admin</div>
 
-            <!-- Dashboard Title -->
-            <h3 class="i-name">
-                Portofolio
-            </h3>
+            <div class="container-dashboard">
+                <!-- Dashboard Title -->
+                <h3 class="i-name">
+                    Portofolio
+                </h3>
+
+                <!-- Button  -->
+                <a href="#">+  Add New</a>
+            </div>
+
 
             <!-- Items -->
             <div class="board">
@@ -80,7 +86,7 @@ if ($_SESSION['role'] == null) {
                                 </td>
 
                                 <td class="people-des">
-                                    <h5><?php echo stripslashes($product->category_portfolio) ?></h5>                                
+                                    <h5><?php echo stripslashes($product->category_portfolio) ?></h5>
                                 </td>
 
                                 <td class="active">
