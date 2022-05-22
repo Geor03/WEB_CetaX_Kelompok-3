@@ -88,7 +88,7 @@ if ($_SESSION['role'] == null) {
                                 </td>
 
                                 <td class="edit">
-                                    <a href="admin-edit-page.php?product=<?php echo stripslashes($product->id_portfolio) ?>">Edit</a>
+                                    <a href="admin-edit-page-portfolio.php?portfolio=<?php echo stripslashes($product->id_portfolio) ?>">Edit</a>
                                 </td>
                             </tr>
                         <?php endforeach ?>

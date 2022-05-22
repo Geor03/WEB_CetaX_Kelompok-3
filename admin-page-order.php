@@ -9,7 +9,7 @@ $pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 
-$result = $pdo->prepare(" SELECT tableo.*,tp.*,tc.*  FROM table_order tableo INNER JOIN table_product tp ON tableo.id_product = tp.id_product INNER JOIN table_customer tc ON tableo.id_customer = tc.id_customer");
+$result = $pdo->prepare(" SELECT tableo.*,tp.*,tc.*,pm.*  FROM table_order tableo INNER JOIN table_product tp ON tableo.id_product = tp.id_product INNER JOIN table_customer tc ON tableo.id_customer = tc.id INNER JOIN payment_method pm ON tableo.id_paymentMethod = pm.id_paymentMethod");
 $result->execute();
 $final = $result->fetchAll();
 if ($_SESSION['role'] == null) {
@@ -79,8 +79,14 @@ if ($_SESSION['role'] == null) {
                                 </td>
 
                                 <td class="people-des">
-                                    <h5><?php echo stripslashes($product->category_product) ?></h5>
-                                    <p><?php echo stripslashes($product->stock_qty) ?></p>
+                                    <h5><?php echo stripslashes($product->email) ?></h5>
+                                    <h5><?php echo stripslashes($product->size) ?></h5>
+                                    <p><?php echo stripslashes($product->quantity) ?></p>
+                                    <p><?php echo stripslashes($product->material) ?></p>
+                                    <p><?php echo stripslashes($product->shipping) ?></p>
+                                    <p><?php echo stripslashes($product->total_price) ?></p>
+                                    <p><?php echo stripslashes($product->payment_name) ?></p>
+                                    <p><?php echo stripslashes($product->Date) ?></p>
                                 </td>
 
                                 <td class="active">

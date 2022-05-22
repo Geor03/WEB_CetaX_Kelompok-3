@@ -1,3 +1,23 @@
+<?php
+include_once 'css/all-style.php';
+session_start();
+if ($_SESSION['role'] == null) {
+    header('Location: login.php');
+}
+$portfolioId = $_GET['portfolio'];
+$host = 'localhost';
+$dbname = 'cetax';
+$username = 'root';
+$password = '';
+$pdo = new PDO("mysql: host=$host;dbname=$dbname", $username, $password);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+
+$result = $pdo->prepare("SELECT * FROM table_portfolio WHERE id_portfolio = $portfolioId");
+$result->execute();
+$final = $result->fetch();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,9 +44,9 @@
         </center>
     
         <div class="form-edit">
-            <form action="php/admin-edit-process.php?product=<?php echo stripslashes($final->id_product) ?>" method="post" enctype='multipart/form-data'>
+            <form action="php/admin-edit-portfolio-process.php?product=<?php echo stripslashes($final->id_portfolio) ?>" method="post" enctype='multipart/form-data'>
                 <div class="txt_field">
-                    <input type="text" name="product_name" value="<?php echo stripslashes($final->product_name) ?>" required>
+                    <input type="text" name="product_name" value="<?php echo stripslashes($final->portfolio_name) ?>" required>
                     <span></span>
                     <label>Portfolio Name</label>
                 </div>
@@ -34,22 +54,22 @@
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Choose Category</option>
-                        <option value="1" <?php if($final->id_productCategory=="1") echo 'selected="selected"'; ?>>T-shirt</option>
-                        <option value="2" <?php if($final->id_productCategory=="2") echo 'selected="selected"'; ?>>Mug</option>
-                        <option value="3" <?php if($final->id_productCategory=="3") echo 'selected="selected"'; ?>>Tote bag</option>
-                        <option value="4" <?php if($final->id_productCategory=="4") echo 'selected="selected"'; ?>>Mini Sticker</option>
+                        <option value="1" <?php if($final->id_portfolioCategory=="1") echo 'selected="selected"'; ?>>T-shirt</option>
+                        <option value="2" <?php if($final->id_portfolioCategory=="2") echo 'selected="selected"'; ?>>Mug</option>
+                        <option value="3" <?php if($final->id_portfolioCategory=="3") echo 'selected="selected"'; ?>>Tote bag</option>
+                        <option value="4" <?php if($final->id_portfolioCategory=="4") echo 'selected="selected"'; ?>>Mini Sticker</option>
                     </select>
                 </div>
 
                 <div class="txt_field" id="file">
                     <div class="file-upload">
-                        <input type="file" name="image"/><input type="hidden" name="oldfile" value="<?=$final->product_photo ?>"><?php echo $final->product_photo?></input>
+                        <input type="file" name="image"/><input type="hidden" name="oldfile" value="<?=$final->portfolio_photo ?>"><?php echo $final->portfolio_photo?></input>
                     </div>
                 </div>
 
                 <div class="btn-choose">
                     <input type="submit" name="submit" value="Update">
-                    <a href="php/admin-delete-process.php?product=<?php echo stripslashes($final->id_product) ?>"><input type="submit" id="remove" value="Delete"></a>
+                    <a href="php/admin-delete-portfolio.php?portfolio=<?php echo stripslashes($final->id_portfolio) ?>"><input type="submit" id="remove" value="Delete"></a>
                 </div>
             </form>
         </div>
