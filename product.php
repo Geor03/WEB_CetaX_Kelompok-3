@@ -57,7 +57,7 @@ $final = $result->fetchAll();
 
     <?php if ($_SESSION['role'] != null) { ?>
       <div class="logout">
-        <a id="profile" href="profile.php"><i class="fa-solid fa-user"></i></a>
+        <a id="profile" href="profile-page.php"><i class="fa-solid fa-user"></i></a>
 
         <p>Hello, <?= $_SESSION['Name'] ?></p>
 

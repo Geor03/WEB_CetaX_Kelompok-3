@@ -189,6 +189,14 @@ nav {
 }
 
 /* Content */
+.profile-info {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 3rem 0;
+}
+
 .container-profile {
     max-width: 1700px;
     margin: 0 auto;
@@ -217,6 +225,14 @@ nav {
 
 .profileForm {
     margin: 5rem 0;
+}
+
+.profileForm a {
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #663399;
 }
 
 form .txt_field {

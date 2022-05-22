@@ -1,3 +1,8 @@
+<?php
+include_once 'css/all-style.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/edit-profile.css">
     <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +65,7 @@
     </nav>
 
     <!-- Containers -->
-    <div class="container-profile">
+    <div class="container-profile-first">
 
         <!-- Content -->
         <div class="container-profile-box">
@@ -75,63 +80,21 @@
 
                 <div class="profileForm">
                     <h1>Profile</h1>
-                    <form action="php/signup-process.php" method="post">
-                        <div class="txt_field">
-                            <input type="text" name="user" required>
-                            <span></span>
-                            <label>Username</label>
-                        </div>
+                    
+                    <!-- Profile Information -->
+                    <div class="profile-info">
+                        <p>Full Name <br> Marco</p>
 
-                        <div class="txt_field">
-                            <input type="email" name="email" required>
-                            <span></span>
-                            <label>Email</label>
-                        </div>
+                        <p>Email <br> example@email.com</p>
 
-                        <div class="txt_field">
-                            <input type="password" name="pw" id="pw" required>
-                            <span></span>
-                            <label>New Password</label>
-                        </div>
+                        <p>Phone <br> 1234566</p>
 
-                        <div class="txt_field">
-                            <input type="password" name="confirm_pw" id="confirmPw" required>
-                            <span></span>
-                            <label>Confirmation Password</label>
-                        </div>
+                        <p>Address <br> Jalan Mawar</p>
 
-                        <div class="txt_field">
-                            <input type="text" name="Fname" required>
-                            <span></span>
-                            <label>First Name</label>
-                        </div>
+                        <p>Postal code <br> 12345</p>
+                    </div>
 
-                        <div class="txt_field">
-                            <input type="text" name="Lname" required>
-                            <span></span>
-                            <label>Last Name</label>
-                        </div>
-
-                        <div class="txt_field">
-                            <input type="text" name="phone" required>
-                            <span></span>
-                            <label>Phone Number</label>
-                        </div>
-
-                        <div class="txt_field">
-                            <input type="text" name="address" required>
-                            <span></span>
-                            <label>Address</label>
-                        </div>
-
-                        <div class="txt_field">
-                            <input type="text" name="postal" required>
-                            <span></span>
-                            <label>Postal Code</label>
-                        </div>
-
-                        <input type="submit" value="Save" name="save" onclick="Validate()">
-                    </form>
+                    <a href="edit-profile.php">Edit Profile</a>
                 </div>
             </div>
         </div>

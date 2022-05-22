@@ -1,3 +1,8 @@
+<?php
+include_once 'css/all-style.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/edit-profile.css">
     <script src="https://kit.fontawesome.com/a623eebd84.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
