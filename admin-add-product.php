@@ -59,6 +59,10 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
                     <label>Add Stock</label>
                 </div>
 
+                <div class="txt_field">
+                    <textarea name="description" id="desc" placeholder="Description" cols="30" rows="10"></textarea>
+                </div>
+
                 <div class="select">
                     <select name="category" id="category" style="background: #663399; color: white;">
                         <option selected disabled>Choose Category</option>
