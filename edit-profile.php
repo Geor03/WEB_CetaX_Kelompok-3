@@ -4,7 +4,7 @@ session_start();
 $id = $_SESSION['user_id'];
 if ($_SESSION['role'] == null) {
     header('Location: login.php');
-  }
+}
 $host = 'localhost';
 $dbname = 'cetax';
 $username = 'root';
@@ -57,26 +57,26 @@ $final = $result->fetch()
 
 
         <?php
-            if ($_SESSION['role'] != null) { ?>
-        <div class="logout">
-            <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
+        if ($_SESSION['role'] != null) { ?>
+            <div class="logout">
+                <a id="profile" href="#"><i class="fa-solid fa-user"></i></a>
 
-            <p>Hello,
-                <?= $_SESSION['Name'] ?>
-            </p>
+                <p>Hello,
+                    <?= $_SESSION['Name'] ?>
+                </p>
 
-            <a id="log" href="php/logout.php">Log Out</a>
-        </div>
+                <a id="log" href="php/logout.php">Log Out</a>
+            </div>
         <?php
-            } else {
-            ?>
+        } else {
+        ?>
             <div class="login">
                 <a id="login-btn" href="login.php">Log In</a>
                 <a id="sign-btn" href="signup.php">Sign Up</a>
             </div>
-            <?php
-            }
-            ?>
+        <?php
+        }
+        ?>
     </nav>
 
     <!-- Containers -->
@@ -103,7 +103,7 @@ $final = $result->fetch()
                         </div>
 
                         <div class="txt_field">
-                            <input type="email" name="email" value="<?= stripslashes($final->email) ?>"required>
+                            <input type="email" name="email" value="<?= stripslashes($final->email) ?>" required>
                             <span></span>
                             <label>Email</label>
                         </div>
@@ -121,19 +121,19 @@ $final = $result->fetch()
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="Fname" value="<?= stripslashes($final->first_name) ?>"required>
+                            <input type="text" name="Fname" value="<?= stripslashes($final->first_name) ?>" required>
                             <span></span>
                             <label>First Name</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="Lname" value="<?= stripslashes( $final->last_name) ?>"required>
+                            <input type="text" name="Lname" value="<?= stripslashes($final->last_name) ?>" required>
                             <span></span>
                             <label>Last Name</label>
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="phone" value="<?= stripslashes($final->no_telp) ?>"required>
+                            <input type="text" name="phone" value="<?= stripslashes($final->no_telp) ?>" required>
                             <span></span>
                             <label>Phone Number</label>
                         </div>
@@ -145,7 +145,7 @@ $final = $result->fetch()
                         </div>
 
                         <div class="txt_field">
-                            <input type="text" name="postal" value="<?= stripslashes($final->postalcode) ?>"required>
+                            <input type="text" name="postal" value="<?= stripslashes($final->postalcode) ?>" required>
                             <span></span>
                             <label>Postal Code</label>
                         </div>
@@ -156,6 +156,72 @@ $final = $result->fetch()
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container-footer">
+            <div class="cetax">
+                <h3>CetaX</h3>
+
+                <div class="footer-img">
+                    <a href="https://www.facebook.com/login/">
+                        <img src="images/fb.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/accounts/login/?hl=en">
+                        <img src="images/ig.png" alt="">
+                    </a>
+
+                    <a href="https://www.youtube.com/">
+                        <img src="images/yt.png" alt="">
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>
+                        &#169 2022 All Right Resource <br>| Kelompok 3
+                    </p>
+                </div>
+            </div>
+
+            <div class="location">
+                <h3>Location info</h3>
+                <p>
+                    Jl. Scientia Boulevard, Curug Sangereng,
+                    Kec. Klp. Dua, Kabupaten Tangerang, Banten
+                    15810
+                </p>
+            </div>
+
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>
+                    Phone 0812-9898-2929 <br>
+                    Customer Service 021-55231
+                </p>
+            </div>
+
+            <div class="useful-link">
+                <h3>Useful Link</h3>
+                <a href="product.php">
+                    Product
+                </a>
+                <a href="portfolio.php">
+                    Portfolio
+                </a>
+                <a href="about-us.php">
+                    About Us
+                </a>
+                <a href="faq.php">
+                    FAQs
+                </a>
+                <a href="tnc.php">
+                    Terms & Condition
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Inner JS -->
     <!-- <script>

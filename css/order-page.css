@@ -166,7 +166,7 @@ nav {
 
 .logout p {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .logout #log {
@@ -482,7 +482,7 @@ footer {
 }
 
 /* Laptop Small */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     /* Navbar */
     nav {

@@ -267,7 +267,7 @@ $final = $result->fetchAll();
 
         <div class="copyright">
           <p>
-            &#169 2022 All Right Resource <br>| Kelompok 2
+            &#169 2022 All Right Resource <br>| Kelompok 3
           </p>
         </div>
       </div>

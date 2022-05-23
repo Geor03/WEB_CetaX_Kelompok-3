@@ -169,7 +169,7 @@ nav {
 
 .logout p {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .logout #log {
@@ -302,7 +302,73 @@ input[type="submit"]:hover {
     transition: .5s;
 }
 
-@media screen and (min-width: 1024px) {
+/* Footer */
+
+footer {
+    width: 100vw;
+    background-color: #f7f8f8;
+}
+
+.container-footer {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: #f7f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cetax {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.footer-img a {
+    text-decoration: none;
+}
+
+.footer-img a img {
+    width: 50px;
+}
+
+.copyright p {
+    color: #c4c4c4;
+}
+
+.location {
+    margin-right: 0px;
+}
+
+.location p {
+    width: 300px;
+    color: #c4c4c4;
+    font-weight: 500;
+}
+
+.contact-us p {
+    color: #c4c4c4;
+}
+
+.useful-link {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.useful-link a {
+    text-decoration: none;
+    color: #c4c4c4;
+    transition: .5s all ease-in-out;
+}
+
+.useful-link a:hover {
+    color: black;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     /* Navbar */
     nav {

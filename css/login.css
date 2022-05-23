@@ -375,7 +375,7 @@ footer {
 }
 
 /* Laptop Small */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     .form-box {
         max-width: 900px;
         margin: 4rem auto;
