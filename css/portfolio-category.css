@@ -200,6 +200,10 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .portfolio-box {

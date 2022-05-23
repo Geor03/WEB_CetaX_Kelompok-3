@@ -95,7 +95,9 @@ $final = $result->fetchAll();
           <h3><?php echo stripslashes($product->portfolio_name) ?></h3>
         </div>
 
-        <!-- <div class="portfolio-box">
+        
+      <?php endforeach ?>
+      <div class="portfolio-box">
                 <a href="images/comp2.png">
                     <img src="images/comp2.png" alt="">
                 </a>
@@ -107,19 +109,8 @@ $final = $result->fetchAll();
                     <img src="images/comp3.png" alt="">
                 </a>
                 <h3>Pull and Bear</h3> 
-            </div> -->
-      <?php endforeach ?>
-    </div>
-
-    <!-- Second Row
-        <div class="portfolio-card">
-            <div class="portfolio-box">
-                <a href="images/compm1.png">
-                    <img src="images/compm1.png" width="300px" height="300px" alt="">
-                </a>
-                <h3>Audi</h3>
             </div>
-
+            
             <div class="portfolio-box">
                 <a href="images/compm2.png">
                     <img src="images/compm2.png" width="300px" height="300px" alt="">
@@ -133,7 +124,19 @@ $final = $result->fetchAll();
                 </a>
                 <h3>Hyundai</h3>
             </div>
-        </div>
+    </div>
+
+    <!-- Second Row
+        <div class="portfolio-card">
+            <!-- <div class="portfolio-box">
+                <a href="images/compm1.png">
+                    <img src="images/compm1.png" width="300px" height="300px" alt="">
+                </a>
+                <h3>Audi</h3>
+            </div> -->
+
+            
+        <!-- </div>
 
         Third Row 
         <div class="portfolio-card">
