@@ -45,6 +45,10 @@ $final = $result->fetch()
             <h1 class="brand" id="color">X</h1>
         </div>
 
+        <a id="menu-btn">
+            <img src="images/menu-icon.png" alt="" />
+        </a>
+
         <div class="kanan">
             <ul class="navbar">
                 <li><a href="home.php">Home</a></li>
@@ -193,6 +197,8 @@ $final = $result->fetch()
             return true;
         }
     </script>
+
+    <script src="js/dropdown.js"></script>
 </body>
 
 </html>

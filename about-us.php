@@ -36,6 +36,10 @@ if ($_SESSION['role'] == null) {
             <h1 id="color">X</h1>
         </div>
 
+        <a id="menu-btn">
+            <img src="images/menu-icon.png" alt="" />
+        </a>
+
         <div class="kanan">
             <ul class="navbar">
                 <li><a href="home.php">Home</a></li>
@@ -359,6 +363,8 @@ if ($_SESSION['role'] == null) {
             },
         });
     </script>
+
+    <script src="js/dropdown.js"></script>
 </body>
 
 </html>

@@ -90,6 +90,10 @@ if ($_SESSION['role'] == null) {
                                     <p><?php echo stripslashes($product->product_photo) ?></p>
                                 </td>
 
+                                <td>
+                                    <img src="<?php echo $row['...'] ?>"/>
+                                </td>
+
                                 <td class="active">
                                     <p>Active</p>
                                 </td>

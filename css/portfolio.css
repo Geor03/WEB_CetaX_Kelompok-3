@@ -463,32 +463,31 @@ footer {
 
     /* Navigation */
     .kanan {
-        margin: 20px auto;
+        display: none;
+        width: 100vw;
+        text-align: center;
     }
 
-    .kanan {
-        /* position: absolute; */
-        /* margin-top: 150px; */
-        justify-content: center;
+    .navbar li {
+        text-align: center;
+        background-color: white;
     }
 
-    .kanan ul {
-        margin: 0px 0px 0px 0px;
+    .active-nav {
+        display: block;
     }
 
-    .kanan ul li {
-        margin-left: 5px;
-    }
 
-    .kanan ul li a {
-        font-size: 12px;
-        padding: 0;
-        margin: 5px;
+
+    #menu-btn {
+        display: block;
     }
 
     /* Log Out */
     .logout {
+        max-width: 400px;
         margin: 10px auto;
+        display: none;
     }
 
     .logout p {
@@ -507,6 +506,11 @@ footer {
 
     .logout p {
         font-size: 16px;
+    }
+
+    .active-log {
+        display: flex;
+        max-width: 300px;
     }
 
     /* Content */

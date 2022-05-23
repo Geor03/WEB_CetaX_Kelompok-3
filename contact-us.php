@@ -30,6 +30,10 @@ session_start();
       <h1 id="color">X</h1>
     </div>
 
+    <a id="menu-btn">
+      <img src="images/menu-icon.png" alt="" />
+    </a>
+
     <div class="kanan">
       <ul class="navbar">
         <li><a href="home.php">Home</a></li>
@@ -207,6 +211,8 @@ session_start();
     </div>
 
   </footer>
+
+  <script src="js/dropdown.js"></script>
 </body>
 
 </html>

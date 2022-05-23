@@ -38,6 +38,7 @@ nav {
 /* Navigation */
 .kanan {
     display: flex;
+    /* margin-right: 130px; */
 }
 
 .kanan a {
@@ -186,6 +187,14 @@ nav {
 .logout #log:hover {
     box-shadow: inset 150px 0 0 0 red;
     cursor: pointer;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.dropdown {
+    display: none;
 }
 
 /* CONTENT */
@@ -705,10 +714,6 @@ footer {
 
 /* Tab */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    nav {
-        margin: 20px auto;
-    }
-
     .logo {
         margin-left: 5px;
     }
@@ -734,7 +739,7 @@ footer {
 
     /* Log Out */
     .logout {
-        margin-right: -30px;
+        margin-right: -30;
     }
 
     .logout p {
@@ -753,6 +758,11 @@ footer {
     .logout p {
         font-size: 12px;
     }
+/* 
+    #menu-btn {
+        display: block;
+        margin-right: 50px;
+    } */
 
     /* CONTENT */
     .slider {
@@ -889,32 +899,31 @@ footer {
 
     /* Navigation */
     .kanan {
-        margin: 20px auto;
+        display: none;
+        width: 100vw;
+        text-align: center;
     }
 
-    .kanan {
-        /* position: absolute; */
-        /* margin-top: 150px; */
-        justify-content: center;
+    .navbar li {
+        text-align: center;
+        background-color: white;
     }
 
-    .kanan ul {
-        margin: 0px 0px 0px 0px;
+    .active-nav {
+        display: block;
     }
 
-    .kanan ul li {
-        margin-left: 5px;
-    }
+    
 
-    .kanan ul li a {
-        font-size: 12px;
-        padding: 0;
-        margin: 5px;
+    #menu-btn {
+        display: block;
     }
 
     /* Log Out */
     .logout {
+        max-width: 400px;
         margin: 10px auto;
+        display: none;
     }
 
     .logout p {
@@ -933,6 +942,11 @@ footer {
 
     .logout p {
         font-size: 16px;
+    }
+    
+    .active-log {
+        display: flex;
+        max-width: 300px;
     }
 
     /* CONTENT */

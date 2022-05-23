@@ -45,6 +45,10 @@ $final = $result->fetchAll();
       <h1 class="brand" id="color">X</h1>
     </div>
 
+    <a id="menu-btn">
+      <img src="images/menu-icon.png" alt="" />
+    </a>
+
     <div class="kanan">
       <ul class="navbar">
         <li><a href="home.php">Home</a></li>
@@ -55,7 +59,6 @@ $final = $result->fetchAll();
       </ul>
     </div>
 
-
     <?php
     if ($_SESSION['role'] != null) { ?>
       <div class="logout">
@@ -65,15 +68,15 @@ $final = $result->fetchAll();
 
         <a id="log" href="php/logout.php">Log Out</a>
       </div>
-      <?php
-          } else {
-            ?>
+    <?php
+    } else {
+    ?>
       <div class="login">
         <a id="login-btn" href="login.php">Log In</a>
         <a id="sign-btn" href="signup.php">Sign Up</a>
       </div>
     <?php
-          }
+    }
     ?>
   </nav>
 
@@ -310,6 +313,7 @@ $final = $result->fetchAll();
     </div>
   </footer>
 
+  <script src="js/dropdown.js"></script>
 </body>
 
 </html>
