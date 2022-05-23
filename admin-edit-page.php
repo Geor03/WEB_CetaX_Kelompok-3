@@ -63,7 +63,7 @@ $final = $result->fetch();
                 </div>
 
                 <div class="txt_field">
-                    <textarea name="description" id="desc" placeholder="Description" cols="30" rows="10"></textarea>
+                    <textarea name="description" id="desc" placeholder="Description" cols="30" rows="10" required><?php echo stripslashes($final->Description) ?></textarea>
                 </div>
 
                 <div class="select">

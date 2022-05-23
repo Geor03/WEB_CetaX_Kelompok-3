@@ -14,6 +14,8 @@ if(isset($_POST['price']))$price = $_POST['price'];
 if(isset($_POST['stock']))$stock = $_POST['stock'];
 if(isset($_POST['category']))$category = $_POST['category'];
 if(isset($_POST['oldfile']))$oldfile = $_POST['oldfile'];
+if(isset($_POST['description']))$desc = $_POST['description'];
+
 
 $fileName = $_FILES['image']['name'];
 $file_temp = $_FILES['image']['tmp_name'];
@@ -31,7 +33,7 @@ else if($fileName=="") {
 
 // Insert image file name into database
 //$insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
-$query = $pdo->prepare("UPDATE `table_product` SET `id_productCategory`='$category',`product_name`='$productname',`product_photo`='$targetFilePath',`price`='$price',`stock_qty`='$stock' WHERE id_product = $id");
+$query = $pdo->prepare("UPDATE `table_product` SET `id_productCategory`='$category',`product_name`='$productname',`product_photo`='$targetFilePath',`price`='$price',`stock_qty`='$stock', `Description` = '$desc' WHERE id_product = $id");
 $result = $query->execute();
 if($result){
     echo "<script>alert('Edit Succesfully');window.location.href='../admin-page.php';</script>";
