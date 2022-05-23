@@ -191,6 +191,7 @@ nav {
 /* Content */
 .profile-info {
     display: flex;
+    flex-direction: column;
     gap: 5rem;
     flex-wrap: wrap;
     max-width: 500px;

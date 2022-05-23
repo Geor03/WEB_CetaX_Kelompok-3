@@ -95,7 +95,7 @@ $final = $result->fetchAll();
               <a href="order-page.php?product=<?php echo stripslashes($product->id_product) ?>"><?php echo stripslashes($product->product_name) ?></a>
             </div>
             <!-- Price -->
-            <a href="order-page.php?product=<?php echo stripslashes($product->id_product) ?>" class="price">$<?php echo stripslashes($product->price) ?></a>
+            <a href="order-page.php?product=<?php echo stripslashes($product->id_product) ?>" class="price">IDR <?php echo stripslashes($product->price) ?></a>
           </div>
         </div>
       <?php endforeach ?>
